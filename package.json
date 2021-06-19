@@ -1,0 +1,36 @@
+{
+    "author": "ChalkySticks LLC",
+    "bugs": {
+        "url": "https://github.com/chalkysticks/sass-theme/issues"
+    },
+    "description": "Shared ChalkySticks theming using SASS",
+    "directories": {
+        "example": "example"
+    },
+    "homepage": "https://github.com/chalkysticks/sass-theme#readme",
+    "keywords": [
+        "billiards",
+        "chalkysticks",
+        "pool"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "name": "chalkysticks-sass-theme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chalkysticks/sass-theme.git"
+    },
+    "scripts": {
+        "serve": "http-server",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "node-sass --watch --output-style expanded --source-map true --source-map-contents true --precision 6 src/app/boot.scss dist/app.css"
+    },
+    "version": "1.0.0",
+    "devDependencies": {
+        "http-server": "^0.12.3",
+        "node-sass": "^6.0.0"
+    },
+    "dependencies": {
+        "bootstrap": "^5.0.1"
+    }
+}

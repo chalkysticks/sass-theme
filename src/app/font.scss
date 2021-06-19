@@ -1,0 +1,70 @@
+
+/**
+ * Fonts
+ *
+ * 100    Extra Light or Ultra Light
+ * 200    Light or Thin
+ * 300    Book or Demi
+ * 400    Normal or Regular
+ * 500    Medium
+ * 600    Semibold, Demibold
+ * 700    Bold
+ * 800    Black, Extra Bold or Heavy
+ * 900    Extra Black, Fat, Poster or Ultra Black
+ *
+ * Fonts are prioritized in a list of preference.
+ * WOFF2, WOFF, OTF, SVG, EOT, TTF
+ *
+ * We should only need WOFF2 because of modern browser support,
+ * but Apple (obviously) has some issues which requires us to
+ * support WOFF asw well.
+ */
+
+// Remote Fonts
+// -----------------------------------------------------------------------------
+
+    // [ intentionally left blank ]
+
+
+// Prelo
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: "Prelo";
+    font-weight: 100;
+    src: url("https://static.chalkysticks.com/fonts/prelo-hairline-webfont.eot") format("embedded-opentype"),
+        url("https://static.chalkysticks.com/fonts/prelo-hairline-webfont.ttf") format("truetype"),
+        url("https://static.chalkysticks.com/fonts/prelo-hairline-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Prelo";
+    font-weight: 200;
+    src: url("https://static.chalkysticks.com/fonts/prelo-light-webfont.eot") format("embedded-opentype"),
+        url("https://static.chalkysticks.com/fonts/prelo-light-webfont.ttf") format("truetype"),
+        url("https://static.chalkysticks.com/fonts/prelo-light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Prelo";
+    font-weight: 500;
+    src: url("https://static.chalkysticks.com/fonts/prelo-medium-webfont.eot") format("embedded-opentype"),
+        url("https://static.chalkysticks.com/fonts/prelo-medium-webfont.ttf") format("truetype"),
+        url("https://static.chalkysticks.com/fonts/prelo-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Prelo";
+    font-weight: 700;
+    src: url("https://static.chalkysticks.com/fonts/prelo-bold-webfont.eot") format("embedded-opentype"),
+        url("https://static.chalkysticks.com/fonts/prelo-bold-webfont.ttf") format("truetype"),
+        url("https://static.chalkysticks.com/fonts/prelo-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Prelo";
+    font-weight: 800;
+    src: url("https://static.chalkysticks.com/fonts/prelo-black-webfont.eot") format("embedded-opentype"),
+        url("https://static.chalkysticks.com/fonts/prelo-black-webfont.woff") format("woff"),
+        url("https://static.chalkysticks.com/fonts/prelo-black-webfont.ttf") format("truetype");
+}

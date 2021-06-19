@@ -1,0 +1,21 @@
+
+@import "../variables.scss";
+
+@mixin generate-colors($key, $value) {
+    .background-#{$key} { background-color: $value !important }
+    .foreground-#{$key} { color: $value !important }
+    .border-color-#{$key} { border-color: $value !important }
+    .color-#{$key} { color: $value !important }
+    .fill-#{$key} { fill: $value !important }
+    .stroke-#{$key} { stroke: $value !important }
+}
+
+
+// ChalkySticks Theme
+// -----------------------------------------------------------------------------
+
+@include generate-colors('chalky-black', $chalky-black);
+@include generate-colors('chalky-blue', $chalky-blue);
+@include generate-colors('chalky-green', $chalky-green);
+@include generate-colors('chalky-red', $chalky-red);
+@include generate-colors('chalky-white', $chalky-white);
