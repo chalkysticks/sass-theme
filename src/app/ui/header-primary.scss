@@ -1,4 +1,7 @@
 
+@import "../variables";
+
+
 // Layout
 // ---------------------------------------------------------------------------
 
@@ -10,4 +13,24 @@ header.type-primary {
     display: flex;
     font-size: 1.25rem;
     padding: 1.5rem;
+
+    .nav {
+        font-size: 0.90em;
+
+        a {
+            color: $chalky-white;
+        }
+    }
+}
+
+
+// User Interaction
+// ---------------------------------------------------------------------------
+
+header.type-primary {
+    .nav {
+        a:hover {
+            opacity: 0.75;
+        }
+    }
 }

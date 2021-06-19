@@ -1,0 +1,11 @@
+
+@import "../variables.scss";
+
+
+// Layout
+// ---------------------------------------------------------------------------
+
+hr {
+    margin-bottom: $divider-spacing-y !important;
+    margin-top: $divider-spacing-y !important;
+}
