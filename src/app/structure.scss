@@ -1,4 +1,7 @@
 
+@import "./variables.scss";
+
+
 // Layout
 // ---------------------------------------------------------------------------
 
@@ -6,4 +9,13 @@
 *:before,
 *:after {
     box-sizing: border-box;
+}
+
+:root {
+    --chalky-black: $chalky-black;
+    --chalky-blue: $chalky-blue;
+    --chalky-green: $chalky-green;
+    --chalky-red: $chalky-red;
+    --chalky-white: $chalky-white;
+    --font-stack-body: $font-stack-body;
 }
