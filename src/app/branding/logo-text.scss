@@ -1,0 +1,42 @@
+
+@import "../variables";
+
+// Logo + ChalkySticks
+// ---------------------------------------------------------------------------
+
+.branding-logo-text,
+.branding-logo-text.on-dark {
+    $size: 50px;
+
+    align-items: center;
+    display: flex;
+
+    &::before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64.545 77.998' enable-background='new 0 0 64.545 77.998' xml:space='preserve'%3E%3Cpath fill='%23F7F7F7' d='M32.398,77.998l8.488-9.078c0,0-20.66-20.687-23.915-24.536 c-4.04-4.775-4.708-9.671-4.29-13.734c0.215-5.493,4.506-18.46,20.444-18.296c15.39,1.104,19.175,14.558,18.665,21.337 c0.105,3.946-2.616,10.649-9.822,17.124c3.564,3.355,8.489,8.279,8.489,8.279S65.06,49.047,64.531,30.592 C64.002,12.139,48.551,0,32.398,0C14.912,0.393,0,12.093,0,33.061c0.237,10.57,5.423,17.705,10.061,22.233 C12.366,57.705,32.398,77.998,32.398,77.998z' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        content: " ";
+        height: $size;
+        transform: scale(0.75);
+        width: $size;
+    }
+
+    h2 {
+        color: $chalky-white;
+        font-weight: 500;
+        text-transform: none;
+    }
+}
+
+.branding-logo-text.on-light {
+    color: $chalky-blue;
+
+    &::before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64.545 77.998' enable-background='new 0 0 64.545 77.998' xml:space='preserve'%3E%3Cpath fill='%232B3544' d='M32.398,77.998l8.488-9.078c0,0-20.66-20.687-23.915-24.536 c-4.04-4.775-4.708-9.671-4.29-13.734c0.215-5.493,4.506-18.46,20.444-18.296c15.39,1.104,19.175,14.558,18.665,21.337 c0.105,3.946-2.616,10.649-9.822,17.124c3.564,3.355,8.489,8.279,8.489,8.279S65.06,49.047,64.531,30.592 C64.002,12.139,48.551,0,32.398,0C14.912,0.393,0,12.093,0,33.061c0.237,10.57,5.423,17.705,10.061,22.233 C12.366,57.705,32.398,77.998,32.398,77.998z' /%3E%3C/svg%3E");
+    }
+
+    h2 {
+        color: $chalky-blue;
+        font-weight: 500;
+        text-transform: none;
+    }
+}
