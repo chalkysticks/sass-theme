@@ -10453,12 +10453,12 @@ button.type-plain {
   color: #2B3544;
 }
 
-button.on-dark {
+button.type-dark {
   background-color: #2B3544;
   color: #F7F7F7;
 }
 
-button.on-light {
+button.type-light {
   background-color: #F7F7F7;
   color: #2B3544;
 }

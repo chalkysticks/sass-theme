@@ -107,12 +107,12 @@ button {
         color: $chalky-blue;
     }
 
-    &.on-dark {
+    &.type-dark {
         background-color: $chalky-blue;
         color: $chalky-white;
     }
 
-    &.on-light {
+    &.type-light {
         background-color: $chalky-white;
         color: $chalky-blue;
     }
