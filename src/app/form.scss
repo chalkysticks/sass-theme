@@ -6,6 +6,47 @@
 // ---------------------------------------------------------------------------
 
 
+// Form
+// ---------------------------------------------------------------------------
+
+form {
+    fieldset {
+        legend {
+            display: none;
+        }
+
+        ~ footer {
+            text-align: right;
+        }
+    }
+
+    label {
+        display: block;
+        margin: 1.5rem 0;
+        width: 100%;
+
+        h3 {
+            color: $chalky-blue;
+            font-size: 0.875rem !important;
+            letter-spacing: 0 !important;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+        }
+
+        input[type=email],
+        input[type=password],
+        input[type=text],
+        textarea {
+            background: white;
+            border: 1px solid $chalky-blue;
+            border-radius: 3px;
+            padding: 0.25rem 0.5rem;
+            width: 100%;
+        }
+    }
+}
+
+
 // Buttons
 // ---------------------------------------------------------------------------
 
@@ -59,6 +100,15 @@ button {
             background-color: #dd4b39;
             color: white;
         }
+    }
+
+    &[type=reset],
+    &[disabled] {
+        background-color: $chalky-light;
+    }
+
+    &[disabled] {
+        pointer-events: none;
     }
 }
 

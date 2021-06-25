@@ -10364,6 +10364,39 @@ fieldset:disabled .btn {
   stroke: #F7F7F7 !important;
 }
 
+form fieldset legend {
+  display: none;
+}
+
+form fieldset ~ footer {
+  text-align: right;
+}
+
+form label {
+  display: block;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+form label h3, form label .h3 {
+  color: #2B3544;
+  font-size: 0.875rem !important;
+  letter-spacing: 0 !important;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+form label input[type=email],
+form label input[type=password],
+form label input[type=text],
+form label textarea {
+  background: white;
+  border: 1px solid #2B3544;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+}
+
 button {
   border: 0;
   background-color: #2B3544;
@@ -10413,6 +10446,14 @@ button.btn-social.type-twitter {
 button.btn-social.type-google {
   background-color: #dd4b39;
   color: white;
+}
+
+button[type=reset], button[disabled] {
+  background-color: #d1d1d1;
+}
+
+button[disabled] {
+  pointer-events: none;
 }
 
 button:hover::before {
@@ -10618,6 +10659,7 @@ header.type-primary .nav a:hover {
 .branding-logo-text,
 .branding-logo-text.on-dark {
   align-items: center;
+  color: #F7F7F7;
   display: flex;
 }
 

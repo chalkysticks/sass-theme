@@ -212,6 +212,36 @@
                     </header>
                     <section>
                         <form>
+                            <fieldset>
+                                <legend>Login</legend>
+
+                                <label>
+                                    <h3>Email Address</h3>
+                                    <input type="email" name="email" placeholder="john@example.com" />
+                                </label>
+
+                                <label>
+                                    <h3>Password</h3>
+                                    <input type="password" name="password" />
+                                </label>
+                            </fieldset>
+
+                            <footer>
+                                <button type="reset" name="btnLogin">
+                                    <span>Reset</span>
+                                </button>
+
+                                <button disabled>
+                                    <span>Disabled</span>
+                                </button>
+
+                                <button name="btnLogin">
+                                    <span>Login</span>
+                                </button>
+                            </footer>
+                        </form>
+
+                        <form>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                                 <input
