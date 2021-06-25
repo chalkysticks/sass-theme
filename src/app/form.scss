@@ -102,6 +102,21 @@ button {
         }
     }
 
+    &.type-plain {
+        background-color: transparent;
+        color: $chalky-blue;
+    }
+
+    &.on-dark {
+        background-color: $chalky-blue;
+        color: $chalky-white;
+    }
+
+    &.on-light {
+        background-color: $chalky-white;
+        color: $chalky-blue;
+    }
+
     &[type=reset],
     &[disabled] {
         background-color: $chalky-light;

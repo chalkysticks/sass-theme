@@ -10448,6 +10448,21 @@ button.btn-social.type-google {
   color: white;
 }
 
+button.type-plain {
+  background-color: transparent;
+  color: #2B3544;
+}
+
+button.on-dark {
+  background-color: #2B3544;
+  color: #F7F7F7;
+}
+
+button.on-light {
+  background-color: #F7F7F7;
+  color: #2B3544;
+}
+
 button[type=reset], button[disabled] {
   background-color: #d1d1d1;
 }
