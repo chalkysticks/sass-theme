@@ -9,6 +9,7 @@
     "description": "Shared ChalkySticks theming using SASS",
     "devDependencies": {
         "http-server": "^0.12.3",
+        "husky": "^6.0.0",
         "node-sass": "^6.0.0"
     },
     "directories": {
@@ -28,9 +29,10 @@
         "url": "git+https://github.com/chalkysticks/sass-theme.git"
     },
     "scripts": {
+        "prepare": "husky install",
         "serve": "http-server",
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "node-sass --watch --output-style expanded --source-map true --source-map-contents true --precision 6 src/app/boot.scss dist/app.css"
     },
-    "version": "1.1.0"
+    "version": "1.1.2"
 }
