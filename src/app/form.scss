@@ -83,6 +83,10 @@ button {
     i {
         margin: 0.5rem;
         margin-left: 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &.btn-social {

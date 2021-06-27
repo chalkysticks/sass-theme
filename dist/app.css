@@ -10433,6 +10433,10 @@ button i {
   margin-left: 0;
 }
 
+button i:last-child {
+  margin-right: 0;
+}
+
 button.btn-social.type-facebook {
   background-color: #3B5998;
   color: white;
