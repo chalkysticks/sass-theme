@@ -135,7 +135,7 @@ button {
 // User Interaction
 // ---------------------------------------------------------------------------
 
-button:hover::before {
+button:hover:not(.no-hover)::before {
     animation: button-sway 1s infinite;
     opacity: 0.15;
     z-index: 2;
