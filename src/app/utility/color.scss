@@ -14,8 +14,8 @@
 // ChalkySticks Theme
 // -----------------------------------------------------------------------------
 
-@include generate-colors('chalky-black', $chalky-black);
-@include generate-colors('chalky-blue', $chalky-blue);
-@include generate-colors('chalky-green', $chalky-green);
-@include generate-colors('chalky-red', $chalky-red);
-@include generate-colors('chalky-white', $chalky-white);
+@include generate-colors('chalky-black', var(--chalky-black));
+@include generate-colors('chalky-blue', var(--chalky-blue));
+@include generate-colors('chalky-green', var(--chalky-green));
+@include generate-colors('chalky-red', var(--chalky-red));
+@include generate-colors('chalky-white', var(--chalky-white));

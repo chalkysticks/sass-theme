@@ -1,7 +1,3 @@
-
-@import "./variables.scss";
-
-
 // Layout
 // ---------------------------------------------------------------------------
 
@@ -26,7 +22,7 @@ form {
         width: 100%;
 
         h3 {
-            color: $chalky-blue;
+            color: var(--chalky-blue);
             font-size: 0.875rem !important;
             letter-spacing: 0 !important;
             margin-bottom: 0.25rem;
@@ -38,7 +34,7 @@ form {
         input[type=text],
         textarea {
             background: white;
-            border: 1px solid $chalky-blue;
+            border: 1px solid var(--chalky-blue);
             border-radius: 3px;
             padding: 0.25rem 0.5rem;
             width: 100%;
@@ -52,8 +48,8 @@ form {
 
 button {
     border: 0;
-    background-color: $chalky-blue;
-    color: $chalky-white;
+    background-color: var(--chalky-blue);
+    color: var(--chalky-white);
     font-weight: 600;
     padding: 0.5rem 1rem;
     position: relative;
@@ -108,22 +104,22 @@ button {
 
     &.type-plain {
         background-color: transparent;
-        color: $chalky-blue;
+        color: var(--chalky-blue);
     }
 
     &.type-dark {
-        background-color: $chalky-blue;
-        color: $chalky-white;
+        background-color: var(--chalky-blue);
+        color: var(--chalky-white);
     }
 
     &.type-light {
-        background-color: $chalky-white;
-        color: $chalky-blue;
+        background-color: var(--chalky-white);
+        color: var(--chalky-blue);
     }
 
     &[type=reset],
     &[disabled] {
-        background-color: $chalky-light;
+        background-color: var(--chalky-light);
     }
 
     &[disabled] {
