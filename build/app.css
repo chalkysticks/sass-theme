@@ -11502,6 +11502,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 0;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover span {
+  color: var(--chalky-black);
+}
+
 hr {
   margin-bottom: var(--divider-spacing-y) !important;
   margin-top: var(--divider-spacing-y) !important;
