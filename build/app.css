@@ -11479,6 +11479,19 @@ button:active::before {
   box-sizing: border-box;
 }
 
+figure {
+  margin: 0;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.state-is-mobile .mobile-only,
+.is-mobile .mobile-only {
+  display: block;
+}
+
 html,
 body {
   font-family: var(--font-stack-body);
