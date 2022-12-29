@@ -11142,9 +11142,12 @@ fieldset:disabled .btn {
   --divider-spacing-y: 4rem;
   --chalky-black: #343434;
   --chalky-blue: #2B3544;
+  --chalky-blue-dark: #11181F;
+  --chalky-blue-light: #32435C;
   --chalky-light: #d1d1d1;
   --chalky-green: #5DD888;
   --chalky-red: #D14545;
+  --chalky-red-dark: #642021;
   --chalky-white: #F7F7F7;
   --font-stack-body: "Prelo", Georgia, serif;
 }
@@ -11153,9 +11156,12 @@ fieldset:disabled .btn {
   --divider-spacing-y: 4rem;
   --chalky-black: #343434;
   --chalky-blue: #2B3544;
+  --chalky-blue-dark: #11181F;
+  --chalky-blue-light: #32435C;
   --chalky-light: #d1d1d1;
   --chalky-green: #5DD888;
   --chalky-red: #D14545;
+  --chalky-red-dark: #642021;
   --chalky-white: #F7F7F7;
   --font-stack-body: "Prelo", Georgia, serif;
 }
@@ -11512,6 +11518,15 @@ header.type-primary .nav a {
 
 header.type-primary .nav a:hover {
   opacity: 0.75;
+}
+
+header > mark, header > .mark {
+  background: var(--chalky-red);
+  border-radius: 5px;
+  color: var(--chalky-white);
+  font-size: 0.675rem;
+  font-weight: 500;
+  padding: 3px 10px;
 }
 
 .branding-chalky-badge {
