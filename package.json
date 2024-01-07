@@ -10,7 +10,7 @@
     "devDependencies": {
         "http-server": "^0.12.3",
         "husky": "^6.0.0",
-        "node-sass": "^6.0.0"
+        "sass": "^1.69.7"
     },
     "directories": {
         "example": "example"
@@ -29,11 +29,11 @@
         "url": "git+https://github.com/chalkysticks/sass-theme.git"
     },
     "scripts": {
-        "build": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/app/boot.scss build/app.css",
+        "build": "sass --style=expanded --source-map --precision=6 src/app/boot.scss:build/app.css",
         "prepare": "husky install",
         "serve": "http-server",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "watch": "node-sass --watch --output-style expanded --source-map true --source-map-contents true --precision 6 src/app/boot.scss build/app.css"
+        "watch": "sass --watch --style=expanded --source-map --precision=6 src/app/boot.scss:build/app.css"
     },
-    "version": "1.1.12"
+    "version": "1.1.14"
 }
