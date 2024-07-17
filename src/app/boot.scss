@@ -2,29 +2,28 @@
 // ---------------------------------------------------------------------------
 
 // @see https://getbootstrap.com/docs/5.0/components
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Application
 // ---------------------------------------------------------------------------
 
-@import "./variables.scss";
-@import "./core.scss";
-@import "./utility/color.scss";
+@import './variables.scss';
+@import './core.scss';
+@import './utility/color.scss';
 
-@import "./form.scss";
-@import "./font.scss";
-@import "./icons.scss";
-@import "./structure.scss";
-@import "./typography.scss";
+@import './form.scss';
+@import './font.scss';
+@import './icons.scss';
+@import './structure.scss';
+@import './typography.scss';
 
-@import "./element/hr.scss";
+@import './element/hr.scss';
 
-@import "./ui/badge.scss";
-@import "./ui/header-primary.scss";
-@import "./ui/mark.scss";
+@import './ui/badge.scss';
+@import './ui/header-primary.scss';
+@import './ui/mark.scss';
 
-@import "./branding/icon.scss";
-@import "./branding/logo-text.scss";
+@import './branding/icon.scss';
+@import './branding/logo-text.scss';
 
-@import "./page/playground.scss";
+@import './page/playground.scss';

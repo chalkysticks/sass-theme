@@ -2,31 +2,30 @@
 // ---------------------------------------------------------------------------
 
 header.type-primary {
-    align-items: center;
-    background-color: var(--chalky-blue);
-    border-bottom: 1px solid var(--chalky-black);
-    color: var(--chalky-white);
-    display: flex;
-    font-size: 1.25rem;
-    padding: 1.5rem;
+	align-items: center;
+	background-color: var(--chalky-blue);
+	border-bottom: 1px solid var(--chalky-black);
+	color: var(--chalky-white);
+	display: flex;
+	font-size: 1.25rem;
+	padding: 1.5rem;
 
-    .nav {
-        font-size: 0.90em;
+	.nav {
+		font-size: 0.9em;
 
-        a {
-            color: var(--chalky-white);
-        }
-    }
+		a {
+			color: var(--chalky-white);
+		}
+	}
 }
-
 
 // User Interaction
 // ---------------------------------------------------------------------------
 
 header.type-primary {
-    .nav {
-        a:hover {
-            opacity: 0.75;
-        }
-    }
+	.nav {
+		a:hover {
+			opacity: 0.75;
+		}
+	}
 }

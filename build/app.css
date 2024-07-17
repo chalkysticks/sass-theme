@@ -10721,30 +10721,40 @@ textarea.form-control-lg {
 }
 :root {
   --divider-spacing-y: 4rem;
+  --icon-size-xs: 24px;
+  --icon-size-sm: 32px;
+  --icon-size-md: 48px;
+  --icon-size-lg: 64px;
+  --icon-size-xl: 96px;
   --chalky-black: #343434;
-  --chalky-blue: #2B3544;
-  --chalky-blue-dark: #11181F;
-  --chalky-blue-light: #32435C;
+  --chalky-blue: #2b3544;
+  --chalky-blue-dark: #11181f;
+  --chalky-blue-light: #32435c;
   --chalky-light: #d1d1d1;
-  --chalky-green: #5DD888;
-  --chalky-red: #D14545;
+  --chalky-green: #5dd888;
+  --chalky-red: #d14545;
   --chalky-red-dark: #642021;
-  --chalky-white: #F7F7F7;
+  --chalky-white: #f7f7f7;
   --font-stack-body: "Prelo", Georgia, serif;
   --font-stack-chalky: "Prelo", Georgia, serif;
 }
 
 :root {
   --divider-spacing-y: 4rem;
+  --icon-size-xs: 24px;
+  --icon-size-sm: 32px;
+  --icon-size-md: 48px;
+  --icon-size-lg: 64px;
+  --icon-size-xl: 96px;
   --chalky-black: #343434;
-  --chalky-blue: #2B3544;
-  --chalky-blue-dark: #11181F;
-  --chalky-blue-light: #32435C;
+  --chalky-blue: #2b3544;
+  --chalky-blue-dark: #11181f;
+  --chalky-blue-light: #32435c;
   --chalky-light: #d1d1d1;
-  --chalky-green: #5DD888;
-  --chalky-red: #D14545;
+  --chalky-green: #5dd888;
+  --chalky-red: #d14545;
   --chalky-red-dark: #642021;
-  --chalky-white: #F7F7F7;
+  --chalky-white: #f7f7f7;
   --font-stack-body: "Prelo", Georgia, serif;
   --font-stack-chalky: "Prelo", Georgia, serif;
 }
@@ -10934,11 +10944,11 @@ button i:last-child {
   margin-right: 0;
 }
 button.btn-social.type-facebook {
-  background-color: #3B5998;
+  background-color: #3b5998;
   color: white;
 }
 button.btn-social.type-twitter {
-  background-color: #55ACEE;
+  background-color: #55acee;
   color: white;
 }
 button.btn-social.type-google {
@@ -11124,9 +11134,9 @@ header > mark, header > .mark {
   background-color: var(--chalky-blue);
   border-radius: 6px;
   display: inline-block;
-  height: 75px;
+  height: var(--icon-size-md);
   position: relative;
-  width: 75px;
+  width: var(--icon-size-md);
 }
 .branding-chalky-badge:after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='auto' viewBox='0 0 64.545 77.998' xml:space='preserve'%3E%3Cpath fill='%23F7F7F7' d='M32.398,77.998l8.488-9.078c0,0-20.66-20.687-23.915-24.536 c-4.04-4.775-4.708-9.671-4.29-13.734c0.215-5.493,4.506-18.46,20.444-18.296c15.39,1.104,19.175,14.558,18.665,21.337 c0.105,3.946-2.616,10.649-9.822,17.124c3.564,3.355,8.489,8.279,8.489,8.279S65.06,49.047,64.531,30.592 C64.002,12.139,48.551,0,32.398,0C14.912,0.393,0,12.093,0,33.061c0.237,10.57,5.423,17.705,10.061,22.233 C12.366,57.705,32.398,77.998,32.398,77.998z' /%3E%3C/svg%3E");
@@ -11141,13 +11151,21 @@ header > mark, header > .mark {
   transform: translate(-50%, -50%);
   width: 70%;
 }
-.branding-chalky-badge.size-sm {
-  height: 30px;
-  width: 30px;
+.branding-chalky-badge.size-xs, .branding-chalky-badge[size=xs] {
+  height: var(--icon-size-xs);
+  width: var(--icon-size-xs);
 }
-.branding-chalky-badge.size-lg {
-  height: 125px;
-  width: 125px;
+.branding-chalky-badge.size-sm, .branding-chalky-badge[size=sm] {
+  height: var(--icon-size-sm);
+  width: var(--icon-size-sm);
+}
+.branding-chalky-badge.size-lg, .branding-chalky-badge[size=lg] {
+  height: var(--icon-size-lg);
+  width: var(--icon-size-lg);
+}
+.branding-chalky-badge.size-xl, .branding-chalky-badge[size=xl] {
+  height: var(--icon-size-xl);
+  width: var(--icon-size-xl);
 }
 
 .branding-chalky-badge.on-light {
@@ -11161,13 +11179,21 @@ header > mark, header > .mark {
   height: 78px;
   width: 65px;
 }
+.branding-icon.size-xs {
+  height: 25.74px;
+  width: 21.45px;
+}
 .branding-icon.size-sm {
   height: 39px;
   width: 32.5px;
 }
-.branding-icon.size-lg {
-  height: 117px;
-  width: 97.5px;
+.branding-icon.size-sm {
+  height: 89.7px;
+  width: 74.75px;
+}
+.branding-icon.size-sm {
+  height: 39px;
+  width: 32.5px;
 }
 
 .branding-logo-icon,
@@ -11237,7 +11263,7 @@ header > mark, header > .mark {
   margin-left: -300px;
 }
 .page-playground h2, .page-playground .h2 {
-  color: #D1D1D1;
+  color: #d1d1d1;
   font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.05rem;

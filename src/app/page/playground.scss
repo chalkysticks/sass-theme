@@ -1,39 +1,38 @@
-
 // Layout
 // ---------------------------------------------------------------------------
 
 .page-playground {
-    margin: 0 auto;
-    max-width: 1024px;
-    padding: 2rem;
-    text-align: left;
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 2rem;
+	text-align: left;
 
-    .level-0 {
-        margin: 2rem 0;
-        padding: 2rem 0;
-    }
+	.level-0 {
+		margin: 2rem 0;
+		padding: 2rem 0;
+	}
 
-    .level-1 {
-        margin: 2rem 0;
-        padding-left: 300px;
+	.level-1 {
+		margin: 2rem 0;
+		padding-left: 300px;
 
-        > header {
-            float: left;
-            margin-left: -300px;
-        }
-    }
+		> header {
+			float: left;
+			margin-left: -300px;
+		}
+	}
 
-    h2 {
-        color: #D1D1D1;
-        font-size: 1.75rem;
-        font-weight: 700;
-        letter-spacing: -0.05rem;
-        text-transform: uppercase;
-    }
+	h2 {
+		color: #d1d1d1;
+		font-size: 1.75rem;
+		font-weight: 700;
+		letter-spacing: -0.05rem;
+		text-transform: uppercase;
+	}
 
-    h3 {
-        font-size: 1.5rem;
-        font-weight: 500;
-        letter-spacing: -0.05rem;
-    }
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 500;
+		letter-spacing: -0.05rem;
+	}
 }

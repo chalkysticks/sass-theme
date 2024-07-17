@@ -1,15 +1,25 @@
-
-@import "../variables.scss";
+@import '../variables.scss';
 
 @mixin generate-colors($key, $value) {
-    .background-#{$key} { background-color: $value !important }
-    .foreground-#{$key} { color: $value !important }
-    .border-color-#{$key} { border-color: $value !important }
-    .color-#{$key} { color: $value !important }
-    .fill-#{$key} { fill: $value !important }
-    .stroke-#{$key} { stroke: $value !important }
+	.background-#{$key} {
+		background-color: $value !important;
+	}
+	.foreground-#{$key} {
+		color: $value !important;
+	}
+	.border-color-#{$key} {
+		border-color: $value !important;
+	}
+	.color-#{$key} {
+		color: $value !important;
+	}
+	.fill-#{$key} {
+		fill: $value !important;
+	}
+	.stroke-#{$key} {
+		stroke: $value !important;
+	}
 }
-
 
 // ChalkySticks Theme
 // -----------------------------------------------------------------------------

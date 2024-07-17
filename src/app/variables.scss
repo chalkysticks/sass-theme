@@ -4,24 +4,28 @@
 
 	--divider-spacing-y: 4rem;
 
+	--icon-size-xs: 24px;
+	--icon-size-sm: 32px;
+	--icon-size-md: 48px;
+	--icon-size-lg: 64px;
+	--icon-size-xl: 96px;
 
 	// 1. Colors
 	// ------------------------------------------------------------------------------
 
 	--chalky-black: #343434;
-	--chalky-blue: #2B3544;
-	--chalky-blue-dark: #11181F;
-	--chalky-blue-light: #32435C;
+	--chalky-blue: #2b3544;
+	--chalky-blue-dark: #11181f;
+	--chalky-blue-light: #32435c;
 	--chalky-light: #d1d1d1;
-	--chalky-green: #5DD888;
-	--chalky-red: #D14545;
+	--chalky-green: #5dd888;
+	--chalky-red: #d14545;
 	--chalky-red-dark: #642021;
-	--chalky-white: #F7F7F7;
-
+	--chalky-white: #f7f7f7;
 
 	// 2. Typography
 	// ------------------------------------------------------------------------------
 
-	--font-stack-body: "Prelo", Georgia, serif;
-	--font-stack-chalky: "Prelo", Georgia, serif;
+	--font-stack-body: 'Prelo', Georgia, serif;
+	--font-stack-chalky: 'Prelo', Georgia, serif;
 }
