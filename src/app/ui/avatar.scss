@@ -1,0 +1,48 @@
+// Layout
+// ---------------------------------------------------------------------------
+
+.avatar {
+	border-radius: 50%;
+	display: inline-block;
+	height: var(--avatar-size-md);
+	overflow: hidden;
+	position: relative;
+	width: var(--avatar-size-md);
+
+	img {
+		height: 100%;
+		left: 0;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+// Variations
+// ---------------------------------------------------------------------------
+
+.avatar.size-xs {
+	height: var(--avatar-size-xs);
+	width: var(--avatar-size-xs);
+}
+
+.avatar.size-sm {
+	height: var(--avatar-size-sm);
+	width: var(--avatar-size-sm);
+}
+
+.avatar.size-md {
+	height: var(--avatar-size-md);
+	width: var(--avatar-size-md);
+}
+
+.avatar.size-lg {
+	height: var(--avatar-size-lg);
+	width: var(--avatar-size-lg);
+}
+
+.avatar.size-xl {
+	height: var(--avatar-size-xl);
+	width: var(--avatar-size-xl);
+}

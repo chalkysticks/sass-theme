@@ -10720,6 +10720,11 @@ textarea.form-control-lg {
   }
 }
 :root {
+  --avatar-size-xs: 24px;
+  --avatar-size-sm: 32px;
+  --avatar-size-md: 48px;
+  --avatar-size-lg: 64px;
+  --avatar-size-xl: 96px;
   --divider-spacing-y: 4rem;
   --icon-size-xs: 24px;
   --icon-size-sm: 32px;
@@ -10740,6 +10745,11 @@ textarea.form-control-lg {
 }
 
 :root {
+  --avatar-size-xs: 24px;
+  --avatar-size-sm: 32px;
+  --avatar-size-md: 48px;
+  --avatar-size-lg: 64px;
+  --avatar-size-xl: 96px;
   --divider-spacing-y: 4rem;
   --icon-size-xs: 24px;
   --icon-size-sm: 32px;
@@ -11095,6 +11105,48 @@ a:hover span {
 hr {
   margin-bottom: var(--divider-spacing-y) !important;
   margin-top: var(--divider-spacing-y) !important;
+}
+
+.avatar {
+  border-radius: 50%;
+  display: inline-block;
+  height: var(--avatar-size-md);
+  overflow: hidden;
+  position: relative;
+  width: var(--avatar-size-md);
+}
+.avatar img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.avatar.size-xs {
+  height: var(--avatar-size-xs);
+  width: var(--avatar-size-xs);
+}
+
+.avatar.size-sm {
+  height: var(--avatar-size-sm);
+  width: var(--avatar-size-sm);
+}
+
+.avatar.size-md {
+  height: var(--avatar-size-md);
+  width: var(--avatar-size-md);
+}
+
+.avatar.size-lg {
+  height: var(--avatar-size-lg);
+  width: var(--avatar-size-lg);
+}
+
+.avatar.size-xl {
+  height: var(--avatar-size-xl);
+  width: var(--avatar-size-xl);
 }
 
 .badge {
