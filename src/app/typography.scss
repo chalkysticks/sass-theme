@@ -1,8 +1,80 @@
+// Mixins
+// ---------------------------------------------------------------------------
+
+.type-heading-1 {
+	font-size: 3rem;
+	font-weight: var(--font-weight-medium);
+}
+
+.type-heading-2 {
+	font-size: 2.25rem;
+	font-weight: var(--font-weight-medium);
+}
+
+.type-heading-3 {
+	font-size: 1.5rem;
+	font-weight: var(--font-weight-medium);
+	line-height: 1.2;
+}
+
+.type-heading-4 {
+	font-size: 1.31rem;
+	font-weight: var(--font-weight-semibold);
+	text-transform: uppercase;
+}
+
+.type-input {
+	font-size: 0.81rem;
+	font-weight: var(--font-weight-semibold);
+}
+
+.type-link {
+	color: var(--chalky-lightblue);
+	font-size: 1rem;
+	font-weight: var(--font-weight-medium);
+	line-height: 1.375;
+	text-decoration: underline;
+}
+
+.type-paragraph {
+	font-size: 1rem;
+	font-weight: var(--font-weight-light);
+	line-height: 1.375;
+}
+
+.type-small {
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: var(--font-weight-book);
+	line-height: 1.66;
+	vertical-align: middle;
+}
+
+.type-small-heading {
+	font-size: 0.75rem;
+	font-weight: var(--font-weight-medium);
+	letter-spacing: 0.0125rem;
+	margin: 0.7em 0;
+	text-transform: uppercase;
+}
+
+.type-subtitle {
+	font-size: 1.3rem;
+	font-weight: var(--font-weight-light);
+	line-height: 1.375;
+}
+
+.type-title {
+	font-size: 3rem;
+	font-weight: var(--font-weight-bold);
+}
+
 // Layout
 // ---------------------------------------------------------------------------
 
 html,
 body {
+	color: var(--chalky-blue);
 	font-family: var(--font-stack-body);
 }
 
@@ -10,18 +82,60 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
 	margin: 0;
 	padding: 0;
 }
 
-a {
-	cursor: pointer;
-	letter-spacing: 1px;
-	text-decoration: none;
+p {
+	@extend .type-paragraph;
+}
 
-	&:hover span {
-		color: var(--chalky-black);
-	}
+small {
+	@extend .type-small;
+}
+
+a {
+	@extend .type-link;
+
+	cursor: pointer;
+}
+
+h1 {
+	@extend .type-heading-1;
+}
+
+h2 {
+	@extend .type-heading-2;
+}
+
+h3 {
+	@extend .type-heading-3;
+}
+
+h4 {
+	@extend .type-heading-4;
+}
+
+h6 {
+	@extend .type-small-heading;
+
+	color: var(--chalky-grey-2);
+}
+
+input {
+	@extend .type-input;
+}
+
+blockquote {
+	border-left: 8px solid var(--border-dark);
+	font-size: 1.125rem;
+	font-weight: var(--font-weight-book);
+	line-height: 1.5;
+	margin: 1rem 3rem 1rem 0;
+	padding: 1rem;
+}
+
+small {
+	color: var(--chalky-grey-2);
 }

@@ -11,8 +11,8 @@ figure {
 	margin: 0;
 }
 
-.mobile-only {
-	display: none;
+header:has(.type-title) {
+	margin-bottom: 3rem;
 }
 
 // State

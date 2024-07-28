@@ -2,6 +2,7 @@
 // ---------------------------------------------------------------------------
 
 .page-playground {
+	background-color: var(--chalky-offwhite);
 	margin: 0 auto;
 	max-width: 1024px;
 	padding: 2rem;
@@ -20,19 +21,5 @@
 			float: left;
 			margin-left: -300px;
 		}
-	}
-
-	h2 {
-		color: #d1d1d1;
-		font-size: 1.75rem;
-		font-weight: 700;
-		letter-spacing: -0.05rem;
-		text-transform: uppercase;
-	}
-
-	h3 {
-		font-size: 1.5rem;
-		font-weight: 500;
-		letter-spacing: -0.05rem;
 	}
 }

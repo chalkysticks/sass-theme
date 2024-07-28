@@ -1,0 +1,19 @@
+// Theme
+// ------------------------------------------------------------------------------
+
+.theme-light {
+	--body-background: var(--chalky-offwhite);
+	--body-color: var(--chalky-blue);
+	--border-dark: var(--chalky-blue);
+}
+
+.theme-dark {
+	--body-background: var(--chalky-blue);
+	--body-color: var(--chalky-offwhite);
+	--border-dark: var(--chalky-white);
+}
+
+[class*='theme-'] {
+	background: var(--body-background);
+	color: var(--body-color);
+}

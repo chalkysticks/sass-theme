@@ -16,22 +16,118 @@
 	--icon-size-lg: 64px;
 	--icon-size-xl: 96px;
 
+	--rounded-button: 4px;
+	--rounded-corner: 8px;
+	--rounded-corner-outer: 10px;
+
 	// 1. Colors
 	// ------------------------------------------------------------------------------
 
-	--chalky-black: #343434;
-	--chalky-blue: #2b3544;
-	--chalky-blue-dark: #11181f;
-	--chalky-blue-light: #32435c;
-	--chalky-light: #d1d1d1;
-	--chalky-green: #5dd888;
+	--chalky-black: #030504;
+	--chalky-blue: #2b3544; // rgb(43, 53, 68)
+	--chalky-blue-2: #273142;
+	--chalky-blue-3: #26303f;
+	--chalky-blue-4: #212a38;
+	--chalky-grey: #cccccc;
+	--chalky-grey-2: #a0a4a7;
+	--chalky-grey-3: #777c83;
+	--chalky-grey-4: #4d535e;
+	--chalky-lightblue: #4688b4;
+	--chalky-lightblue-2: #4db8ff;
+	--chalky-purple: #b44697;
+	--chalky-purple-2: #e731b7;
 	--chalky-red: #d14545;
-	--chalky-red-dark: #642021;
-	--chalky-white: #f7f7f7;
+	--chalky-red-2: #a53f42;
+	--chalky-red-3: #79383f;
+	--chalky-red-4: #4e313c;
+	--chalky-white: #fafafa;
+	--chalky-offwhite: #f0f1f0;
 
 	// 2. Typography
 	// ------------------------------------------------------------------------------
 
+	--font-size-large: 1.5rem;
+	--font-size-medium: 1.125rem;
+	--font-size-normal: 1rem;
+	--font-size-small: 0.875rem;
+	--font-size-x-small: 0.75rem;
+	--font-size-smallest: 0.625rem;
+
 	--font-stack-body: 'Prelo', Georgia, serif;
 	--font-stack-chalky: 'Prelo', Georgia, serif;
+
+	--font-weight-extra-light: 100;
+	--font-weight-light: 200;
+	--font-weight-book: 300;
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+	--font-weight-black: 800;
+	--font-weight-extra-black: 900;
+
+	// 3. Form
+	// ------------------------------------------------------------------------------
+
+	--button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+
+	--radio-radius: 0.75rem;
+
+	// 4. Layout
+	// ------------------------------------------------------------------------------
+
+	--body-background: var(--chalky-offwhite);
+	--body-color: var(--chalky-blue);
+	--border-dark: var(--chalky-blue);
+
+	--layout-gutter: 1.5rem;
+
+	// 5. Z-Index
+	// ------------------------------------------------------------------------------
+
+	--z-under: -1;
+	--z-bottom: 1;
+	--z-page-bottom: 200;
+	--z-page-mid: 205;
+	--z-page-top: 209;
+	--z-header-bottom: 210;
+	--z-header-mid: 215;
+	--z-header-top: 219;
+	--z-panel-bottom: 220;
+	--z-panel-mid: 225;
+	--z-panel-top: 229;
+	--z-modal-bottom: 230;
+	--z-modal-mid: 235;
+	--z-modal-top: 239;
+	--z-top: 299;
+
+	// 6. Utility
+	// ------------------------------------------------------------------------------
+
+	--ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	--ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	--ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	--ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	--ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+	--ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+	--ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	--ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+	--ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+	--ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+	--ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+	--ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	--ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	--ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+	--ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+	--ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+	--ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+	--ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+	// 7. Scrollbar
+	// ------------------------------------------------------------------------------
+
+	--scrollbar-thumb-color: #444;
+	--scrollbar-thumb-hover-color: #666;
+	--scrollbar-track-color: #000;
+	--scrollbar-size: 8px;
 }
