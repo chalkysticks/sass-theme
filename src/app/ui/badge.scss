@@ -6,6 +6,10 @@
 
 	background-color: var(--chalky-blue);
 	padding: 0.5rem 0.875rem;
+
+	+ .badge {
+		margin-right: 0.25rem;
+	}
 }
 
 // Variations
