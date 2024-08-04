@@ -11609,10 +11609,11 @@ hr {
 
 .badge {
   background-color: var(--chalky-blue);
+  margin: 0.15rem 0.25rem 0.15rem 0;
   padding: 0.5rem 0.875rem;
 }
-.badge + .badge {
-  margin-left: 0.25rem;
+.badge:last-child {
+  margin-right: 0;
 }
 
 .badge.bg-primary,
