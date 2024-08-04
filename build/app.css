@@ -11112,7 +11112,8 @@ textarea:not(:invalid) + .type-error {
   opacity: 0;
 }
 
-button {
+button,
+.btn {
   background-color: var(--button-primary-background);
   border-radius: var(--button-border-radius);
   border: var(--button-primary-border);
@@ -11123,23 +11124,29 @@ button {
   position: relative;
 }
 button > i,
-button > span {
+button > span,
+.btn > i,
+.btn > span {
   position: relative;
   z-index: 2;
 }
-button .icon {
+button .icon,
+.btn .icon {
   margin: 0.5rem;
   margin-left: 0;
 }
-button .icon:last-child {
+button .icon:last-child,
+.btn .icon:last-child {
   margin-right: 0;
 }
-button[disabled] {
+button[disabled],
+.btn[disabled] {
   background-color: var(--button-disabled-background);
   border: var(--button-disabled-border);
   color: var(--button-disabled-color);
 }
-button[disabled]::after {
+button[disabled]::after,
+.btn[disabled]::after {
   background: rgba(0, 0, 0, 0.1);
   border-radius: var(--button-border-radius);
   content: " ";
@@ -11150,12 +11157,14 @@ button[disabled]::after {
   top: 0;
   width: 100%;
 }
-button.button-secondary {
+button.button-secondary,
+.btn.button-secondary {
   background-color: var(--button-secondary-background);
   border: var(--button-secondary-border);
   color: var(--button-secondary-color);
 }
-button.button-tertiary {
+button.button-tertiary,
+.btn.button-tertiary {
   background-color: var(--button-tertiary-background);
   border: var(--button-tertiary-border);
   color: var(--button-tertiary-color);

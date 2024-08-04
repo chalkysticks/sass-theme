@@ -57,7 +57,8 @@ textarea:not(:invalid) {
 // Buttons
 // ---------------------------------------------------------------------------
 
-button {
+button,
+.btn {
 	background-color: var(--button-primary-background);
 	border-radius: var(--button-border-radius);
 	border: var(--button-primary-border);
