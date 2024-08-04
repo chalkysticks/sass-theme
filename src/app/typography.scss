@@ -34,7 +34,6 @@
 
 .type-link {
 	color: var(--chalky-lightblue);
-	font-size: 1rem;
 	font-weight: var(--font-weight-medium);
 	line-height: 1.375;
 	text-decoration: underline;
@@ -142,4 +141,12 @@ blockquote {
 
 small {
 	color: var(--chalky-grey-2);
+}
+
+// Utility
+// ---------------------------------------------------------------------------
+
+a.no-decoration {
+	border: 0;
+	text-decoration: none;
 }

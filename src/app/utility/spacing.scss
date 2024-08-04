@@ -1,0 +1,48 @@
+// Override spacing values for specific cases
+.pull {
+	@each $side in ('top', 'right', 'bottom', 'left') {
+		&-#{$side}-xs {
+			margin-#{$side}: -0.5rem;
+		}
+
+		&-#{$side}-sm {
+			margin-#{$side}: -0.75rem;
+		}
+
+		&-#{$side} {
+			margin-#{$side}: -1rem;
+		}
+
+		&-#{$side}-lg {
+			margin-#{$side}: -1.25rem;
+		}
+
+		&-#{$side}-xl {
+			margin-#{$side}: -1.5rem;
+		}
+	}
+}
+
+.push {
+	@each $side in ('top', 'right', 'bottom', 'left') {
+		&-#{$side}-xs {
+			margin-#{$side}: 0.5rem;
+		}
+
+		&-#{$side}-sm {
+			margin-#{$side}: 0.75rem;
+		}
+
+		&-#{$side} {
+			margin-#{$side}: 1rem;
+		}
+
+		&-#{$side}-lg {
+			margin-#{$side}: 1.25rem;
+		}
+
+		&-#{$side}-xl {
+			margin-#{$side}: 1.5rem;
+		}
+	}
+}
