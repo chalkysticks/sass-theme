@@ -1,8 +1,8 @@
 // Logo + ChalkySticks
 // ---------------------------------------------------------------------------
 
-.branding-logo-text,
-.branding-logo-text.on-dark {
+.branding-chalky-wordmark,
+.branding-chalky-wordmark.on-dark {
 	$size: 50px;
 
 	align-items: center;
@@ -27,7 +27,7 @@
 	}
 }
 
-.branding-logo-text.on-light {
+.branding-chalky-wordmark.on-light {
 	color: var(--chalky-blue);
 
 	&::before {

@@ -1,39 +1,39 @@
 {
-	"author": "ChalkySticks LLC",
-	"bugs": {
-		"url": "https://github.com/chalkysticks/sass-theme/issues"
-	},
-	"dependencies": {
-		"bootstrap": "^5.0.1"
-	},
-	"description": "Shared ChalkySticks theming using SASS",
-	"devDependencies": {
-		"http-server": "^0.12.3",
-		"husky": "^6.0.0",
-		"sass": "^1.26.5"
-	},
-	"directories": {
-		"example": "example"
-	},
-	"homepage": "https://github.com/chalkysticks/sass-theme#readme",
-	"keywords": [
-		"billiards",
-		"chalkysticks",
-		"pool"
-	],
-	"license": "MIT",
-	"main": "index.js",
-	"name": "@chalkysticks/sass",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/chalkysticks/sass-theme.git"
-	},
-	"scripts": {
-		"build": "sass --style=expanded --source-map --precision=6 src/app/boot.scss:build/app.css",
-		"prepare": "husky install",
-		"serve": "http-server",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"watch": "sass --watch --style=expanded --source-map -q --precision=6 src/app/boot.scss:build/app.css"
-	},
-	"version": "1.2.2"
+    "author": "ChalkySticks LLC",
+    "bugs": {
+        "url": "https://github.com/chalkysticks/sass-theme/issues"
+    },
+    "dependencies": {
+        "bootstrap": "^5.0.1"
+    },
+    "description": "Shared ChalkySticks theming using SASS",
+    "devDependencies": {
+        "http-server": "^0.12.3",
+        "husky": "^6.0.0",
+        "sass": "^1.26.5"
+    },
+    "directories": {
+        "example": "example"
+    },
+    "homepage": "https://github.com/chalkysticks/sass-theme#readme",
+    "keywords": [
+        "billiards",
+        "chalkysticks",
+        "pool"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "name": "@chalkysticks/sass",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chalkysticks/sass-theme.git"
+    },
+    "scripts": {
+        "build": "sass --style=expanded --source-map --precision=6 src/app/boot.scss:build/app.css",
+        "prepare": "husky install",
+        "serve": "http-server",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "sass --watch --style=expanded --source-map -q --precision=6 src/app/boot.scss:build/app.css"
+    },
+    "version": "1.2.4"
 }

@@ -1,6 +1,10 @@
 // Mixins
 // ---------------------------------------------------------------------------
 
+.type-error {
+	color: var(--chalky-red);
+}
+
 .type-heading-1 {
 	font-size: 3rem;
 	font-weight: var(--font-weight-medium);

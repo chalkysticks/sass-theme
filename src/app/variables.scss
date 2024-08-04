@@ -2,19 +2,19 @@
 	// 0. Sizes
 	// ------------------------------------------------------------------------------
 
-	--avatar-size-xs: 24px;
-	--avatar-size-sm: 32px;
-	--avatar-size-md: 48px;
-	--avatar-size-lg: 64px;
-	--avatar-size-xl: 96px;
+	--avatar-size-xs: 36px;
+	--avatar-size-sm: 50px;
+	--avatar-size-md: 75px;
+	--avatar-size-lg: 100px;
+	--avatar-size-xl: 125px;
 
 	--divider-spacing-y: 4rem;
 
-	--icon-size-xs: 24px;
-	--icon-size-sm: 32px;
-	--icon-size-md: 48px;
-	--icon-size-lg: 64px;
-	--icon-size-xl: 96px;
+	--icon-size-xs: 36px;
+	--icon-size-sm: 50px;
+	--icon-size-md: 75px;
+	--icon-size-lg: 100px;
+	--icon-size-xl: 125px;
 
 	--rounded-button: 4px;
 	--rounded-corner: 8px;
@@ -69,8 +69,25 @@
 	// 3. Form
 	// ------------------------------------------------------------------------------
 
-	--button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	--button-primary-background: var(--chalky-red);
+	--button-primary-border: 1px solid transparent;
+	--button-primary-color: var(--chalky-white);
 
+	--button-secondary-background: var(--chalky-blue);
+	--button-secondary-border: 1px solid transparent;
+	--button-secondary-color: var(--chalky-white);
+
+	--button-tertiary-background: var(--chalky-white);
+	--button-tertiary-border: 1px solid var(--chalky-grey);
+	--button-tertiary-color: var(--chalky-blue);
+
+	--button-disabled-background: var(--chalky-grey-3);
+	--button-disabled-border: 1px solid var(--chalky-grey);
+	--button-disabled-color: var(--chalky-grey);
+
+	--button-border-radius: 4px;
+	--button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	--input-outline-width: 6px;
 	--radio-radius: 0.75rem;
 
 	// 4. Layout
