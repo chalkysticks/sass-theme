@@ -11662,6 +11662,11 @@ hr {
   color: var(--chalky-white);
 }
 
+.glass-panel {
+  background: rgba(245, 245, 245, 0.65);
+  backdrop-filter: blur(0.75em);
+}
+
 header.type-primary {
   align-items: center;
   background-color: var(--chalky-blue);
