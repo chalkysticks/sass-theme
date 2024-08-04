@@ -10725,7 +10725,9 @@ textarea.form-control-lg {
   --avatar-size-md: 75px;
   --avatar-size-lg: 100px;
   --avatar-size-xl: 125px;
-  --divider-spacing-y: 4rem;
+  --divider-color: rgba(0, 0, 0, 0.15);
+  --divider-size: 1px;
+  --divider-spacing-y: 1.5rem;
   --icon-size-xs: 36px;
   --icon-size-sm: 50px;
   --icon-size-md: 75px;
@@ -10835,7 +10837,9 @@ textarea.form-control-lg {
   --avatar-size-md: 75px;
   --avatar-size-lg: 100px;
   --avatar-size-xl: 125px;
-  --divider-spacing-y: 4rem;
+  --divider-color: rgba(0, 0, 0, 0.15);
+  --divider-size: 1px;
+  --divider-spacing-y: 1.5rem;
   --icon-size-xs: 36px;
   --icon-size-sm: 50px;
   --icon-size-md: 75px;
@@ -11402,6 +11406,10 @@ small, .small {
 }
 
 hr {
+  background: transparent;
+  border: 0;
+  border-top: var(--divider-size) solid var(--divider-color);
+  height: 1px;
   margin-bottom: var(--divider-spacing-y) !important;
   margin-top: var(--divider-spacing-y) !important;
 }

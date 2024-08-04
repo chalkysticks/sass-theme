@@ -2,6 +2,10 @@
 // ---------------------------------------------------------------------------
 
 hr {
+	background: transparent;
+	border: 0;
+	border-top: var(--divider-size) solid var(--divider-color);
+	height: 1px;
 	margin-bottom: var(--divider-spacing-y) !important;
 	margin-top: var(--divider-spacing-y) !important;
 }
