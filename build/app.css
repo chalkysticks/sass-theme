@@ -11612,7 +11612,7 @@ hr {
   padding: 0.5rem 0.875rem;
 }
 .badge + .badge {
-  margin-right: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 .badge.bg-primary,
