@@ -2,5 +2,57 @@
 // ---------------------------------------------------------------------------
 
 .badge {
+	@extend .type-small-heading;
+
 	background-color: var(--chalky-blue);
+	padding: 0.5rem 0.875rem;
+}
+
+// Variations
+// ---------------------------------------------------------------------------
+
+.badge.bg-primary,
+.badge.type-primary {
+	background-color: var(--chalky-blue) !important;
+}
+
+.badge.bg-success,
+.badge.type-success {
+	background-color: var(--chalky-lightblue-2) !important;
+}
+
+.badge.type-secondary,
+.badge.bg-secondary {
+	background-color: var(--chalky-blue-4) !important;
+	color: var(--chalky-white);
+}
+
+.badge.type-danger,
+.badge.bg-danger {
+	background-color: var(--chalky-red) !important;
+	color: var(--chalky-white);
+}
+
+.badge.type-warning,
+.badge.bg-warning {
+	background-color: var(--chalky-purple) !important;
+	color: var(--chalky-white);
+}
+
+.badge.type-info,
+.badge.bg-info {
+	background-color: var(--chalky-offwhite) !important;
+	color: var(--chalky-blue);
+}
+
+.badge.type-light,
+.badge.bg-light {
+	background-color: var(--chalky-white) !important;
+	color: var(--chalky-blue);
+}
+
+.badge.type-dark,
+.badge.bg-dark {
+	background-color: var(--chalky-black) !important;
+	color: var(--chalky-white);
 }
