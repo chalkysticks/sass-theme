@@ -10749,6 +10749,7 @@ textarea.form-control-lg {
   --chalky-lightblue-2: #4db8ff;
   --chalky-purple: #b44697;
   --chalky-purple-2: #e731b7;
+  --chalky-purple-3: #9747ff;
   --chalky-red: #d14545;
   --chalky-red-2: #a53f42;
   --chalky-red-3: #79383f;
@@ -10781,9 +10782,10 @@ textarea.form-control-lg {
   --button-tertiary-background: var(--chalky-white);
   --button-tertiary-border: 1px solid var(--chalky-grey);
   --button-tertiary-color: var(--chalky-blue);
-  --button-disabled-background: var(--chalky-grey-3);
+  --button-disabled-background: var(--chalky-offwhite);
   --button-disabled-border: 1px solid var(--chalky-grey);
   --button-disabled-color: var(--chalky-grey);
+  --button-control-size: 40px;
   --button-border-radius: 4px;
   --button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   --input-outline-width: 6px;
@@ -10861,6 +10863,7 @@ textarea.form-control-lg {
   --chalky-lightblue-2: #4db8ff;
   --chalky-purple: #b44697;
   --chalky-purple-2: #e731b7;
+  --chalky-purple-3: #9747ff;
   --chalky-red: #d14545;
   --chalky-red-2: #a53f42;
   --chalky-red-3: #79383f;
@@ -10893,9 +10896,10 @@ textarea.form-control-lg {
   --button-tertiary-background: var(--chalky-white);
   --button-tertiary-border: 1px solid var(--chalky-grey);
   --button-tertiary-color: var(--chalky-blue);
-  --button-disabled-background: var(--chalky-grey-3);
+  --button-disabled-background: var(--chalky-offwhite);
   --button-disabled-border: 1px solid var(--chalky-grey);
   --button-disabled-color: var(--chalky-grey);
+  --button-control-size: 40px;
   --button-border-radius: 4px;
   --button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   --input-outline-width: 6px;
@@ -11240,9 +11244,10 @@ button,
   border-radius: var(--button-border-radius);
   border: var(--button-primary-border);
   color: var(--button-primary-color);
-  font-weight: 600;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-regular);
   overflow: hidden;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   position: relative;
 }
 button > i,
@@ -11266,18 +11271,8 @@ button[disabled],
   background-color: var(--button-disabled-background);
   border: var(--button-disabled-border);
   color: var(--button-disabled-color);
-}
-button[disabled]::after,
-.btn[disabled]::after {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: var(--button-border-radius);
-  content: " ";
-  height: 100%;
-  left: 0;
+  cursor: no-drop;
   pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 button.button-secondary,
 .btn.button-secondary {
@@ -11292,14 +11287,48 @@ button.button-tertiary,
   color: var(--button-tertiary-color);
 }
 
+button.control,
+.btn.control {
+  background-color: var(--chalky-white);
+  box-shadow: 0px 0.5px 2.8px rgba(0, 0, 0, 0.02), 0px 4px 22px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  color: var(--chalky-grey-4);
+  font-size: 0;
+  height: var(--button-control-size);
+  padding: 0;
+  width: var(--button-control-size);
+}
 button:hover:not(.no-hover)::before {
   animation: button-sway 1s infinite;
   opacity: 0.15;
   z-index: 2;
 }
 
+button:hover:not(.no-hover) {
+  border: 1px solid var(--chalky-red-4);
+}
+button:hover:not(.no-hover).button-secondary {
+  border: 1px solid var(--chalky-blue-4);
+}
+button:hover:not(.no-hover).button-tertiary {
+  border: 1px solid var(--chalky-grey-4);
+}
+button:hover:not(.no-hover)[disabled] {
+  border: 1px solid transparent;
+}
+
 button:active {
+  background-color: var(--chalky-red-2);
   transform: translate(1px, 1px);
+}
+button:active.button-secondary {
+  background-color: var(--chalky-blue-4);
+}
+button:active.button-tertiary {
+  background-color: var(--chalky-offwhite);
+}
+button:active.control {
+  background-color: var(--color-offwhite);
 }
 
 button:active::before {
@@ -11609,6 +11638,7 @@ hr {
 
 .badge {
   background-color: var(--chalky-blue);
+  cursor: default;
   margin: 0.15rem 0.25rem 0.15rem 0;
   padding: 0.5rem 0.875rem;
 }
@@ -11685,6 +11715,71 @@ header.type-primary .nav a {
 
 header.type-primary .nav a:hover {
   opacity: 0.75;
+}
+
+.icon-arrowup, button.control.type-up, button.control.type-arrowup,
+.btn.control.type-up,
+.btn.control.type-arrowup {
+  background-image: url('data:image/svg+xml,<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 15.5C7.51777 15.5 7.9375 15.0803 7.9375 14.5625V3.70083L11.9621 7.72541C12.3282 8.09153 12.9218 8.09153 13.2879 7.72541C13.654 7.3593 13.654 6.7657 13.2879 6.39959L7.66291 0.774587C7.2968 0.408471 6.7032 0.408471 6.33709 0.774587L0.712087 6.39959C0.345971 6.7657 0.345971 7.3593 0.712087 7.72541C1.0782 8.09153 1.6718 8.09153 2.03791 7.72541L6.0625 3.70083V14.5625C6.0625 15.0803 6.48223 15.5 7 15.5Z" fill="black"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-arrowdown, button.control.type-down, button.control.type-arrowdown,
+.btn.control.type-down,
+.btn.control.type-arrowdown {
+  background-image: url('data:image/svg+xml,<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 0.5C7.51777 0.5 7.9375 0.919733 7.9375 1.4375V12.2992L11.9621 8.27459C12.3282 7.90847 12.9218 7.90847 13.2879 8.27459C13.654 8.6407 13.654 9.2343 13.2879 9.60041L7.66291 15.2254C7.2968 15.5915 6.7032 15.5915 6.33709 15.2254L0.712087 9.60041C0.345971 9.2343 0.345971 8.6407 0.712087 8.27459C1.0782 7.90847 1.6718 7.90847 2.03791 8.27459L6.0625 12.2992V1.4375C6.0625 0.919733 6.48223 0.5 7 0.5Z" fill="black"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-zoomin, button.control.type-zoomin,
+.btn.control.type-zoomin {
+  background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.125 15C11.922 15 15 11.922 15 8.125C15 4.32804 11.922 1.25 8.125 1.25C4.32804 1.25 1.25 4.32804 1.25 8.125C1.25 11.922 4.32804 15 8.125 15ZM16.25 8.125C16.25 12.6123 12.6123 16.25 8.125 16.25C3.63769 16.25 0 12.6123 0 8.125C0 3.63769 3.63769 0 8.125 0C12.6123 0 16.25 3.63769 16.25 8.125Z" fill="black"/><path d="M12.9299 14.6777C12.9667 14.7277 13.0078 14.7756 13.053 14.8208L17.8661 19.6339C18.3543 20.122 19.1457 20.122 19.6339 19.6339C20.122 19.1457 20.122 18.3543 19.6339 17.8661L14.8208 13.053C14.7756 13.0078 14.7277 12.9667 14.6777 12.9299C14.1874 13.5974 13.5974 14.1874 12.9299 14.6777Z" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8.125 3.75C8.47018 3.75 8.75 4.02982 8.75 4.375V7.5H11.875C12.2202 7.5 12.5 7.77982 12.5 8.125C12.5 8.47018 12.2202 8.75 11.875 8.75H8.75V11.875C8.75 12.2202 8.47018 12.5 8.125 12.5C7.77982 12.5 7.5 12.2202 7.5 11.875V8.75H4.375C4.02982 8.75 3.75 8.47018 3.75 8.125C3.75 7.77982 4.02982 7.5 4.375 7.5H7.5V4.375C7.5 4.02982 7.77982 3.75 8.125 3.75Z" fill="black"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-zoomout, button.control.type-zoomout,
+.btn.control.type-zoomout {
+  background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.125 15C11.922 15 15 11.922 15 8.125C15 4.32804 11.922 1.25 8.125 1.25C4.32804 1.25 1.25 4.32804 1.25 8.125C1.25 11.922 4.32804 15 8.125 15ZM16.25 8.125C16.25 12.6123 12.6123 16.25 8.125 16.25C3.63769 16.25 0 12.6123 0 8.125C0 3.63769 3.63769 0 8.125 0C12.6123 0 16.25 3.63769 16.25 8.125Z" fill="black"/><path d="M12.9299 14.6777C12.9667 14.7277 13.0078 14.7756 13.053 14.8208L17.8661 19.6339C18.3543 20.122 19.1457 20.122 19.6339 19.6339C20.122 19.1457 20.122 18.3543 19.6339 17.8661L14.8208 13.053C14.7756 13.0078 14.7277 12.9667 14.6777 12.9299C14.1874 13.5974 13.5974 14.1874 12.9299 14.6777Z" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 8.125C3.75 7.77982 4.02982 7.5 4.375 7.5H11.875C12.2202 7.5 12.5 7.77982 12.5 8.125C12.5 8.47018 12.2202 8.75 11.875 8.75H4.375C4.02982 8.75 3.75 8.47018 3.75 8.125Z" fill="black"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-location, button.control.type-location,
+.btn.control.type-location {
+  background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 0.5C8.5 0.223858 8.27614 0 8 0C7.72386 0 7.5 0.223858 7.5 0.5V1.01758C4.03251 1.2623 1.2623 4.03251 1.01758 7.5H0.5C0.223858 7.5 0 7.72386 0 8C0 8.27614 0.223858 8.5 0.5 8.5H1.01758C1.2623 11.9675 4.03251 14.7377 7.5 14.9824V15.5C7.5 15.7761 7.72386 16 8 16C8.27614 16 8.5 15.7761 8.5 15.5V14.9824C11.9675 14.7377 14.7377 11.9675 14.9824 8.5H15.5C15.7761 8.5 16 8.27614 16 8C16 7.72386 15.7761 7.5 15.5 7.5H14.9824C14.7377 4.03251 11.9675 1.2623 8.5 1.01758V0.5ZM2.02054 7.5C2.26101 4.5851 4.5851 2.26101 7.5 2.02054V2.5C7.5 2.77614 7.72386 3 8 3C8.27614 3 8.5 2.77614 8.5 2.5V2.02054C11.4149 2.26101 13.739 4.5851 13.9795 7.5H13.5C13.2239 7.5 13 7.72386 13 8C13 8.27614 13.2239 8.5 13.5 8.5H13.9795C13.739 11.4149 11.4149 13.739 8.5 13.9795V13.5C8.5 13.2239 8.27614 13 8 13C7.72386 13 7.5 13.2239 7.5 13.5V13.9795C4.5851 13.739 2.26101 11.4149 2.02054 8.5H2.5C2.77614 8.5 3 8.27614 3 8C3 7.72386 2.77614 7.5 2.5 7.5H2.02054ZM8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" fill="black"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-plus, button.control.type-plus,
+.btn.control.type-plus {
+  background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 2.5C10.3452 2.5 10.625 2.77982 10.625 3.125V9.375H16.875C17.2202 9.375 17.5 9.65482 17.5 10C17.5 10.3452 17.2202 10.625 16.875 10.625H10.625V16.875C10.625 17.2202 10.3452 17.5 10 17.5C9.65482 17.5 9.375 17.2202 9.375 16.875V10.625H3.125C2.77982 10.625 2.5 10.3452 2.5 10C2.5 9.65482 2.77982 9.375 3.125 9.375H9.375V3.125C9.375 2.77982 9.65482 2.5 10 2.5Z" fill="black"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-minus, button.control.type-minus,
+.btn.control.type-minus {
+  background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 10C2.5 9.65482 2.77982 9.375 3.125 9.375H16.875C17.2202 9.375 17.5 9.65482 17.5 10C17.5 10.3452 17.2202 10.625 16.875 10.625H3.125C2.77982 10.625 2.5 10.3452 2.5 10Z" fill="black"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-menu, button.control.type-menu,
+.btn.control.type-menu {
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17.25C3.75 16.8358 4.08579 16.5 4.5 16.5H19.5C19.9142 16.5 20.25 16.8358 20.25 17.25C20.25 17.6642 19.9142 18 19.5 18H4.5C4.08579 18 3.75 17.6642 3.75 17.25Z" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 11.25C3.75 10.8358 4.08579 10.5 4.5 10.5H19.5C19.9142 10.5 20.25 10.8358 20.25 11.25C20.25 11.6642 19.9142 12 19.5 12H4.5C4.08579 12 3.75 11.6642 3.75 11.25Z" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25C3.75 4.83579 4.08579 4.5 4.5 4.5H19.5C19.9142 4.5 20.25 4.83579 20.25 5.25C20.25 5.66421 19.9142 6 19.5 6H4.5C4.08579 6 3.75 5.66421 3.75 5.25Z" fill="black"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-close, button.control.type-close,
+.btn.control.type-close {
+  background-image: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6161 11.6161C12.1043 11.128 12.8957 11.128 13.3839 11.6161L20 18.2322L26.6161 11.6161C27.1043 11.128 27.8957 11.128 28.3839 11.6161C28.872 12.1043 28.872 12.8957 28.3839 13.3839L21.7678 20L28.3839 26.6161C28.872 27.1043 28.872 27.8957 28.3839 28.3839C27.8957 28.872 27.1043 28.872 26.6161 28.3839L20 21.7678L13.3839 28.3839C12.8957 28.872 12.1043 28.872 11.6161 28.3839C11.128 27.8957 11.128 27.1043 11.6161 26.6161L18.2322 20L11.6161 13.3839C11.128 12.8957 11.128 12.1043 11.6161 11.6161Z" fill="%232B3544"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 header > mark, header > .mark {

@@ -63,9 +63,10 @@ button,
 	border-radius: var(--button-border-radius);
 	border: var(--button-primary-border);
 	color: var(--button-primary-color);
-	font-weight: 600;
+	font-size: var(--font-size-normal);
+	font-weight: var(--font-weight-regular);
 	overflow: hidden;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 2rem;
 	position: relative;
 
 	> i,
@@ -87,18 +88,8 @@ button,
 		background-color: var(--button-disabled-background);
 		border: var(--button-disabled-border);
 		color: var(--button-disabled-color);
-	}
-
-	&[disabled]::after {
-		background: rgba(0, 0, 0, 0.1);
-		border-radius: var(--button-border-radius);
-		content: ' ';
-		height: 100%;
-		left: 0;
+		cursor: no-drop;
 		pointer-events: none;
-		position: absolute;
-		top: 0;
-		width: 100%;
 	}
 
 	&.button-secondary {
@@ -114,6 +105,56 @@ button,
 	}
 }
 
+button.control,
+.btn.control {
+	background-color: var(--chalky-white);
+	box-shadow: 0px 0.5px 2.8px rgba(0, 0, 0, 0.02), 0px 4px 22px rgba(0, 0, 0, 0.04);
+	border: 1px solid rgba(0, 0, 0, 0.075);
+	color: var(--chalky-grey-4);
+	font-size: 0;
+	height: var(--button-control-size);
+	padding: 0;
+	width: var(--button-control-size);
+
+	&.type-up,
+	&.type-arrowup {
+		@extend .icon-arrowup;
+	}
+
+	&.type-down,
+	&.type-arrowdown {
+		@extend .icon-arrowdown;
+	}
+
+	&.type-zoomin {
+		@extend .icon-zoomin;
+	}
+
+	&.type-zoomout {
+		@extend .icon-zoomout;
+	}
+
+	&.type-location {
+		@extend .icon-location;
+	}
+
+	&.type-plus {
+		@extend .icon-plus;
+	}
+
+	&.type-minus {
+		@extend .icon-minus;
+	}
+
+	&.type-menu {
+		@extend .icon-menu;
+	}
+
+	&.type-close {
+		@extend .icon-close;
+	}
+}
+
 // User Interaction
 // ---------------------------------------------------------------------------
 
@@ -123,8 +164,37 @@ button:hover:not(.no-hover)::before {
 	z-index: 2;
 }
 
+button:hover:not(.no-hover) {
+	border: 1px solid var(--chalky-red-4);
+
+	&.button-secondary {
+		border: 1px solid var(--chalky-blue-4);
+	}
+
+	&.button-tertiary {
+		border: 1px solid var(--chalky-grey-4);
+	}
+
+	&[disabled] {
+		border: 1px solid transparent;
+	}
+}
+
 button:active {
+	background-color: var(--chalky-red-2);
 	transform: translate(1px, 1px);
+
+	&.button-secondary {
+		background-color: var(--chalky-blue-4);
+	}
+
+	&.button-tertiary {
+		background-color: var(--chalky-offwhite);
+	}
+
+	&.control {
+		background-color: var(--color-offwhite);
+	}
 }
 
 button:active::before {

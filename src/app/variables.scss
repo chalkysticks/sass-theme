@@ -38,6 +38,7 @@
 	--chalky-lightblue-2: #4db8ff;
 	--chalky-purple: #b44697;
 	--chalky-purple-2: #e731b7;
+	--chalky-purple-3: #9747ff;
 	--chalky-red: #d14545;
 	--chalky-red-2: #a53f42;
 	--chalky-red-3: #79383f;
@@ -83,9 +84,11 @@
 	--button-tertiary-border: 1px solid var(--chalky-grey);
 	--button-tertiary-color: var(--chalky-blue);
 
-	--button-disabled-background: var(--chalky-grey-3);
+	--button-disabled-background: var(--chalky-offwhite);
 	--button-disabled-border: 1px solid var(--chalky-grey);
 	--button-disabled-color: var(--chalky-grey);
+
+	--button-control-size: 40px;
 
 	--button-border-radius: 4px;
 	--button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
