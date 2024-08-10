@@ -1,0 +1,12 @@
+// Layout
+// ---------------------------------------------------------------------------
+
+.border {
+	border-radius: var(--rounded-corner);
+	border: 1px solid var(--chalky-grey);
+}
+
+.outline {
+	border-radius: var(--rounded-corner);
+	outline: 1px solid var(--chalky-grey);
+}

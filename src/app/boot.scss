@@ -10,8 +10,14 @@
 @import './variables.scss';
 @import './core.scss';
 
+@import './utility/aspect-ratio.scss';
+@import './utility/border.scss';
 @import './utility/color.scss';
+@import './utility/layout.scss';
+@import './utility/shadow.scss';
 @import './utility/spacing.scss';
+@import './utility/text.scss';
+@import './utility/visibility.scss';
 
 @import './form.scss';
 @import './font.scss';

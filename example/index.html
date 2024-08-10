@@ -18,6 +18,7 @@
 				<header>
 					<h3>Typography</h3>
 				</header>
+
 				<section>
 					<header>
 						<h1 class="type-title">Trainer</h1>
@@ -52,7 +53,8 @@
 						Pellentesque ac ex quis lacus fermentum laoreet ut ac augue.
 					</p>
 				</section>
-				<section style="margin-top: 5rem">
+
+				<section class="push-top-xx">
 					<div>
 						<h1>Heading One</h1>
 					</div>
@@ -84,21 +86,53 @@
 				</header>
 
 				<div>
-					<p class="push-bottom-xs">Lorem ipsum sit amet, push bottom xs</p>
-					<p class="push-bottom-sm">Lorem ipsum sit amet, push bottom sm</p>
-					<p class="push-bottom">Lorem ipsum sit amet, push bottom</p>
-					<p class="push-bottom-lg">Lorem ipsum sit amet, push bottom lg</p>
-					<p class="push-bottom-xl">Lorem ipsum sit amet, push bottom xl</p>
+					<h3>Push-bottom</h3>
+
+					<p class="outline padded push-bottom-xs">Lorem ipsum sit amet, push bottom xs</p>
+					<p class="outline padded push-bottom-sm">Lorem ipsum sit amet, push bottom sm</p>
+					<p class="outline padded push-bottom">Lorem ipsum sit amet, push bottom</p>
+					<p class="outline padded push-bottom-lg">Lorem ipsum sit amet, push bottom lg</p>
+					<p class="outline padded push-bottom-xl">Lorem ipsum sit amet, push bottom xl</p>
+					<p class="outline padded push-bottom-xx">Lorem ipsum sit amet, push bottom xl</p>
 					<p>Lorem ipsum sit amet</p>
 				</div>
 
 				<div>
-					<p class="pull-bottom-xs">Lorem ipsum sit amet, pull bottom xs</p>
-					<p class="pull-bottom-sm">Lorem ipsum sit amet, pull bottom sm</p>
-					<p class="pull-bottom">Lorem ipsum sit amet, pull bottom</p>
-					<p class="pull-bottom-lg">Lorem ipsum sit amet, pull bottom lg</p>
-					<p class="pull-bottom-xl">Lorem ipsum sit amet, pull bottom xl</p>
+					<h3>Pull-bottom</h3>
+
+					<p class="outline padded pull-bottom-xs">Lorem ipsum sit amet, pull bottom xs</p>
+					<p class="outline padded pull-bottom-sm">Lorem ipsum sit amet, pull bottom sm</p>
+					<p class="outline padded pull-bottom">Lorem ipsum sit amet, pull bottom</p>
+					<p class="outline padded pull-bottom-lg">Lorem ipsum sit amet, pull bottom lg</p>
+					<p class="outline padded pull-bottom-xl">Lorem ipsum sit amet, pull bottom xl</p>
+					<p class="outline padded pull-bottom-xx">Lorem ipsum sit amet, pull bottom xl</p>
 					<p>Lorem ipsum sit amet</p>
+				</div>
+
+				<div>
+					<h3>Pad-bottom</h3>
+
+					<p class="outline padded pad-bottom-xs">Lorem ipsum sit amet, pad bottom xs</p>
+					<p class="outline padded pad-bottom-sm">Lorem ipsum sit amet, pad bottom sm</p>
+					<p class="outline padded pad-bottom">Lorem ipsum sit amet, pad bottom</p>
+					<p class="outline padded pad-bottom-lg">Lorem ipsum sit amet, pad bottom lg</p>
+					<p class="outline padded pad-bottom-xl">Lorem ipsum sit amet, pad bottom xl</p>
+					<p class="outline padded pad-bottom-xx">PLorem ipsum sit amet, pad bottom xl</p>
+					<p>Lorem ipsum sit amet</p>
+				</div>
+			</section>
+
+			<section class="level-1">
+				<header>
+					<h2>Shadow</h2>
+				</header>
+
+				<div>
+					<p class="border padded shadow-xs">shadow xs</p>
+					<p class="border padded shadow-sm">shadow sm</p>
+					<p class="border padded shadow">shadow</p>
+					<p class="border padded shadow-lg">shadow lg</p>
+					<p class="border padded shadow-xl">shadow xl</p>
 				</div>
 			</section>
 		</section>
@@ -264,23 +298,27 @@
 				<header>
 					<h3>Form Elements</h3>
 				</header>
+
 				<section>
 					<label>
 						<h6>Email Address</h6>
 						<input type="text" placeholder="Enter password" />
 					</label>
 				</section>
+
 				<section>
 					<label>
 						<input type="text" placeholder="Enter password" />
 					</label>
 				</section>
+
 				<section>
 					<label>
 						<input type="text" placeholder="Enter password" required />
 						<small class="type-error">This field is required</small>
 					</label>
 				</section>
+
 				<section class="button-group">
 					<button>
 						<span>Button</span>
@@ -298,6 +336,108 @@
 						<span>Disabled</span>
 					</button>
 				</section>
+
+				<section class="layout-horizontal">
+					<label>
+						<input type="radio" />
+						<span>Radio #1</span>
+					</label>
+
+					<label>
+						<input checked type="radio" />
+						<span>Radio #2</span>
+					</label>
+
+					<label>
+						<input checked disabled type="radio" />
+						<span>Radio #2</span>
+					</label>
+				</section>
+
+				<section class="layout-horizontal">
+					<label>
+						<input type="checkbox" />
+						<span>Checkbox #1</span>
+					</label>
+
+					<label>
+						<input checked type="checkbox" />
+						<span>Checkbox #2</span>
+					</label>
+
+					<label>
+						<input checked disabled type="checkbox" />
+						<span>Checkbox #2</span>
+					</label>
+				</section>
+
+				<section class="layout-horizontal">
+					<label>
+						<input class="switch" type="checkbox" />
+						<span>Switch #1</span>
+					</label>
+
+					<label>
+						<input class="switch" checked type="checkbox" />
+						<span>Switch #2</span>
+					</label>
+
+					<label>
+						<input class="switch" checked disabled type="checkbox" />
+						<span>Switch #2</span>
+					</label>
+				</section>
+
+				<section class="layout-horizontal theme-dark">
+					<label>
+						<input type="radio" />
+						<span>Radio #1</span>
+					</label>
+
+					<label>
+						<input checked type="radio" />
+						<span>Radio #2</span>
+					</label>
+
+					<label>
+						<input checked disabled type="radio" />
+						<span>Radio #2</span>
+					</label>
+				</section>
+
+				<section class="layout-horizontal theme-dark">
+					<label>
+						<input type="checkbox" />
+						<span>Checkbox #1</span>
+					</label>
+
+					<label>
+						<input checked type="checkbox" />
+						<span>Checkbox #2</span>
+					</label>
+
+					<label>
+						<input checked disabled type="checkbox" />
+						<span>Checkbox #2</span>
+					</label>
+				</section>
+
+				<section class="layout-horizontal theme-dark">
+					<label>
+						<input class="switch" type="checkbox" />
+						<span>Switch #1</span>
+					</label>
+
+					<label>
+						<input class="switch" checked type="checkbox" />
+						<span>Switch #2</span>
+					</label>
+
+					<label>
+						<input class="switch" checked disabled type="checkbox" />
+						<span>Switch #2</span>
+					</label>
+				</section>
 			</section>
 
 			<hr />
@@ -306,6 +446,7 @@
 				<header>
 					<h3>Control Buttons</h3>
 				</header>
+
 				<section>
 					<button class="control type-up">Up</button>
 					<button class="control type-down">Down</button>
@@ -316,6 +457,32 @@
 					<button class="control type-minus">Minus</button>
 					<button class="control type-menu">Menu</button>
 					<button class="control type-close">Close</button>
+				</section>
+
+				<section class="push-top">
+					<button class="control size-lg type-up">Up</button>
+					<button class="control size-lg type-down">Down</button>
+					<button class="control size-lg type-zoomin">Zoom In</button>
+					<button class="control size-lg type-zoomout">Zoom Out</button>
+					<button class="control size-lg type-location">Location</button>
+					<button class="control size-lg type-plus">Plus</button>
+					<button class="control size-lg type-minus">Minus</button>
+					<button class="control size-lg type-menu">Menu</button>
+					<button class="control size-lg type-close">Close</button>
+				</section>
+
+				<section class="push-top">
+					<div class="control-group">
+						<button class="control type-up">Up</button>
+						<button class="control type-down">Down</button>
+					</div>
+				</section>
+
+				<section class="push-top">
+					<div class="control-group horizontal">
+						<button class="control type-zoomin">Zoom In</button>
+						<button class="control type-zoomout">Zoom Out</button>
+					</div>
 				</section>
 			</section>
 
