@@ -26,6 +26,21 @@
 
 @include generate-colors('chalky-black', var(--chalky-black));
 @include generate-colors('chalky-blue', var(--chalky-blue));
-@include generate-colors('chalky-green', var(--chalky-green));
+@include generate-colors('chalky-blue-2', var(--chalky-blue-2));
+@include generate-colors('chalky-blue-3', var(--chalky-blue-3));
+@include generate-colors('chalky-blue-4', var(--chalky-blue-4));
+@include generate-colors('chalky-grey', var(--chalky-grey));
+@include generate-colors('chalky-grey-2', var(--chalky-grey-2));
+@include generate-colors('chalky-grey-3', var(--chalky-grey-3));
+@include generate-colors('chalky-grey-4', var(--chalky-grey-4));
+@include generate-colors('chalky-lightblue', var(--chalky-lightblue));
+@include generate-colors('chalky-lightblue-2', var(--chalky-lightblue-2));
+@include generate-colors('chalky-purple', var(--chalky-purple));
+@include generate-colors('chalky-purple-2', var(--chalky-purple-2));
+@include generate-colors('chalky-purple-3', var(--chalky-purple-3));
 @include generate-colors('chalky-red', var(--chalky-red));
+@include generate-colors('chalky-red-2', var(--chalky-red-2));
+@include generate-colors('chalky-red-3', var(--chalky-red-3));
+@include generate-colors('chalky-red-4', var(--chalky-red-4));
 @include generate-colors('chalky-white', var(--chalky-white));
+@include generate-colors('chalky-offwhite', var(--chalky-offwhite));
