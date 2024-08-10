@@ -152,8 +152,8 @@
 	// 7. Scrollbar
 	// ------------------------------------------------------------------------------
 
-	--scrollbar-thumb-color: #444;
-	--scrollbar-thumb-hover-color: #666;
-	--scrollbar-track-color: #000;
-	--scrollbar-size: 8px;
+	--scrollbar-size: 0.5rem;
+	--scrollbar-thumb-color: var(--chalky-grey);
+	--scrollbar-thumb-hover-color: var(--chalky-white);
+	--scrollbar-track-color: var(--chalky-blue-4);
 }

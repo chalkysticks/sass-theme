@@ -1,0 +1,30 @@
+// Layout
+// ---------------------------------------------------------------------------
+
+::-webkit-scrollbar {
+	height: var(--scrollbar-size);
+	width: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-button {
+	height: 0px;
+	width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-thumb-color);
+	border-radius: 50px;
+	border: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--scrollbar-thumb-hover-color);
+}
+
+::-webkit-scrollbar-track {
+	background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}

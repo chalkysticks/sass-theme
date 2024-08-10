@@ -10829,10 +10829,10 @@ textarea.form-control-lg {
   --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
   --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
-  --scrollbar-thumb-color: #444;
-  --scrollbar-thumb-hover-color: #666;
-  --scrollbar-track-color: #000;
-  --scrollbar-size: 8px;
+  --scrollbar-size: 0.5rem;
+  --scrollbar-thumb-color: var(--chalky-grey);
+  --scrollbar-thumb-hover-color: var(--chalky-white);
+  --scrollbar-track-color: var(--chalky-blue-4);
 }
 
 .aspect-1x1 {
@@ -10995,10 +10995,10 @@ textarea.form-control-lg {
   --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
   --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
-  --scrollbar-thumb-color: #444;
-  --scrollbar-thumb-hover-color: #666;
-  --scrollbar-track-color: #000;
-  --scrollbar-size: 8px;
+  --scrollbar-size: 0.5rem;
+  --scrollbar-thumb-color: var(--chalky-grey);
+  --scrollbar-thumb-hover-color: var(--chalky-white);
+  --scrollbar-track-color: var(--chalky-blue-4);
 }
 
 .background-chalky-black {
@@ -11709,10 +11709,49 @@ textarea:focus {
   font-weight: 800;
   src: url("https://static.chalkysticks.com/fonts/prelo-black-webfont.eot") format("embedded-opentype"), url("https://static.chalkysticks.com/fonts/prelo-black-webfont.woff") format("woff"), url("https://static.chalkysticks.com/fonts/prelo-black-webfont.ttf") format("truetype");
 }
+::-webkit-scrollbar {
+  height: var(--scrollbar-size);
+  width: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-button {
+  height: 0px;
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 50px;
+  border: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+html {
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+  scrollbar-width: thin;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 figure {
