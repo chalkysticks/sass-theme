@@ -11437,6 +11437,7 @@ input[type=email],
 input[type=number],
 input[type=password],
 input[type=text],
+select,
 textarea {
   background: var(--chalky-white);
   border: 1px solid var(--chalky-grey);
@@ -11450,6 +11451,7 @@ input[type=email]:placeholder-shown,
 input[type=number]:placeholder-shown,
 input[type=password]:placeholder-shown,
 input[type=text]:placeholder-shown,
+select:placeholder-shown,
 textarea:placeholder-shown {
   font-weight: var(--font-weight-book);
 }
