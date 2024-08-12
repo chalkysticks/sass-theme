@@ -172,8 +172,8 @@ button,
 button.control,
 .btn.control {
 	background-color: var(--chalky-white);
-	box-shadow: 0px 0.5px 2.8px rgba(0, 0, 0, 0.02), 0px 4px 22px rgba(0, 0, 0, 0.04);
 	border: 1px solid rgba(0, 0, 0, 0.075);
+	box-shadow: 0px 0.5px 2.8px rgba(0, 0, 0, 0.02), 0px 4px 22px rgba(0, 0, 0, 0.04);
 	color: var(--chalky-grey-4);
 	font-size: 0;
 	height: var(--button-control-size);
@@ -238,12 +238,6 @@ button.control,
 // User Interaction
 // ---------------------------------------------------------------------------
 
-button:hover:not(.no-hover)::before {
-	animation: button-sway 1s infinite;
-	opacity: 0.15;
-	z-index: 2;
-}
-
 button:hover:not(.no-hover) {
 	border: 1px solid var(--chalky-red-4);
 
@@ -284,7 +278,7 @@ button:active::before {
 label:has(input:active),
 label:has(input:focus) {
 	h6 {
-		color: var(--chalky-blue);
+		color: var(--body-color);
 	}
 }
 
@@ -299,22 +293,7 @@ textarea {
 
 	&:active,
 	&:focus {
-		border-color: var(--chalky-blue);
+		border-color: var(--body-color);
 		outline: var(--input-outline-width) solid rgba(0, 0, 0, 0.07);
-	}
-}
-
-// Button Animation
-// ---------------------------------------------------------------------------
-
-@keyframes button-sway {
-	0% {
-		transform: translate(0, 0);
-	}
-	50% {
-		transform: translate(0, -50%);
-	}
-	100% {
-		transform: translate(0, 0%);
 	}
 }
