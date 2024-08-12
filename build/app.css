@@ -11986,7 +11986,7 @@ button:active.button-tertiary {
   background-color: var(--chalky-offwhite);
 }
 button:active.control {
-  background-color: var(--color-offwhite);
+  background-color: var(--chalky-offwhite);
 }
 
 button:active::before {
