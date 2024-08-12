@@ -35,5 +35,5 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "sass --watch --style=expanded --source-map -q --precision=6 src/app/boot.scss:build/app.css"
     },
-    "version": "1.3.13"
+    "version": "1.4.1"
 }
