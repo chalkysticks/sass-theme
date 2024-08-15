@@ -6,29 +6,29 @@
 }
 
 .type-heading-1 {
-	font-size: 3rem;
+	font-size: 3em;
 	font-weight: var(--font-weight-medium);
 }
 
 .type-heading-2 {
-	font-size: 2.25rem;
+	font-size: 2.25em;
 	font-weight: var(--font-weight-medium);
 }
 
 .type-heading-3 {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	font-weight: var(--font-weight-medium);
 	line-height: 1.2;
 }
 
 .type-heading-4 {
-	font-size: 1.31rem;
+	font-size: 1.31em;
 	font-weight: var(--font-weight-semibold);
 	text-transform: uppercase;
 }
 
 .type-input {
-	font-size: 0.81rem;
+	font-size: 0.81em;
 	font-weight: var(--font-weight-semibold);
 }
 
@@ -40,35 +40,35 @@
 }
 
 .type-paragraph {
-	font-size: 1rem;
+	font-size: 1em;
 	font-weight: var(--font-weight-light);
 	line-height: 1.375;
 }
 
 .type-small {
 	display: inline-block;
-	font-size: 0.75rem;
+	font-size: 0.75em;
 	font-weight: var(--font-weight-book);
 	line-height: 1.66;
 	vertical-align: middle;
 }
 
 .type-small-heading {
-	font-size: 0.75rem;
+	font-size: 0.75em;
 	font-weight: var(--font-weight-medium);
-	letter-spacing: 0.0125rem;
+	letter-spacing: 0.0125em;
 	margin: 0.7em 0;
 	text-transform: uppercase;
 }
 
 .type-subtitle {
-	font-size: 1.3rem;
+	font-size: 1.3em;
 	font-weight: var(--font-weight-light);
 	line-height: 1.375;
 }
 
 .type-title {
-	font-size: 3rem;
+	font-size: 3em;
 	font-weight: var(--font-weight-bold);
 }
 
@@ -132,7 +132,7 @@ input {
 
 blockquote {
 	border-left: 8px solid var(--border-dark);
-	font-size: 1.125rem;
+	font-size: 1.125em;
 	font-weight: var(--font-weight-book);
 	line-height: 1.5;
 	margin: 1rem 3rem 1rem 0;
