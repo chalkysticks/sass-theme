@@ -1,0 +1,16 @@
+// Layout
+// ---------------------------------------------------------------------------
+
+.fullscreen {
+	bottom: 0;
+	left: 0;
+	max-height: 100%;
+	max-width: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.fullscreen.fixed {
+	position: fixed;
+}
