@@ -10734,6 +10734,7 @@ textarea.form-control-lg {
   --icon-size-lg: 100px;
   --icon-size-xl: 125px;
   --rounded-button: 4px;
+  --rounded-badge: 6px;
   --rounded-corner: 8px;
   --rounded-corner-outer: 10px;
   --chalky-black: #030504;
@@ -10909,6 +10910,7 @@ textarea.form-control-lg {
   --icon-size-lg: 100px;
   --icon-size-xl: 125px;
   --rounded-button: 4px;
+  --rounded-badge: 6px;
   --rounded-corner: 8px;
   --rounded-corner-outer: 10px;
   --chalky-black: #030504;
@@ -11563,6 +11565,12 @@ textarea.form-control-lg {
   align-items: center;
   display: flex;
   flex-direction: row;
+}
+
+.layout-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .layout-vertical {
@@ -12610,8 +12618,9 @@ header > mark, header > .mark {
 
 .branding-chalky-badge {
   background-color: var(--chalky-blue);
-  border-radius: 6px;
+  border-radius: var(--rounded-badge);
   display: inline-block;
+  flex-shrink: 0;
   height: var(--icon-size-md);
   position: relative;
   width: var(--icon-size-md);

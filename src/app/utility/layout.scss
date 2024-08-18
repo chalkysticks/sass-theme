@@ -7,6 +7,12 @@
 	flex-direction: row;
 }
 
+.layout-center {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
 .layout-vertical {
 	display: flex;
 	flex-direction: column;

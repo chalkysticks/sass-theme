@@ -3,8 +3,9 @@
 
 .branding-chalky-badge {
 	background-color: var(--chalky-blue);
-	border-radius: 6px;
+	border-radius: var(--rounded-badge);
 	display: inline-block;
+	flex-shrink: 0;
 	height: var(--icon-size-md);
 	position: relative;
 	width: var(--icon-size-md);
