@@ -10719,7 +10719,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-:root {
+:root,
+Page {
   --avatar-size-xs: 36px;
   --avatar-size-sm: 50px;
   --avatar-size-md: 75px;
@@ -10895,7 +10896,8 @@ textarea.form-control-lg {
   outline: 1px solid var(--chalky-grey);
 }
 
-:root {
+:root,
+Page {
   --avatar-size-xs: 36px;
   --avatar-size-sm: 50px;
   --avatar-size-md: 75px;
