@@ -221,6 +221,14 @@ button.control,
 	&.type-close {
 		@extend .icon-close;
 	}
+
+	&.type-volumeoff {
+		@extend .icon-volumeoff;
+	}
+
+	&.type-volumeon {
+		@extend .icon-volumeon;
+	}
 }
 
 .control-group {
