@@ -231,6 +231,12 @@ button.control,
 	}
 }
 
+button.control.theme-dark,
+.btn.control.theme-dark {
+	background-color: var(--chalky-blue);
+	color: var(--chalky-white);
+}
+
 .control-group {
 	align-items: center;
 	display: flex;
