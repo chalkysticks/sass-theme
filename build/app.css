@@ -12046,6 +12046,16 @@ button.button-tertiary,
   border: var(--button-tertiary-border);
   color: var(--button-tertiary-color);
 }
+button.size-small,
+.btn.size-small {
+  font-size: var(--font-size-small);
+  padding: 0.25rem 1rem;
+}
+button.size-large,
+.btn.size-large {
+  font-size: var(--font-size-large);
+  padding: 0.75rem 2rem;
+}
 
 button.control,
 .btn.control {
