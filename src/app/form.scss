@@ -220,6 +220,10 @@ button.control,
 		@extend .icon-plus;
 	}
 
+	&.type-list {
+		@extend .icon-list;
+	}
+
 	&.type-minus {
 		@extend .icon-minus;
 	}
@@ -230,6 +234,14 @@ button.control,
 
 	&.type-close {
 		@extend .icon-close;
+	}
+
+	&.type-fullscreen {
+		@extend .icon-fullscreen;
+	}
+
+	&.type-save {
+		@extend .icon-save;
 	}
 
 	&.type-volumeoff {
