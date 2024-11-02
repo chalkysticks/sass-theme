@@ -12777,6 +12777,22 @@ header > mark, header > .mark {
   padding: 3px 10px;
 }
 
+.tags {
+  display: flex;
+  gap: 0.5em;
+}
+.tags .tag {
+  border-radius: 3rem;
+  border: 1px solid currentColor;
+  color: var(--chalky-white);
+  display: inline-block;
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.33em 1.125em;
+  text-transform: uppercase;
+}
+
 .branding-chalky-badge {
   background-color: var(--chalky-blue);
   border-radius: var(--rounded-badge);

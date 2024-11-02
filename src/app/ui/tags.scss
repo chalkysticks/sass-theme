@@ -1,0 +1,19 @@
+// Layout
+// ---------------------------------------------------------------------------
+
+.tags {
+	display: flex;
+	gap: 0.5em;
+
+	.tag {
+		border-radius: 3rem;
+		border: 1px solid currentColor;
+		color: var(--chalky-white);
+		display: inline-block;
+		flex: 0 0 auto;
+		font-size: 12px;
+		font-weight: 600;
+		padding: 0.33em 1.125em;
+		text-transform: uppercase;
+	}
+}
