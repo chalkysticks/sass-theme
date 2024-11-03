@@ -12337,6 +12337,12 @@ header:has(.type-title) {
   text-transform: uppercase;
 }
 
+.type-heading-5, h5, .h5 {
+  font-size: 1em;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+}
+
 .type-input, input {
   font-size: 0.81em;
   font-weight: var(--font-weight-semibold);
@@ -12406,7 +12412,7 @@ a {
 }
 
 h6, .h6 {
-  color: var(--chalky-grey-2);
+  color: var(--chalky-grey-3);
 }
 
 blockquote {

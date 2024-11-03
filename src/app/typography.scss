@@ -27,6 +27,12 @@
 	text-transform: uppercase;
 }
 
+.type-heading-5 {
+	font-size: 1em;
+	font-weight: var(--font-weight-semibold);
+	text-transform: uppercase;
+}
+
 .type-input {
 	font-size: 0.81em;
 	font-weight: var(--font-weight-semibold);
@@ -120,10 +126,14 @@ h4 {
 	@extend .type-heading-4;
 }
 
+h5 {
+	@extend .type-heading-5;
+}
+
 h6 {
 	@extend .type-small-heading;
 
-	color: var(--chalky-grey-2);
+	color: var(--chalky-grey-3);
 }
 
 input {
