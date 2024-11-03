@@ -10899,9 +10899,29 @@ Page {
   border: 1px solid var(--chalky-grey);
 }
 
+.border-blue {
+  border-radius: var(--rounded-corner);
+  border: 1px solid var(--chalky-blue);
+}
+
+.border-dark {
+  border-radius: var(--rounded-corner);
+  border: 1px solid var(--chalky-blue-4);
+}
+
 .outline {
   border-radius: var(--rounded-corner);
   outline: 1px solid var(--chalky-grey);
+}
+
+.outline-blue {
+  border-radius: var(--rounded-corner);
+  outline: 1px solid var(--chalky-blue);
+}
+
+.outline-dark {
+  border-radius: var(--rounded-corner);
+  outline: 1px solid var(--chalky-blue-4);
 }
 
 :root,
