@@ -51,6 +51,12 @@
 	line-height: 1.375;
 }
 
+.type-small-paragraph {
+	font-size: 0.875em;
+	font-weight: var(--font-weight-light);
+	line-height: 1.375;
+}
+
 .type-small {
 	display: inline-block;
 	font-size: 0.75em;
@@ -98,6 +104,10 @@ h5 {
 
 p {
 	@extend .type-paragraph;
+}
+
+p.small {
+	@extend .type-small-paragraph;
 }
 
 small {

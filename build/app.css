@@ -12361,6 +12361,12 @@ header:has(.type-title) {
   line-height: 1.375;
 }
 
+.type-small-paragraph, p.small {
+  font-size: 0.875em;
+  font-weight: var(--font-weight-light);
+  line-height: 1.375;
+}
+
 .type-small, small, .small {
   display: inline-block;
   font-size: 0.75em;
