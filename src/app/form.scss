@@ -204,6 +204,16 @@ button.control,
 		@extend .icon-arrowdown;
 	}
 
+	&.type-right,
+	&.type-arrowright {
+		@extend .icon-arrowright;
+	}
+
+	&.type-left,
+	&.type-arrowleft {
+		@extend .icon-arrowleft;
+	}
+
 	&.type-zoomin {
 		@extend .icon-zoomin;
 	}
@@ -250,6 +260,14 @@ button.control,
 
 	&.type-volumeon {
 		@extend .icon-volumeon;
+	}
+
+	&.type-information {
+		@extend .icon-information;
+	}
+
+	&.type-speech {
+		@extend .icon-speech;
 	}
 }
 
