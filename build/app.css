@@ -13047,7 +13047,7 @@ header > mark, header > .mark {
 .branding-chalky-wordmark.on-dark.size-xs,
 .branding-chalky-wordmark.on-dark[size=xs] {
   --chalky-wordmark-size: 30px;
-  --chalky-wordmark-text-size: 25px;
+  --chalky-wordmark-text-size: 30px;
 }
 .branding-chalky-wordmark.size-sm, .branding-chalky-wordmark[size=sm],
 .branding-chalky-wordmark.on-dark.size-sm,
