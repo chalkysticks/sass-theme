@@ -1,0 +1,153 @@
+// Base mixin for filter properties
+@mixin filter($properties) {
+	-webkit-filter: $properties;
+	filter: $properties;
+}
+
+// Filter classes
+.filter {
+	&-blur {
+		@include filter(blur(5px));
+
+		&-sm {
+			@include filter(blur(2px));
+		}
+
+		&-lg {
+			@include filter(blur(10px));
+		}
+	}
+
+	&-brightness {
+		@include filter(brightness(150%));
+
+		&-dim {
+			@include filter(brightness(75%));
+		}
+
+		&-bright {
+			@include filter(brightness(200%));
+		}
+	}
+
+	&-contrast {
+		@include filter(contrast(150%));
+
+		&-low {
+			@include filter(contrast(75%));
+		}
+
+		&-high {
+			@include filter(contrast(200%));
+		}
+	}
+
+	&-grayscale {
+		@include filter(grayscale(100%));
+
+		&-partial {
+			@include filter(grayscale(50%));
+		}
+	}
+
+	&-hue-rotate {
+		@include filter(hue-rotate(90deg));
+
+		&-full {
+			@include filter(hue-rotate(180deg));
+		}
+
+		&-subtle {
+			@include filter(hue-rotate(45deg));
+		}
+	}
+
+	&-invert {
+		@include filter(invert(100%));
+
+		&-partial {
+			@include filter(invert(50%));
+		}
+	}
+
+	&-opacity {
+		@include filter(opacity(50%));
+
+		&-light {
+			@include filter(opacity(75%));
+		}
+
+		&-heavy {
+			@include filter(opacity(25%));
+		}
+	}
+
+	&-saturate {
+		@include filter(saturate(150%));
+
+		&-low {
+			@include filter(saturate(50%));
+		}
+
+		&-high {
+			@include filter(saturate(250%));
+		}
+	}
+
+	&-sepia {
+		@include filter(sepia(100%));
+
+		&-partial {
+			@include filter(sepia(50%));
+		}
+	}
+
+	// Combination filters
+	&-vintage {
+		@include filter(sepia(50%) hue-rotate(-30deg) saturate(160%));
+	}
+
+	&-cold {
+		@include filter(brightness(110%) hue-rotate(180deg) saturate(120%));
+	}
+
+	&-warm {
+		@include filter(brightness(110%) hue-rotate(-30deg) saturate(130%));
+	}
+
+	&-dramatic {
+		@include filter(contrast(150%) brightness(90%) saturate(130%));
+	}
+}
+
+// Transition mixin for smooth filter changes
+.filter-transition {
+	transition: filter 0.3s ease;
+}
+
+// Hover effects
+.filter-hover {
+	&-blur:hover {
+		@include filter(blur(5px));
+	}
+
+	&-brightness:hover {
+		@include filter(brightness(150%));
+	}
+
+	&-contrast:hover {
+		@include filter(contrast(150%));
+	}
+
+	&-grayscale:hover {
+		@include filter(grayscale(100%));
+	}
+
+	&-sepia:hover {
+		@include filter(sepia(100%));
+	}
+
+	&-invert:hover {
+		@include filter(invert(100%));
+	}
+}

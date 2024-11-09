@@ -1,0 +1,254 @@
+// Primary Colors
+.tint {
+	&-red {
+		filter: brightness(0) saturate(100%) invert(19%) sepia(92%) saturate(6304%) hue-rotate(357deg) brightness(99%) contrast(118%);
+	}
+
+	&-blue {
+		filter: brightness(0) saturate(100%) invert(8%) sepia(100%) saturate(7154%) hue-rotate(248deg) brightness(89%) contrast(145%);
+	}
+
+	&-green {
+		filter: brightness(0) saturate(100%) invert(28%) sepia(67%) saturate(860%) hue-rotate(93deg) brightness(93%) contrast(106%);
+	}
+
+	&-yellow {
+		filter: brightness(0) saturate(100%) invert(83%) sepia(29%) saturate(4784%) hue-rotate(359deg) brightness(103%) contrast(104%);
+	}
+
+	&-purple {
+		filter: brightness(0) saturate(100%) invert(12%) sepia(88%) saturate(6378%) hue-rotate(276deg) brightness(89%) contrast(125%);
+	}
+
+	// Social Media Colors
+	&-facebook {
+		filter: brightness(0) saturate(100%) invert(23%) sepia(93%) saturate(1111%) hue-rotate(204deg) brightness(97%) contrast(96%);
+	}
+
+	&-twitter {
+		filter: brightness(0) saturate(100%) invert(45%) sepia(98%) saturate(1731%) hue-rotate(176deg) brightness(100%) contrast(95%);
+	}
+
+	&-instagram {
+		filter: brightness(0) saturate(100%) invert(28%) sepia(75%) saturate(1967%) hue-rotate(297deg) brightness(96%) contrast(98%);
+	}
+
+	&-linkedin {
+		filter: brightness(0) saturate(100%) invert(26%) sepia(98%) saturate(1361%) hue-rotate(193deg) brightness(96%) contrast(88%);
+	}
+
+	// UI Colors
+	&-success {
+		filter: brightness(0) saturate(100%) invert(39%) sepia(74%) saturate(366%) hue-rotate(87deg) brightness(103%) contrast(92%);
+	}
+
+	&-warning {
+		filter: brightness(0) saturate(100%) invert(77%) sepia(41%) saturate(5103%) hue-rotate(359deg) brightness(101%) contrast(104%);
+	}
+
+	&-danger {
+		filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(6430%) hue-rotate(358deg) brightness(95%) contrast(114%);
+	}
+
+	&-info {
+		filter: brightness(0) saturate(100%) invert(49%) sepia(98%) saturate(1850%) hue-rotate(175deg) brightness(96%) contrast(95%);
+	}
+
+	// Material Design Colors
+	&-material-red {
+		filter: brightness(0) saturate(100%) invert(34%) sepia(50%) saturate(3535%) hue-rotate(340deg) brightness(97%) contrast(92%);
+	}
+
+	&-material-pink {
+		filter: brightness(0) saturate(100%) invert(41%) sepia(65%) saturate(4767%) hue-rotate(316deg) brightness(89%) contrast(98%);
+	}
+
+	&-material-purple {
+		filter: brightness(0) saturate(100%) invert(23%) sepia(53%) saturate(5693%) hue-rotate(266deg) brightness(75%) contrast(125%);
+	}
+
+	&-material-deep-purple {
+		filter: brightness(0) saturate(100%) invert(12%) sepia(67%) saturate(6107%) hue-rotate(267deg) brightness(92%) contrast(108%);
+	}
+
+	&-material-indigo {
+		filter: brightness(0) saturate(100%) invert(21%) sepia(70%) saturate(4538%) hue-rotate(225deg) brightness(89%) contrast(102%);
+	}
+
+	// Grayscale
+	&-gray-100 {
+		filter: brightness(0) saturate(100%) invert(90%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(96%) contrast(89%);
+	}
+
+	&-gray-300 {
+		filter: brightness(0) saturate(100%) invert(70%) sepia(5%) saturate(26%) hue-rotate(314deg) brightness(92%) contrast(86%);
+	}
+
+	&-gray-500 {
+		filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(94%) contrast(92%);
+	}
+
+	&-gray-700 {
+		filter: brightness(0) saturate(100%) invert(30%) sepia(4%) saturate(10%) hue-rotate(314deg) brightness(98%) contrast(85%);
+	}
+
+	&-gray-900 {
+		filter: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(96%) contrast(89%);
+	}
+
+	// Brand Colors (examples)
+	&-apple {
+		filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(231deg) brightness(94%) contrast(106%);
+	}
+
+	&-microsoft {
+		filter: brightness(0) saturate(100%) invert(31%) sepia(98%) saturate(1783%) hue-rotate(179deg) brightness(96%) contrast(105%);
+	}
+
+	&-google-blue {
+		filter: brightness(0) saturate(100%) invert(31%) sepia(98%) saturate(1783%) hue-rotate(179deg) brightness(96%) contrast(105%);
+	}
+
+	&-google-red {
+		filter: brightness(0) saturate(100%) invert(28%) sepia(75%) saturate(6340%) hue-rotate(351deg) brightness(99%) contrast(92%);
+	}
+
+	&-google-yellow {
+		filter: brightness(0) saturate(100%) invert(89%) sepia(43%) saturate(5654%) hue-rotate(359deg) brightness(102%) contrast(104%);
+	}
+
+	&-google-green {
+		filter: brightness(0) saturate(100%) invert(63%) sepia(31%) saturate(4021%) hue-rotate(77deg) brightness(92%) contrast(87%);
+	}
+}
+
+// Intensity variations
+.tint-opacity {
+	&-75 {
+		opacity: 0.75;
+	}
+
+	&-50 {
+		opacity: 0.5;
+	}
+
+	&-25 {
+		opacity: 0.25;
+	}
+}
+
+// Can be combined with any tint
+.tint-brighten {
+	&-10 {
+		filter: brightness(1.1);
+	}
+
+	&-20 {
+		filter: brightness(1.2);
+	}
+}
+
+.tint-darken {
+	&-10 {
+		filter: brightness(0.9);
+	}
+
+	&-20 {
+		filter: brightness(0.8);
+	}
+}
+
+// Chalky Theme Tints
+.tint {
+	// Blacks
+	&-chalky-black {
+		filter: brightness(0) saturate(100%) invert(1%) sepia(6%) saturate(1074%) hue-rotate(106deg) brightness(95%) contrast(100%);
+	}
+
+	// Blues
+	&-chalky-blue {
+		filter: brightness(0) saturate(100%) invert(18%) sepia(19%) saturate(857%) hue-rotate(182deg) brightness(94%) contrast(87%);
+	}
+
+	&-chalky-blue-2 {
+		filter: brightness(0) saturate(100%) invert(15%) sepia(14%) saturate(1234%) hue-rotate(184deg) brightness(94%) contrast(95%);
+	}
+
+	&-chalky-blue-3 {
+		filter: brightness(0) saturate(100%) invert(14%) sepia(14%) saturate(1147%) hue-rotate(184deg) brightness(94%) contrast(95%);
+	}
+
+	&-chalky-blue-4 {
+		filter: brightness(0) saturate(100%) invert(12%) sepia(14%) saturate(1147%) hue-rotate(184deg) brightness(95%) contrast(97%);
+	}
+
+	// Greys
+	&-chalky-grey {
+		filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(107%) contrast(84%);
+	}
+
+	&-chalky-grey-2 {
+		filter: brightness(0) saturate(100%) invert(66%) sepia(6%) saturate(176%) hue-rotate(174deg) brightness(91%) contrast(86%);
+	}
+
+	&-chalky-grey-3 {
+		filter: brightness(0) saturate(100%) invert(49%) sepia(4%) saturate(568%) hue-rotate(182deg) brightness(91%) contrast(86%);
+	}
+
+	&-chalky-grey-4 {
+		filter: brightness(0) saturate(100%) invert(32%) sepia(9%) saturate(568%) hue-rotate(182deg) brightness(94%) contrast(88%);
+	}
+
+	// Light Blues
+	&-chalky-lightblue {
+		filter: brightness(0) saturate(100%) invert(45%) sepia(52%) saturate(478%) hue-rotate(165deg) brightness(91%) contrast(87%);
+	}
+
+	&-chalky-lightblue-2 {
+		filter: brightness(0) saturate(100%) invert(69%) sepia(92%) saturate(1095%) hue-rotate(179deg) brightness(103%) contrast(101%);
+	}
+
+	// Purples
+	&-chalky-purple {
+		filter: brightness(0) saturate(100%) invert(39%) sepia(65%) saturate(568%) hue-rotate(283deg) brightness(87%) contrast(92%);
+	}
+
+	&-chalky-purple-2 {
+		filter: brightness(0) saturate(100%) invert(37%) sepia(95%) saturate(7471%) hue-rotate(308deg) brightness(91%) contrast(92%);
+	}
+
+	&-chalky-purple-3 {
+		filter: brightness(0) saturate(100%) invert(35%) sepia(82%) saturate(7486%) hue-rotate(255deg) brightness(101%) contrast(108%);
+	}
+
+	// Reds
+	&-chalky-red {
+		filter: brightness(0) saturate(100%) invert(35%) sepia(68%) saturate(1066%) hue-rotate(334deg) brightness(90%) contrast(95%);
+	}
+
+	&-chalky-red-2 {
+		filter: brightness(0) saturate(100%) invert(28%) sepia(29%) saturate(1066%) hue-rotate(334deg) brightness(89%) contrast(93%);
+	}
+
+	&-chalky-red-3 {
+		filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1066%) hue-rotate(314deg) brightness(94%) contrast(89%);
+	}
+
+	&-chalky-red-4 {
+		filter: brightness(0) saturate(100%) invert(17%) sepia(8%) saturate(1544%) hue-rotate(287deg) brightness(93%) contrast(88%);
+	}
+
+	// Whites
+	&-chalky-white {
+		filter: brightness(0) saturate(100%) invert(99%) sepia(3%) saturate(106%) hue-rotate(200deg) brightness(115%) contrast(96%);
+	}
+
+	&-chalky-offwhite {
+		filter: brightness(0) saturate(100%) invert(95%) sepia(4%) saturate(106%) hue-rotate(200deg) brightness(103%) contrast(93%);
+	}
+}
+
+// Usage mixin
+@mixin chalky-tint($color) {
+	@extend .tint-chalky-#{$color};
+}
