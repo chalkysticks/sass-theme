@@ -1,0 +1,12 @@
+<svg class="icon tv-channel-trick" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="-3 -3 30.85 27" xml:space="preserve">
+	<path fill="black" d="M8.839 10.616a2.653 2.653 0 1 1 5.306 0 2.652 2.652 0 1 1-5.306 0z" />
+	<path
+		fill="black"
+		d="M3.451 3.08a2.654 2.654 0 1 1 5.309 0 2.655 2.655 0 1 1-5.309 0zM14.225 18.522a2.653 2.653 0 1 1 2.652 2.654 2.653 2.653 0 0 1-2.652-2.654z"
+	/>
+	<g fill="none" stroke="black" stroke-miterlimit="10">
+		<path d="M6.105 2.348s.789-.063 1.995-.051" />
+		<path stroke-dasharray="4.7103,4.7103" d="M12.784 2.743c4.875.943 10.025 3.777 6.245 11.984" />
+		<path d="M17.934 16.824a33.505 33.505 0 0 1-1.057 1.698" />
+	</g>
+</svg>

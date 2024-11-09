@@ -1,0 +1,13 @@
+<svg class="icon tv-channel-snooker" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="-4 0 50 27" xml:space="preserve">
+	<path
+		fill="none"
+		stroke="#757576"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		d="M2.3 18.009h38.976M2.845 18.009S.132 1 21.685 1c21.554 0 18.84 17.285 18.84 17.285"
+	/>
+	<path
+		fill="black"
+		d="M24.532 18.015a2.846 2.846 0 0 1-2.845 2.846 2.847 2.847 0 1 1 2.845-2.846zM5.69 18.009a2.846 2.846 0 1 1-5.69 0 2.845 2.845 0 1 1 5.69 0zM43.372 18.015a2.847 2.847 0 1 1-5.693-.001 2.847 2.847 0 0 1 5.693.001z"
+	/>
+</svg>
