@@ -13435,5 +13435,8 @@ header > mark, header > .mark {
   float: left;
   margin-left: -300px;
 }
+.page-playground .level-1 section > div figure {
+  display: inline-block;
+}
 
 /*# sourceMappingURL=app.css.map */

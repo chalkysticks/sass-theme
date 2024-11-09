@@ -29,11 +29,12 @@
         "url": "git+https://github.com/chalkysticks/sass-theme.git"
     },
     "scripts": {
-        "build": "sass --style=expanded --source-map --quiet --precision=6 src/app/boot.scss:build/app.css && cp -r src/asset build/asset",
+        "build": "yarn clean && sass --style=expanded --source-map --quiet --precision=6 src/app/boot.scss:build/app.css && cp -r src/asset build/",
+        "clean": "rm -rf ./build",
         "prepare": "husky install",
         "serve": "http-server",
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "sass --watch --style=expanded --source-map -q --precision=6 src/app/boot.scss:build/app.css"
     },
-    "version": "1.10.3"
+    "version": "1.10.5"
 }
