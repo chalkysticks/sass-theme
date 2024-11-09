@@ -1,0 +1,33 @@
+<svg
+	height="184.912px"
+	viewBox="0 0 184.912 184.912"
+	width="184.912px"
+	x="0px"
+	xml:space="preserve"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns="http://www.w3.org/2000/svg"
+	y="0px"
+>
+	<g>
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="0.5" x2="0.5" y2="184.412" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="23.489" y1="0.5" x2="23.489" y2="184.412" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="46.478" y1="0.5" x2="46.478" y2="184.412" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="69.467" y1="0.5" x2="69.467" y2="184.412" />
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="92.456" y1="0.5" x2="92.456" y2="184.412" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="115.444" y1="0.5" x2="115.444" y2="184.412" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="138.435" y1="0.5" x2="138.435" y2="184.412" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="161.423" y1="0.5" x2="161.423" y2="184.412" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="184.412" y1="0.5" x2="184.412" y2="184.412" />
+	</g>
+	<g>
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="184.412" x2="184.412" y2="184.412" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="161.422" x2="184.412" y2="161.422" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="138.434" x2="184.412" y2="138.434" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="115.444" x2="184.412" y2="115.444" />
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="92.456" x2="184.412" y2="92.456" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="69.466" x2="184.412" y2="69.466" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="46.478" x2="184.412" y2="46.478" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="23.49" x2="184.412" y2="23.49" />
+		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="0.5" y1="0.5" x2="184.412" y2="0.5" />
+	</g>
+</svg>

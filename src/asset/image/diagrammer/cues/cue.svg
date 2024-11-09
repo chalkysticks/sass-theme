@@ -1,0 +1,289 @@
+<svg
+	height="440.432px"
+	viewBox="0 0 11.46 440.432"
+	width="11.46px"
+	x="0px"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns="http://www.w3.org/2000/svg"
+	y="0px"
+>
+	<g id="Layer_4" display="none">
+		<g id="UuInSz.tif" display="inline">
+			<image
+				overflow="visible"
+				width="1200"
+				height="951"
+				id="Layer_0_1_"
+				xlink:href="D92CF1EEAF99D512.png"
+				transform="matrix(0.0896 -0.1169 0.1169 0.0896 -40.0117 358.2568)"
+			></image>
+		</g>
+	</g>
+	<g id="Layer_1">
+		<linearGradient
+			id="SVGID_1_"
+			gradientUnits="userSpaceOnUse"
+			x1="-1408.4834"
+			y1="936.2373"
+			x2="-1408.4834"
+			y2="925.0254"
+			gradientTransform="matrix(0.0013 -1 1 0.0013 -922.7927 -1189.6678)"
+		>
+			<stop offset="0" style="stop-color: #603813" />
+			<stop offset="0.5407" style="stop-color: #ddc8b5" />
+			<stop offset="0.7661" style="stop-color: #8c7564" />
+			<stop offset="1" style="stop-color: #3b2314" />
+		</linearGradient>
+		<polygon
+			fill="url(#SVGID_1_)"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			points="7.116,2.551 11.279,437.8
+		0.067,437.472 1.64,2.393 	"
+		/>
+
+		<rect
+			x="0.902"
+			y="437.791"
+			transform="matrix(1 0.0015 -0.0015 1 0.6425 -0.0077)"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			width="9.341"
+			height="2.355"
+		/>
+
+		<linearGradient
+			id="SVGID_2_"
+			gradientUnits="userSpaceOnUse"
+			x1="-1194.127"
+			y1="931.4961"
+			x2="-1194.127"
+			y2="925.9922"
+			gradientTransform="matrix(0.0013 -1 1 0.0013 -922.7927 -1189.6678)"
+		>
+			<stop offset="0" style="stop-color: #a8abad" />
+			<stop offset="0.3115" style="stop-color: #ffffff" />
+			<stop offset="0.6855" style="stop-color: #f6f6f7" />
+			<stop offset="1" style="stop-color: #aaacaf" />
+		</linearGradient>
+		<polygon
+			fill="url(#SVGID_2_)"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			points="7.115,2.476 7.107,8.995
+		1.604,8.988 1.612,2.47 	"
+		/>
+		<path
+			fill="#0570A5"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			d="M7.107,2.476L1.618,2.47L1.62,1.604
+		c0,0,1.029-1.607,2.568-1.604c1.541,0.002,2.923,1.454,2.923,1.454L7.107,2.476z"
+		/>
+
+		<linearGradient
+			id="SVGID_3_"
+			gradientUnits="userSpaceOnUse"
+			x1="-1967.3052"
+			y1="-254.0195"
+			x2="-1967.3052"
+			y2="-254.0195"
+			gradientTransform="matrix(-1 -0.0013 0.0013 -1 -1959.4906 140.7493)"
+		>
+			<stop offset="0" style="stop-color: #603813" />
+			<stop offset="0.5341" style="stop-color: #c3996b" />
+			<stop offset="1" style="stop-color: #3b2314" />
+		</linearGradient>
+		<path fill="url(#SVGID_3_)" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" d="M7.514,397.417" />
+
+		<linearGradient
+			id="SVGID_4_"
+			gradientUnits="userSpaceOnUse"
+			x1="-1971.1245"
+			y1="-267.4268"
+			x2="-1959.9126"
+			y2="-267.4268"
+			gradientTransform="matrix(-1 -0.0013 0.0013 -1 -1959.4906 140.7493)"
+		>
+			<stop offset="0" style="stop-color: #404041" />
+			<stop offset="0.021" style="stop-color: #100f10" />
+			<stop offset="0.391" style="stop-color: #4f5052" />
+			<stop offset="0.5172" style="stop-color: #4a4b4d" />
+			<stop offset="0.676" style="stop-color: #3b3b3d" />
+			<stop offset="0.8516" style="stop-color: #222223" />
+			<stop offset="1" style="stop-color: #080708" />
+		</linearGradient>
+		<polygon fill="url(#SVGID_4_)" points="11.279,437.8 0.067,437.472 0.258,384.927 10.761,383.858 	" />
+
+		<linearGradient
+			id="SVGID_5_"
+			gradientUnits="userSpaceOnUse"
+			x1="-1533.9976"
+			y1="935.5703"
+			x2="-1533.9976"
+			y2="924.8994"
+			gradientTransform="matrix(0.0013 -1 1 0.0013 -922.7927 -1189.6678)"
+		>
+			<stop offset="0" style="stop-color: #404041" />
+			<stop offset="0.2965" style="stop-color: #f1f1f2" />
+			<stop offset="0.5073" style="stop-color: #ffffff" />
+			<stop offset="0.9044" style="stop-color: #4f5052" />
+			<stop offset="1" style="stop-color: #404041" />
+		</linearGradient>
+		<polyline fill="url(#SVGID_5_)" points="0,394.407 0.356,296.802 9.712,297.075 10.671,393.792 	" />
+	</g>
+	<g id="Basic_Cue">
+		<rect
+			id="Rubber"
+			x="25.152"
+			y="437.791"
+			transform="matrix(1 0.0015 -0.0015 1 0.6425 -0.0432)"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			width="9.342"
+			height="2.355"
+		/>
+		<linearGradient id="BaseCue_2_" gradientUnits="userSpaceOnUse" x1="23.8989" y1="223.3857" x2="35.9009" y2="223.3857">
+			<stop offset="0" style="stop-color: #603813" />
+			<stop offset="0.5407" style="stop-color: #ddc8b5" />
+			<stop offset="0.7661" style="stop-color: #8c7564" />
+			<stop offset="1" style="stop-color: #3b2314" />
+		</linearGradient>
+		<polyline id="BaseCue" fill="url(#BaseCue_2_)" points="27,8.988 32.503,8.995 35.901,437.784 23.899,437.784 	" />
+
+		<linearGradient
+			id="Ferrule_2_"
+			gradientUnits="userSpaceOnUse"
+			x1="-1194.0928"
+			y1="956.8916"
+			x2="-1194.0928"
+			y2="951.3887"
+			gradientTransform="matrix(0.0013 -1 1 0.0013 -922.7927 -1189.6678)"
+		>
+			<stop offset="0" style="stop-color: #a8abad" />
+			<stop offset="0.3115" style="stop-color: #ffffff" />
+			<stop offset="0.6855" style="stop-color: #f6f6f7" />
+			<stop offset="1" style="stop-color: #aaacaf" />
+		</linearGradient>
+		<polygon
+			id="Ferrule"
+			fill="url(#Ferrule_2_)"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			points="32.511,2.476
+		32.503,8.995 27,8.988 27.009,2.47 	"
+		/>
+		<path
+			id="Tip"
+			fill="#0570A5"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			d="M32.503,2.476L27.015,2.47
+		l0.001-0.865c0,0,1.028-1.607,2.567-1.604c1.541,0.002,2.924,1.454,2.924,1.454L32.503,2.476z"
+		/>
+		<rect id="Joint" x="25.539" y="220.029" opacity="0.2" fill="#050202" width="8.534" height="0.373" />
+	</g>
+	<g id="McDermott">
+		<rect
+			id="Rubber_1_"
+			x="50.152"
+			y="437.791"
+			transform="matrix(1 0.0015 -0.0015 1 0.6425 -0.0798)"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			width="9.342"
+			height="2.355"
+		/>
+		<polyline id="BaseCue_1_" fill="#CEAD89" points="52,8.988 57.503,8.995 60.901,437.784 48.899,437.784 	" />
+		<g id="Layer_5">
+			<polyline fill="#F2F2F2" points="48.899,437.784 48.899,426.528 60.812,426.528 60.901,437.784 		" />
+			<g>
+				<polyline points="49.222,413.966 60.712,413.966 60.712,416.633 49.222,416.633 			" />
+				<polyline fill="#C1C1C1" points="49.188,414.383 60.712,414.383 60.712,416.133 49.188,416.133 			" />
+				<polyline fill="#185918" points="49.25,414.822 60.712,414.822 60.712,415.68 49.25,415.68 			" />
+			</g>
+			<g>
+				<polyline points="49.222,404.217 60.712,404.217 60.712,406.884 49.222,406.884 			" />
+				<polyline fill="#C1C1C1" points="49.188,404.634 60.712,404.634 60.712,406.384 49.188,406.384 			" />
+				<polyline fill="#185918" points="49.25,405.073 60.712,405.073 60.712,405.931 49.25,405.931 			" />
+			</g>
+			<polyline points="49.222,425.993 60.712,425.993 60.712,426.528 49.222,426.528 		" />
+		</g>
+		<g id="Layer_6">
+			<polyline points="49.222,406.884 49.222,413.966 60.712,413.966 60.712,406.884 		" />
+			<g>
+				<polyline points="49.901,321.614 59.727,321.614 59.727,324.281 49.901,324.281 			" />
+				<polyline fill="#C1C1C1" points="49.872,322.031 59.727,322.031 59.727,323.781 49.872,323.781 			" />
+				<polyline fill="#185918" points="49.924,322.471 59.727,322.471 59.727,323.328 49.924,323.328 			" />
+			</g>
+			<g>
+				<polyline points="49.901,311.865 59.727,311.865 59.727,314.532 49.901,314.532 			" />
+				<polyline fill="#C1C1C1" points="49.872,312.282 59.727,312.282 59.727,314.032 49.872,314.032 			" />
+				<polyline fill="#185918" points="49.924,312.722 59.727,312.722 59.727,313.579 49.924,313.579 			" />
+			</g>
+			<polyline points="49.901,314.532 49.901,321.614 59.727,321.614 59.727,314.532 		" />
+			<g>
+				<polyline points="50.564,237.3 59.19,237.3 59.19,241.092 50.564,241.092 			" />
+				<polyline fill="#C1C1C1" points="50.539,238.364 59.19,238.364 59.19,240.114 50.539,240.114 			" />
+				<polyline fill="#185918" points="50.584,238.804 59.19,238.804 59.19,239.661 50.584,239.661 			" />
+			</g>
+			<g>
+				<polyline points="50.658,226.737 59.108,226.737 59.108,230.529 50.658,230.529 			" />
+				<polyline fill="#C1C1C1" points="50.632,227.802 59.108,227.802 59.108,229.552 50.632,229.552 			" />
+				<polyline fill="#185918" points="50.677,228.241 59.108,228.241 59.108,229.099 50.677,229.099 			" />
+			</g>
+			<polyline fill="#FDFFFD" points="50.645,230.529 59.19,230.529 59.19,237.3 50.645,237.3 		" />
+		</g>
+
+		<linearGradient
+			id="Ferrule_3_"
+			gradientUnits="userSpaceOnUse"
+			x1="-1194.0596"
+			y1="981.8916"
+			x2="-1194.0596"
+			y2="976.3877"
+			gradientTransform="matrix(0.0013 -1 1 0.0013 -922.7927 -1189.6678)"
+		>
+			<stop offset="0" style="stop-color: #a8abad" />
+			<stop offset="0.3115" style="stop-color: #ffffff" />
+			<stop offset="0.6855" style="stop-color: #f6f6f7" />
+			<stop offset="1" style="stop-color: #aaacaf" />
+		</linearGradient>
+		<polygon
+			id="Ferrule_1_"
+			fill="url(#Ferrule_3_)"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			points="
+		57.511,2.476 57.503,8.995 52,8.988 52.009,2.47 	"
+		/>
+		<path
+			id="Tip_1_"
+			fill="#0570A5"
+			stroke="#000000"
+			stroke-width="0.25"
+			stroke-miterlimit="10"
+			d="M57.503,2.476L52.015,2.47
+		l0.001-0.865c0,0,1.028-1.607,2.567-1.604c1.541,0.002,2.924,1.454,2.924,1.454L57.503,2.476z"
+		/>
+		<g id="Shading">
+			<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="48.8989" y1="223.3857" x2="60.9009" y2="223.3857">
+				<stop offset="0" style="stop-color: #404040" />
+				<stop offset="0.474" style="stop-color: #ffffff" />
+				<stop offset="0.6744" style="stop-color: #c2c2c2" />
+				<stop offset="1" style="stop-color: #292929" />
+			</linearGradient>
+			<polyline fill="url(#SVGID_6_)" points="52,8.988 57.503,8.995 60.901,437.784 48.899,437.784 		" />
+		</g>
+		<rect id="Joint_1_" x="50.539" y="220.029" opacity="0.2" fill="#050202" width="8.534" height="0.373" />
+	</g>
+</svg>

@@ -1,13 +1,6 @@
 // Layout
 // -----------------------------------------------------------------------------
 
-.padded {
-	padding-bottom: 1rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 1rem;
-}
-
 .margin {
 	margin-bottom: 1rem;
 	margin-left: 1rem;
@@ -15,8 +8,79 @@
 	margin-top: 1rem;
 }
 
+.margin-x0 {
+	margin: 0.125rem;
+}
+
+.margin-xx {
+	margin: 0.25rem;
+}
+
+.margin-xs {
+	margin: 0.5rem;
+}
+
+.margin-sm {
+	margin: 0.75rem;
+}
+
+.pad {
+	margin: 1rem;
+}
+
+.margin-lg {
+	margin: 1.25rem;
+}
+
+.margin-xl {
+	margin: 1.5rem;
+}
+
+.padded {
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+}
+
+.pad-x0 {
+	padding: 0.125rem;
+}
+
+.pad-xx {
+	padding: 0.25rem;
+}
+
+.pad-xs {
+	padding: 0.5rem;
+}
+
+.pad-sm {
+	padding: 0.75rem;
+}
+
+.pad {
+	padding: 1rem;
+}
+
+.pad-lg {
+	padding: 1.25rem;
+}
+
+.pad-xl {
+	padding: 1.5rem;
+}
+
 .pad {
 	@each $side in ('top', 'right', 'bottom', 'left') {
+		&-#{$side}-x0 {
+			padding-#{$side}: 0.125rem;
+		}
+
+		&-#{$side}-xx {
+			padding-#{$side}: 0.25rem;
+		}
+
 		&-#{$side}-xs {
 			padding-#{$side}: 0.5rem;
 		}
@@ -36,15 +100,19 @@
 		&-#{$side}-xl {
 			padding-#{$side}: 1.5rem;
 		}
-
-		&-#{$side}-xx {
-			padding-#{$side}: 2.25rem;
-		}
 	}
 }
 
 .pull {
 	@each $side in ('top', 'right', 'bottom', 'left') {
+		&-#{$side}-x0 {
+			margin-#{$side}: -0.125rem;
+		}
+
+		&-#{$side}-xx {
+			margin-#{$side}: -0.25rem;
+		}
+
 		&-#{$side}-xs {
 			margin-#{$side}: -0.5rem;
 		}
@@ -64,15 +132,19 @@
 		&-#{$side}-xl {
 			margin-#{$side}: -1.5rem;
 		}
-
-		&-#{$side}-xx {
-			margin-#{$side}: -2.25rem;
-		}
 	}
 }
 
 .push {
 	@each $side in ('top', 'right', 'bottom', 'left') {
+		&-#{$side}-x0 {
+			margin-#{$side}: 0.125rem;
+		}
+
+		&-#{$side}-xx {
+			margin-#{$side}: 0.25rem;
+		}
+
 		&-#{$side}-xs {
 			margin-#{$side}: 0.5rem;
 		}
@@ -91,10 +163,6 @@
 
 		&-#{$side}-xl {
 			margin-#{$side}: 1.5rem;
-		}
-
-		&-#{$side}-xx {
-			margin-#{$side}: 2.25rem;
 		}
 	}
 }
