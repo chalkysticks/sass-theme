@@ -320,6 +320,10 @@ button.icon-only:hover {
 	border: 0 !important;
 }
 
+button.icon-only:active {
+	transform: translate(1px, 1px);
+}
+
 button:active:not(.icon-only) {
 	background-color: var(--chalky-red-2);
 	transform: translate(1px, 1px);
