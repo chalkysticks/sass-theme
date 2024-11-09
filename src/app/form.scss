@@ -148,7 +148,7 @@ button,
 		}
 	}
 
-	.icon-only {
+	&.icon-only {
 		background-color: transparent;
 		border: none;
 		color: var(--button-primary-color);

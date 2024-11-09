@@ -12082,8 +12082,8 @@ button .icon:last-child,
 .btn .icon:last-child {
   margin-right: 0;
 }
-button .icon-only,
-.btn .icon-only {
+button.icon-only,
+.btn.icon-only {
   background-color: transparent;
   border: none;
   color: var(--button-primary-color);
