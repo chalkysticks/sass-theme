@@ -12167,6 +12167,10 @@ button:hover:not(.no-hover)[disabled] {
   border: 1px solid transparent;
 }
 
+button.icon-only:hover {
+  border: 0 !important;
+}
+
 button:active {
   background-color: var(--chalky-red-2);
   transform: translate(1px, 1px);
