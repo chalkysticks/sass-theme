@@ -148,6 +148,14 @@ button,
 		}
 	}
 
+	.icon-only {
+		background-color: transparent;
+		border: none;
+		color: var(--button-primary-color);
+		margin: 0;
+		padding: 0.5em;
+	}
+
 	&[disabled] {
 		background-color: var(--button-disabled-background);
 		border: var(--button-disabled-border);
