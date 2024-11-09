@@ -12171,17 +12171,17 @@ button.icon-only:hover {
   border: 0 !important;
 }
 
-button:active {
+button:active:not(.icon-only) {
   background-color: var(--chalky-red-2);
   transform: translate(1px, 1px);
 }
-button:active.button-secondary {
+button:active:not(.icon-only).button-secondary {
   background-color: var(--chalky-blue-4);
 }
-button:active.button-tertiary {
+button:active:not(.icon-only).button-tertiary {
   background-color: var(--chalky-offwhite);
 }
-button:active.control {
+button:active:not(.icon-only).control {
   background-color: var(--chalky-offwhite);
 }
 
