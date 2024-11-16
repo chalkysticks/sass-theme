@@ -17,6 +17,7 @@ nav {
 		@extend .plain;
 
 		align-items: center;
+		color: var(--body-color);
 		display: flex;
 		font-weight: var(--font-weight-medium);
 		gap: 0.5em;

@@ -45,10 +45,24 @@
 
 @font-face {
 	font-family: 'Prelo';
+	font-weight: 300;
+	src: url('https://static.chalkysticks.com/fonts/prelo-book.woff') format('woff'),
+		url('https://static.chalkysticks.com/fonts/prelo-book.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Prelo';
 	font-weight: 500;
 	src: url('https://static.chalkysticks.com/fonts/prelo-medium-webfont.eot') format('embedded-opentype'),
 		url('https://static.chalkysticks.com/fonts/prelo-medium-webfont.ttf') format('truetype'),
 		url('https://static.chalkysticks.com/fonts/prelo-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Prelo';
+	font-weight: 600;
+	src: url('https://static.chalkysticks.com/fonts/prelo-semibold.woff') format('woff'),
+		url('https://static.chalkysticks.com/fonts/prelo-semibold.woff2') format('woff2');
 }
 
 @font-face {

@@ -11198,8 +11198,18 @@ textarea:focus {
 }
 @font-face {
   font-family: "Prelo";
+  font-weight: 300;
+  src: url("https://static.chalkysticks.com/fonts/prelo-book.woff") format("woff"), url("https://static.chalkysticks.com/fonts/prelo-book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Prelo";
   font-weight: 500;
   src: url("https://static.chalkysticks.com/fonts/prelo-medium-webfont.eot") format("embedded-opentype"), url("https://static.chalkysticks.com/fonts/prelo-medium-webfont.ttf") format("truetype"), url("https://static.chalkysticks.com/fonts/prelo-medium-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Prelo";
+  font-weight: 600;
+  src: url("https://static.chalkysticks.com/fonts/prelo-semibold.woff") format("woff"), url("https://static.chalkysticks.com/fonts/prelo-semibold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Prelo";
@@ -11360,7 +11370,7 @@ header:has(.type-title) {
 .type-heading-5, nav button, h5, .h5 {
   font-size: 1.125em;
   font-weight: var(--font-weight-medium);
-  text-transform: normal;
+  text-transform: none;
 }
 
 .type-heading-6, h6, .h6 {
@@ -11466,6 +11476,14 @@ a.type-caps:hover {
   color: var(--body-color);
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: var(--font-stack-body);
+}
+
 blockquote {
   border-left: 8px solid var(--border-dark);
   font-size: 1.125em;
@@ -11520,6 +11538,7 @@ nav ul li {
 }
 nav button {
   align-items: center;
+  color: var(--body-color);
   display: flex;
   font-weight: var(--font-weight-medium);
   gap: 0.5em;
