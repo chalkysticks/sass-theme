@@ -35,7 +35,7 @@ input[type='password'],
 input[type='text'],
 select,
 textarea {
-	background: var(--chalky-white);
+	background-color: var(--chalky-white);
 	border: 1px solid var(--chalky-grey);
 	border-radius: var(--rounded-corner);
 	color: var(--chalky-blue);
@@ -43,6 +43,15 @@ textarea {
 	font-weight: var(--font-weight-medium);
 	padding: 0.5rem 0.85rem;
 	width: 100%;
+
+	&:-webkit-autofill {
+		-webkit-text-fill-color: var(--chalky-blue) !important; /* Override autofill text color */
+		background-color: var(--chalky-white) !important;
+		box-shadow: 0 0 0px 1000px var(--chalky-white) inset !important;
+		caret-color: var(--chalky-blue) !important; /* Fix caret visibility */
+		color: var(--chalky-blue) !important;
+		transition: background-color 0s ease-in-out 0s; /* Prevent flashing */
+	}
 
 	&:placeholder-shown {
 		font-weight: var(--font-weight-book);
