@@ -142,6 +142,19 @@ a {
 	cursor: pointer;
 }
 
+a.type-caps {
+	@extend .type-small-heading;
+
+	border: 0;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--chalky-grey-3);
+
+	&:hover {
+		color: var(--body-color);
+	}
+}
+
 h1 {
 	@extend .type-heading-1;
 }

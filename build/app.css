@@ -10872,6 +10872,10 @@ label {
   margin: 1.5rem 0;
   width: 100%;
 }
+label a {
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+}
 label h6, label .h6 {
   color: var(--chalky-grey-3);
   font-size: 0.75rem;
@@ -10880,15 +10884,6 @@ label h6, label .h6 {
 }
 label .type-error {
   margin-left: 1rem;
-}
-label a {
-  border: 0;
-  color: var(--chalky-grey-3);
-  font-size: 0.75rem;
-  margin-bottom: 0.75rem;
-  margin-top: 0.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 label input + a {
   float: right;
@@ -11406,7 +11401,7 @@ header:has(.type-title) {
   vertical-align: middle;
 }
 
-.type-small-heading, .badge {
+.type-small-heading, .badge, a.type-caps {
   font-size: 0.75em;
   font-weight: var(--font-weight-medium);
   letter-spacing: 0.0125em;
@@ -11453,6 +11448,16 @@ h6,
 
 a {
   cursor: pointer;
+}
+
+a.type-caps {
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--chalky-grey-3);
+}
+a.type-caps:hover {
+  color: var(--body-color);
 }
 
 blockquote {
@@ -11877,6 +11882,17 @@ button.control.type-volumeon,
 .theme-dark.icon-speech, button.theme-dark.control.type-speech,
 .theme-dark.btn.control.type-speech {
   background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.0591e-05 9.99996C2.0591e-05 4.47715 4.47717 0 10 0C15.5229 0 20 4.47715 20 9.99996C20 15.5229 15.5229 20 10 20C8.5364 20 7.14405 19.685 5.88906 19.1184C5.79051 19.0739 5.68056 19.0603 5.57464 19.0821L1.20105 19.9796C0.871781 20.0472 0.530591 19.9448 0.292911 19.7071C0.0552307 19.4695 -0.0471393 19.1283 0.0204307 18.799L0.91798 14.4254C0.939721 14.3195 0.926161 14.2095 0.881661 14.111C0.315071 12.856 2.0591e-05 11.4637 2.0591e-05 9.99996ZM13.7074 8.70706C14.0979 8.31656 14.0979 7.68342 13.7074 7.29289C13.3168 6.90237 12.6837 6.90237 12.2931 7.29289L9.3538 10.2323C9.1585 10.4275 8.842 10.4275 8.6467 10.2323L7.70735 9.29286C7.31683 8.90236 6.68366 8.90236 6.29314 9.29286C5.90261 9.68346 5.90261 10.3166 6.29314 10.7071L8.2931 12.7071C8.6837 13.0977 9.3168 13.0977 9.7074 12.7071L13.7074 8.70706Z" fill="white"/></svg>');
+}
+
+ol.plain,
+ul.plain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ol.plain li,
+ul.plain li {
+  margin: 0;
 }
 
 header > mark, header > .mark {
