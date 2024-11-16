@@ -1,0 +1,36 @@
+// Layout
+// ---------------------------------------------------------------------------
+
+nav {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin: 0;
+		}
+	}
+
+	button {
+		@extend .type-heading-5;
+		@extend .plain;
+
+		align-items: center;
+		display: flex;
+		font-weight: var(--font-weight-medium);
+		gap: 0.5em;
+
+		.icon {
+			height: 16px;
+			width: 16px;
+		}
+	}
+}
+
+// Variations
+// ---------------------------------------------------------------------------
+
+.theme-dark nav button .icon {
+	@extend .filter-invert;
+}
