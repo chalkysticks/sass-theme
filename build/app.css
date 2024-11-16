@@ -11034,8 +11034,8 @@ button[disabled],
 button.plain,
 .btn.plain {
   background-color: initial;
+  border-color: transparent;
   border-radius: 0;
-  border: none;
   color: initial;
   margin: 0;
   padding: 0;
@@ -11099,6 +11099,9 @@ button.control.theme-dark,
 button:hover:not(.no-hover) {
   border: 1px solid var(--chalky-red-4);
 }
+button:hover:not(.no-hover).plain {
+  border: 1px solid transparent;
+}
 button:hover:not(.no-hover).button-secondary {
   border: 1px solid var(--chalky-blue-4);
 }
@@ -11120,6 +11123,9 @@ button.icon-only:active {
 button:active:not(.icon-only) {
   background-color: var(--chalky-red-2);
   transform: translate(1px, 1px);
+}
+button:active:not(.icon-only).plain {
+  background-color: transparent;
 }
 button:active:not(.icon-only).button-secondary {
   background-color: var(--chalky-blue-4);
