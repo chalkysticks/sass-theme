@@ -192,6 +192,15 @@ button,
 		pointer-events: none;
 	}
 
+	&.btn-plain {
+		background-color: initial;
+		border-radius: 0;
+		border: none;
+		color: initial;
+		margin: 0;
+		padding: 0;
+	}
+
 	&.button-secondary {
 		background-color: var(--button-secondary-background);
 		border: var(--button-secondary-border);

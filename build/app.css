@@ -11036,6 +11036,15 @@ button[disabled],
   cursor: no-drop;
   pointer-events: none;
 }
+button.btn-plain,
+.btn.btn-plain {
+  background-color: initial;
+  border-radius: 0;
+  border: none;
+  color: initial;
+  margin: 0;
+  padding: 0;
+}
 button.button-secondary,
 .btn.button-secondary {
   background-color: var(--button-secondary-background);
