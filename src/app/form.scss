@@ -21,11 +21,28 @@ label {
 	width: 100%;
 
 	h6 {
+		color: var(--chalky-grey-3);
+		font-size: 0.75rem;
+		margin-bottom: 0.75rem;
 		margin-left: 0.5rem;
 	}
 
 	.type-error {
 		margin-left: 1rem;
+	}
+
+	a {
+		border: 0;
+		color: var(--chalky-grey-3);
+		font-size: 0.75rem;
+		margin-bottom: 0.75rem;
+		margin-top: 0.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	input + a {
+		float: right;
 	}
 }
 

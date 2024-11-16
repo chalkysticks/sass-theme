@@ -10873,10 +10873,25 @@ label {
   width: 100%;
 }
 label h6, label .h6 {
+  color: var(--chalky-grey-3);
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
   margin-left: 0.5rem;
 }
 label .type-error {
   margin-left: 1rem;
+}
+label a {
+  border: 0;
+  color: var(--chalky-grey-3);
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+label input + a {
+  float: right;
 }
 
 input[type=email],
@@ -11328,19 +11343,25 @@ header:has(.type-title) {
 
 .type-heading-4, h4, .h4 {
   font-size: 1.31em;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   text-transform: uppercase;
 }
 
 .type-heading-5, h5, .h5 {
+  font-size: 1.125em;
+  font-weight: var(--font-weight-medium);
+  text-transform: normal;
+}
+
+.type-heading-6, h6, .h6 {
   font-size: 1em;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   text-transform: uppercase;
 }
 
 .type-input, input {
   font-size: 0.81em;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
 }
 
 .type-link, a {
@@ -11348,6 +11369,12 @@ header:has(.type-title) {
   font-weight: var(--font-weight-medium);
   line-height: 1.375;
   text-decoration: underline;
+}
+
+.type-large-paragraph, p.large {
+  font-size: 1.3125em;
+  font-weight: var(--font-weight-book);
+  line-height: 1.375;
 }
 
 .type-paragraph, p {
@@ -11370,7 +11397,7 @@ header:has(.type-title) {
   vertical-align: middle;
 }
 
-.type-small-heading, .badge, h6, .h6 {
+.type-small-heading, .badge {
   font-size: 0.75em;
   font-weight: var(--font-weight-medium);
   letter-spacing: 0.0125em;
@@ -11389,6 +11416,11 @@ header:has(.type-title) {
   font-weight: var(--font-weight-bold);
 }
 
+.type-tabbar {
+  font-size: 0.75em;
+  font-weight: var(--font-weight-semibold);
+}
+
 html,
 body {
   color: var(--chalky-blue);
@@ -11403,17 +11435,15 @@ h3,
 h4,
 .h4,
 h5,
-.h5 {
+.h5,
+h6,
+.h6 {
   margin: 0;
   padding: 0;
 }
 
 a {
   cursor: pointer;
-}
-
-h6, .h6 {
-  color: var(--chalky-grey-3);
 }
 
 blockquote {

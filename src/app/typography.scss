@@ -23,19 +23,25 @@
 
 .type-heading-4 {
 	font-size: 1.31em;
-	font-weight: var(--font-weight-semibold);
+	font-weight: var(--font-weight-medium);
 	text-transform: uppercase;
 }
 
 .type-heading-5 {
+	font-size: 1.125em;
+	font-weight: var(--font-weight-medium);
+	text-transform: normal;
+}
+
+.type-heading-6 {
 	font-size: 1em;
-	font-weight: var(--font-weight-semibold);
+	font-weight: var(--font-weight-medium);
 	text-transform: uppercase;
 }
 
 .type-input {
 	font-size: 0.81em;
-	font-weight: var(--font-weight-semibold);
+	font-weight: var(--font-weight-medium);
 }
 
 .type-link {
@@ -43,6 +49,12 @@
 	font-weight: var(--font-weight-medium);
 	line-height: 1.375;
 	text-decoration: underline;
+}
+
+.type-large-paragraph {
+	font-size: 1.3125em;
+	font-weight: var(--font-weight-book);
+	line-height: 1.375;
 }
 
 .type-paragraph {
@@ -84,6 +96,11 @@
 	font-weight: var(--font-weight-bold);
 }
 
+.type-tabbar {
+	font-size: 0.75em;
+	font-weight: var(--font-weight-semibold);
+}
+
 // Layout
 // ---------------------------------------------------------------------------
 
@@ -97,7 +114,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
 	margin: 0;
 	padding: 0;
 }
@@ -108,6 +126,10 @@ p {
 
 p.small {
 	@extend .type-small-paragraph;
+}
+
+p.large {
+	@extend .type-large-paragraph;
 }
 
 small {
@@ -141,9 +163,7 @@ h5 {
 }
 
 h6 {
-	@extend .type-small-heading;
-
-	color: var(--chalky-grey-3);
+	@extend .type-heading-6;
 }
 
 input {
