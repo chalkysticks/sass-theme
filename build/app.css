@@ -11363,19 +11363,19 @@ header:has(.type-title) {
 
 .type-heading-4, h4, .h4 {
   font-size: 1.31em;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
 }
 
 .type-heading-5, nav button, h5, .h5 {
   font-size: 1.125em;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   text-transform: none;
 }
 
 .type-heading-6, h6, .h6 {
   font-size: 1em;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
 }
 
