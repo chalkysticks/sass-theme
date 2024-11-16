@@ -11031,8 +11031,8 @@ button[disabled],
   cursor: no-drop;
   pointer-events: none;
 }
-button.btn-plain,
-.btn.btn-plain {
+button.plain,
+.btn.plain {
   background-color: initial;
   border-radius: 0;
   border: none;
