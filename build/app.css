@@ -11379,6 +11379,14 @@ header:has(.type-title) {
   text-transform: uppercase;
 }
 
+.type-heading-7, .h7 {
+  color: var(--chalky-grey-3);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
 .type-input, input {
   font-size: 0.81em;
   font-weight: var(--font-weight-medium);
