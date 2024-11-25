@@ -6,8 +6,10 @@
 
 	background-color: var(--chalky-blue);
 	cursor: default;
+	font-size: 0.66em;
+	font-weight: var(--font-weight-bold);
 	margin: 0.15rem 0.25rem 0.15rem 0;
-	padding: 0.5rem 0.875rem;
+	padding: 0.33rem 0.5rem;
 
 	&:last-child {
 		margin-right: 0;
