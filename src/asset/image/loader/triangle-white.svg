@@ -1,63 +1,72 @@
-<style>
-	svg {
-		--uib-size: 40px;
-		--uib-color: #ffffff;
-		--uib-speed: 2.6s;
-		--uib-dash: 15;
-		--uib-gap: 85;
-		--uib-bg-opacity: 0.1;
-	}
+<svg
+	class="container"
+	x="0px"
+	y="0px"
+	viewBox="-4 -4 48 48"
+	height="40"
+	width="40"
+	preserveAspectRatio="xMidYMid meet"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<style>
+		svg {
+			--uib-size: 40px;
+			--uib-color: #ffffff;
+			--uib-speed: 2.6s;
+			--uib-dash: 15;
+			--uib-gap: 85;
+			--uib-bg-opacity: 0.1;
+		}
 
-	svg {
-		align-items: center;
-		display: inline-flex;
-		flex-shrink: 0;
-		height: var(--uib-size);
-		justify-content: center;
-		width: var(--uib-size);
-	}
+		svg {
+			align-items: center;
+			display: inline-flex;
+			flex-shrink: 0;
+			height: var(--uib-size);
+			justify-content: center;
+			width: var(--uib-size);
+		}
 
-	svg([hidden]) {
-		display: none;
-	}
+		svg([hidden]) {
+			display: none;
+		}
 
-	.container {
-		height: var(--uib-size);
-		overflow: visible;
-		transform-origin: center;
-		width: var(--uib-size);
-	}
+		.container {
+			height: var(--uib-size);
+			overflow: visible;
+			transform-origin: center;
+			width: var(--uib-size);
+		}
 
-	.car {
-		fill: none;
-		stroke: var(--uib-color);
-		stroke-dasharray: var(--uib-dash), var(--uib-gap);
-		stroke-dashoffset: 0;
-		stroke-linecap: round;
-		animation: travel var(--uib-speed) linear infinite;
-		will-change: stroke-dasharray, stroke-dashoffset;
-	}
-
-	.car,
-	.track {
-		transition: stroke 0.5s ease;
-	}
-
-	.track {
-		stroke: var(--uib-color);
-		opacity: var(--uib-bg-opacity);
-	}
-
-	@keyframes travel {
-		0% {
+		.car {
+			fill: none;
+			stroke: var(--uib-color);
+			stroke-dasharray: var(--uib-dash), var(--uib-gap);
 			stroke-dashoffset: 0;
+			stroke-linecap: round;
+			animation: travel var(--uib-speed) linear infinite;
+			will-change: stroke-dasharray, stroke-dashoffset;
 		}
-		to {
-			stroke-dashoffset: 100;
+
+		.car,
+		.track {
+			transition: stroke 0.5s ease;
 		}
-	}
-</style>
-<svg class="container" x="0px" y="0px" viewBox="0 0 40 40" height="40" width="40" preserveAspectRatio="xMidYMid meet">
+
+		.track {
+			stroke: var(--uib-color);
+			opacity: var(--uib-bg-opacity);
+		}
+
+		@keyframes travel {
+			0% {
+				stroke-dashoffset: 0;
+			}
+			to {
+				stroke-dashoffset: 100;
+			}
+		}
+	</style>
 	<path
 		class="track"
 		fill="none"

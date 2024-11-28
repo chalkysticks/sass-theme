@@ -11,7 +11,7 @@
 	<style>
 		svg {
 			--uib-size: 40px;
-			--uib-color: #ffffff;
+			--uib-color: #2b3544;
 			--uib-speed: 2.6s;
 			--uib-dash: 15;
 			--uib-gap: 85;
@@ -24,6 +24,7 @@
 			flex-shrink: 0;
 			height: var(--uib-size);
 			justify-content: center;
+			opacity: 0.25;
 			width: var(--uib-size);
 		}
 

@@ -24,6 +24,7 @@
 			flex-shrink: 0;
 			height: var(--uib-size);
 			justify-content: center;
+			opacity: 0.25;
 			width: var(--uib-size);
 		}
 

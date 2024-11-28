@@ -11,7 +11,7 @@
 	<style>
 		svg {
 			--uib-size: 40px;
-			--uib-color: #ffffff;
+			--uib-color: #d14545;
 			--uib-speed: 2.6s;
 			--uib-dash: 15;
 			--uib-gap: 85;
