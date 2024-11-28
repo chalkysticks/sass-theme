@@ -1,0 +1,76 @@
+<style>
+	svg {
+		--uib-size: 40px;
+		--uib-color: #ffffff;
+		--uib-speed: 2.6s;
+		--uib-dash: 15;
+		--uib-gap: 85;
+		--uib-bg-opacity: 0.1;
+	}
+
+	svg {
+		align-items: center;
+		display: inline-flex;
+		flex-shrink: 0;
+		height: var(--uib-size);
+		justify-content: center;
+		width: var(--uib-size);
+	}
+
+	svg([hidden]) {
+		display: none;
+	}
+
+	.container {
+		height: var(--uib-size);
+		overflow: visible;
+		transform-origin: center;
+		width: var(--uib-size);
+	}
+
+	.car {
+		fill: none;
+		stroke: var(--uib-color);
+		stroke-dasharray: var(--uib-dash), var(--uib-gap);
+		stroke-dashoffset: 0;
+		stroke-linecap: round;
+		animation: travel var(--uib-speed) linear infinite;
+		will-change: stroke-dasharray, stroke-dashoffset;
+	}
+
+	.car,
+	.track {
+		transition: stroke 0.5s ease;
+	}
+
+	.track {
+		stroke: var(--uib-color);
+		opacity: var(--uib-bg-opacity);
+	}
+
+	@keyframes travel {
+		0% {
+			stroke-dashoffset: 0;
+		}
+		to {
+			stroke-dashoffset: 100;
+		}
+	}
+</style>
+<svg class="container" x="0px" y="0px" viewBox="0 0 40 40" height="40" width="40" preserveAspectRatio="xMidYMid meet">
+	<path
+		class="track"
+		fill="none"
+		stroke-width="5"
+		pathLength="100"
+		d="M39.6 34.32 c0 -14.480000000000002 -7.920000000000001 -27.200000000000003 -19.6 -33.92 C8.32 7.2 0.4 19.840000000000003 0.4 34.32 c5.760000000000001 3.3600000000000003 12.48 5.28 19.6 5.28 S33.839999999999996 37.68 39.6 34.32z"
+	></path>
+
+	<path
+		class="car"
+		fill="none"
+		stroke-width="5"
+		pathLength="100"
+		d="M39.6 34.32 c0 -14.480000000000002 -7.920000000000001 -27.200000000000003 -19.6 -33.92 C8.32 7.2 0.4 19.840000000000003 0.4 34.32 c5.760000000000001 3.3600000000000003 12.48 5.28 19.6 5.28 S33.839999999999996 37.68 39.6 34.32z"
+	></path>
+</svg>
