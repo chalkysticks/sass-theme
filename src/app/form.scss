@@ -309,6 +309,30 @@ button.control,
 	&.type-speech {
 		@extend .icon-speech;
 	}
+
+	&.type-edit {
+		@extend .icon-edit;
+	}
+
+	&.type-chalkysticks {
+		@extend .icon-chalkysticks;
+	}
+
+	&.type-heartoutline {
+		@extend .icon-heartoutline;
+	}
+
+	&.type-heartfill {
+		@extend .icon-heartfill;
+	}
+
+	&.type-shareoutline {
+		@extend .icon-shareoutline;
+	}
+
+	&.type-sharefill {
+		@extend .icon-sharefill;
+	}
 }
 
 button.control.theme-dark,
