@@ -11567,6 +11567,7 @@ nav button .icon {
 .avatar img {
   height: 100%;
   left: 0;
+  margin: 0 !important;
   object-fit: cover;
   position: absolute;
   top: 0;
