@@ -11527,6 +11527,57 @@ address {
   color: var(--body-color);
 }
 
+button.google {
+  -webkit-user-select: none;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+  color: #3c4043;
+  cursor: pointer;
+  display: flex;
+  font-family: "Google Sans", arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: 0.25px;
+  max-width: 300px;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+  user-select: none;
+  width: 100%;
+}
+
+button.google:hover {
+  background-color: #f8f9fa;
+  border-color: #dadce0;
+  box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.302), 0 1px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+button.google:active {
+  background-color: #f1f3f4;
+  border-color: transparent;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302);
+}
+
+button.google img {
+  height: 18px;
+  margin-right: 12px;
+  min-width: 18px;
+  width: 18px;
+}
+
+button.google span {
+  flex-grow: 1;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  white-space: nowrap;
+}
+
 hr {
   background: transparent;
   border: 0;

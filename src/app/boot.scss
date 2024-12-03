@@ -1,51 +1,7 @@
-// Vendor
-// ---------------------------------------------------------------------------
-
 // @see https://getbootstrap.com/docs/5.0/components
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Application
 // ---------------------------------------------------------------------------
 
-@import './variables.scss';
 @import './core.scss';
-
-@import './form.scss';
-@import './font.scss';
-@import './icons.scss';
-@import './scrollbar.scss';
-@import './structure.scss';
-@import './typography.scss';
-@import './theme.scss';
-
-@import './element/hr.scss';
-@import './element/nav.scss';
-
-@import './ui/avatar.scss';
-@import './ui/badge.scss';
-@import './ui/glass.scss';
-@import './ui/header-primary.scss';
-@import './ui/icon.scss';
-@import './ui/list.scss';
-@import './ui/mark.scss';
-@import './ui/showcase.scss';
-@import './ui/tags.scss';
-
-@import './branding/icon.scss';
-@import './branding/logo-text.scss';
-
-@import './page/playground.scss';
-
-@import './utility/aspect-ratio.scss';
-@import './utility/border.scss';
-@import './utility/color.scss';
-@import './utility/depth.scss';
-@import './utility/filter.scss';
-@import './utility/layout.scss';
-@import './utility/position.scss';
-@import './utility/shadow.scss';
-@import './utility/size.scss';
-@import './utility/spacing.scss';
-@import './utility/text.scss';
-@import './utility/tint.scss';
-@import './utility/visibility.scss';
