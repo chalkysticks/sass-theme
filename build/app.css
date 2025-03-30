@@ -10768,11 +10768,31 @@ Page {
   --chalky-red-2-75: #a53f42bb;
   --chalky-red-3-75: #79383fbb;
   --chalky-red-4-75: #4e313cbb;
+  --social-facebook-background: #3b5998;
+  --social-facebook-background-hover: #2d4373;
+  --social-facebook-background-active: #2d4373;
+  --social-facebook-color: #fff;
+  --social-google-background: #db4437;
+  --social-google-background-hover: #c1351d;
+  --social-google-background-active: #c1351d;
+  --social-google-color: #fff;
+  --social-linkedin-background: #0077b5;
+  --social-linkedin-background-hover: #006097;
+  --social-linkedin-background-active: #006097;
+  --social-linkedin-color: #fff;
+  --social-github-background: #333;
+  --social-github-background-hover: #2b2b2b;
+  --social-github-background-active: #2b2b2b;
+  --social-github-color: #fff;
+  --font-size-largest: 3em;
+  --font-size-xx-large: 2em;
+  --font-size-x-large: 2em;
   --font-size-large: 1.5em;
   --font-size-medium: 1.125em;
   --font-size-normal: 1em;
   --font-size-small: 0.875em;
   --font-size-x-small: 0.75em;
+  --font-size-xx-small: 0.625em;
   --font-size-smallest: 0.625em;
   --font-stack-body: "Prelo", Georgia, serif;
   --font-stack-chalky: "Prelo", Georgia, serif;
@@ -10797,6 +10817,21 @@ Page {
   --button-disabled-background: var(--chalky-offwhite);
   --button-disabled-border: 1px solid var(--chalky-grey);
   --button-disabled-color: var(--chalky-grey);
+  --button-facebook-background: var(--social-facebook-background);
+  --button-facebook-border: 1px solid transparent;
+  --button-facebook-color: var(--social-facebook-color);
+  --button-google-background: var(--social-google-background);
+  --button-google-border: 1px solid transparent;
+  --button-google-color: var(--social-google-color);
+  --button-twitter-background: var(--social-twitter-background);
+  --button-twitter-border: 1px solid transparent;
+  --button-twitter-color: var(--social-twitter-color);
+  --button-linkedin-background: var(--social-linkedin-background);
+  --button-linkedin-border: 1px solid transparent;
+  --button-linkedin-color: var(--social-linkedin-color);
+  --button-github-background: var(--social-github-background);
+  --button-github-border: 1px solid transparent;
+  --button-github-color: var(--social-github-color);
   --button-control-size: 40px;
   --button-border-radius: 4px;
   --button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
@@ -10988,14 +11023,17 @@ input.switch:checked + span::after {
 
 button,
 .btn {
-  background-color: var(--button-primary-background);
+  --background-color: var(--button-primary-background);
+  --foreground-color: var(--button-primary-color);
+  --font-size: var(--font-size-normal);
+  background-color: var(--background-color);
   border-radius: var(--button-border-radius);
   border: var(--button-primary-border);
-  color: var(--button-primary-color);
-  font-size: var(--font-size-normal);
+  color: var(--foreground-color);
+  font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
   overflow: hidden;
-  padding: 0.5rem 2rem;
+  padding: calc(var(--font-size) * 0.5) calc(var(--font-size) * 1.5);
   position: relative;
 }
 button > i,
@@ -11025,9 +11063,9 @@ button.icon-only,
 }
 button[disabled],
 .btn[disabled] {
-  background-color: var(--button-disabled-background);
+  --background-color: var(--button-disabled-background);
+  --foreground-color: var(--button-disabled-color);
   border: var(--button-disabled-border);
-  color: var(--button-disabled-color);
   cursor: no-drop;
   pointer-events: none;
 }
@@ -11041,25 +11079,63 @@ button.plain, nav button,
 }
 button.button-secondary,
 .btn.button-secondary {
-  background-color: var(--button-secondary-background);
+  --background-color: var(--button-secondary-background);
+  --foreground-color: var(--button-secondary-color);
   border: var(--button-secondary-border);
-  color: var(--button-secondary-color);
 }
 button.button-tertiary,
 .btn.button-tertiary {
-  background-color: var(--button-tertiary-background);
+  --background-color: var(--button-tertiary-background);
+  --foreground-color: var(--button-tertiary-color);
   border: var(--button-tertiary-border);
-  color: var(--button-tertiary-color);
 }
-button.size-small,
-.btn.size-small {
-  font-size: var(--font-size-small);
-  padding: 0.25rem 1rem;
+button.button-facebook,
+.btn.button-facebook {
+  --background-color: var(--button-facebook-background);
+  --foreground-color: var(--button-facebook-color);
+  border: var(--button-facebook-border);
+}
+button.button-google,
+.btn.button-google {
+  --background-color: var(--button-google-background);
+  --foreground-color: var(--button-google-color);
+  border: var(--button-google-border);
+}
+button.button-linkedin,
+.btn.button-linkedin {
+  --background-color: var(--button-linkedin-background);
+  --foreground-color: var(--button-linkedin-color);
+  border: var(--button-linkedin-border);
+}
+button.button-github,
+.btn.button-github {
+  --background-color: var(--button-github-background);
+  --foreground-color: var(--button-github-color);
+  border: var(--button-github-border);
 }
 button.size-large,
 .btn.size-large {
-  font-size: var(--font-size-large);
-  padding: 0.75rem 2rem;
+  --font-size: var(--font-size-large);
+}
+button.size-medium,
+.btn.size-medium {
+  --font-size: var(--font-size-medium);
+}
+button.size-normal,
+.btn.size-normal {
+  --font-size: var(--font-size-normal);
+}
+button.size-small,
+.btn.size-small {
+  --font-size: var(--font-size-small);
+}
+button.size-x-small,
+.btn.size-x-small {
+  --font-size: var(--font-size-x-small);
+}
+button.size-xx-small,
+.btn.size-xx-small {
+  --font-size: var(--font-size-xx-small);
 }
 
 button.control,
@@ -11110,6 +11186,18 @@ button:hover:not(.no-hover).button-tertiary {
 button:hover:not(.no-hover)[disabled] {
   border: 1px solid transparent;
 }
+button:hover:not(.no-hover).button-facebook {
+  --background-color: var(--social-facebook-background-hover);
+}
+button:hover:not(.no-hover).button-google {
+  --background-color: var(--social-google-background-hover);
+}
+button:hover:not(.no-hover).button-linkedin {
+  --background-color: var(--social-linkedin-background-hover);
+}
+button:hover:not(.no-hover).button-github {
+  --background-color: var(--social-github-background-hover);
+}
 
 button.icon-only:hover {
   border: 0 !important;
@@ -11120,7 +11208,7 @@ button.icon-only:active {
 }
 
 button:active:not(.icon-only) {
-  background-color: var(--chalky-red-2);
+  --background-color: var(--chalky-red-2);
   transform: translate(1px, 1px);
 }
 button:active:not(.icon-only).plain, nav button:active:not(.icon-only) {
@@ -11134,6 +11222,18 @@ button:active:not(.icon-only).button-tertiary {
 }
 button:active:not(.icon-only).control {
   background-color: var(--chalky-offwhite);
+}
+button:active:not(.icon-only).button-facebook {
+  --background-color: var(--social-facebook-background-active);
+}
+button:active:not(.icon-only).button-google {
+  --background-color: var(--social-google-background-active);
+}
+button:active:not(.icon-only).button-linkedin {
+  --background-color: var(--social-linkedin-background-active);
+}
+button:active:not(.icon-only).button-github {
+  --background-color: var(--social-github-background-active);
 }
 
 button:active::before {
@@ -12472,11 +12572,31 @@ Page {
   --chalky-red-2-75: #a53f42bb;
   --chalky-red-3-75: #79383fbb;
   --chalky-red-4-75: #4e313cbb;
+  --social-facebook-background: #3b5998;
+  --social-facebook-background-hover: #2d4373;
+  --social-facebook-background-active: #2d4373;
+  --social-facebook-color: #fff;
+  --social-google-background: #db4437;
+  --social-google-background-hover: #c1351d;
+  --social-google-background-active: #c1351d;
+  --social-google-color: #fff;
+  --social-linkedin-background: #0077b5;
+  --social-linkedin-background-hover: #006097;
+  --social-linkedin-background-active: #006097;
+  --social-linkedin-color: #fff;
+  --social-github-background: #333;
+  --social-github-background-hover: #2b2b2b;
+  --social-github-background-active: #2b2b2b;
+  --social-github-color: #fff;
+  --font-size-largest: 3em;
+  --font-size-xx-large: 2em;
+  --font-size-x-large: 2em;
   --font-size-large: 1.5em;
   --font-size-medium: 1.125em;
   --font-size-normal: 1em;
   --font-size-small: 0.875em;
   --font-size-x-small: 0.75em;
+  --font-size-xx-small: 0.625em;
   --font-size-smallest: 0.625em;
   --font-stack-body: "Prelo", Georgia, serif;
   --font-stack-chalky: "Prelo", Georgia, serif;
@@ -12501,6 +12621,21 @@ Page {
   --button-disabled-background: var(--chalky-offwhite);
   --button-disabled-border: 1px solid var(--chalky-grey);
   --button-disabled-color: var(--chalky-grey);
+  --button-facebook-background: var(--social-facebook-background);
+  --button-facebook-border: 1px solid transparent;
+  --button-facebook-color: var(--social-facebook-color);
+  --button-google-background: var(--social-google-background);
+  --button-google-border: 1px solid transparent;
+  --button-google-color: var(--social-google-color);
+  --button-twitter-background: var(--social-twitter-background);
+  --button-twitter-border: 1px solid transparent;
+  --button-twitter-color: var(--social-twitter-color);
+  --button-linkedin-background: var(--social-linkedin-background);
+  --button-linkedin-border: 1px solid transparent;
+  --button-linkedin-color: var(--social-linkedin-color);
+  --button-github-background: var(--social-github-background);
+  --button-github-border: 1px solid transparent;
+  --button-github-color: var(--social-github-color);
   --button-control-size: 40px;
   --button-border-radius: 4px;
   --button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);

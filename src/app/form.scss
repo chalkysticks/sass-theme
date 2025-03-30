@@ -145,14 +145,18 @@ input.switch {
 
 button,
 .btn {
-	background-color: var(--button-primary-background);
+	--background-color: var(--button-primary-background);
+	--foreground-color: var(--button-primary-color);
+	--font-size: var(--font-size-normal);
+
+	background-color: var(--background-color);
 	border-radius: var(--button-border-radius);
 	border: var(--button-primary-border);
-	color: var(--button-primary-color);
-	font-size: var(--font-size-normal);
+	color: var(--foreground-color);
+	font-size: var(--font-size);
 	font-weight: var(--font-weight-regular);
 	overflow: hidden;
-	padding: 0.5rem 2rem;
+	padding: calc(var(--font-size) * 0.5) calc(var(--font-size) * 1.5);
 	position: relative;
 
 	> i,
@@ -180,9 +184,10 @@ button,
 	}
 
 	&[disabled] {
-		background-color: var(--button-disabled-background);
+		--background-color: var(--button-disabled-background);
+		--foreground-color: var(--button-disabled-color);
+
 		border: var(--button-disabled-border);
-		color: var(--button-disabled-color);
 		cursor: no-drop;
 		pointer-events: none;
 	}
@@ -197,25 +202,69 @@ button,
 	}
 
 	&.button-secondary {
-		background-color: var(--button-secondary-background);
+		--background-color: var(--button-secondary-background);
+		--foreground-color: var(--button-secondary-color);
+
 		border: var(--button-secondary-border);
-		color: var(--button-secondary-color);
 	}
 
 	&.button-tertiary {
-		background-color: var(--button-tertiary-background);
+		--background-color: var(--button-tertiary-background);
+		--foreground-color: var(--button-tertiary-color);
+
 		border: var(--button-tertiary-border);
-		color: var(--button-tertiary-color);
 	}
 
-	&.size-small {
-		font-size: var(--font-size-small);
-		padding: 0.25rem 1rem;
+	&.button-facebook {
+		--background-color: var(--button-facebook-background);
+		--foreground-color: var(--button-facebook-color);
+
+		border: var(--button-facebook-border);
+	}
+
+	&.button-google {
+		--background-color: var(--button-google-background);
+		--foreground-color: var(--button-google-color);
+
+		border: var(--button-google-border);
+	}
+
+	&.button-linkedin {
+		--background-color: var(--button-linkedin-background);
+		--foreground-color: var(--button-linkedin-color);
+
+		border: var(--button-linkedin-border);
+	}
+
+	&.button-github {
+		--background-color: var(--button-github-background);
+		--foreground-color: var(--button-github-color);
+
+		border: var(--button-github-border);
 	}
 
 	&.size-large {
-		font-size: var(--font-size-large);
-		padding: 0.75rem 2rem;
+		--font-size: var(--font-size-large);
+	}
+
+	&.size-medium {
+		--font-size: var(--font-size-medium);
+	}
+
+	&.size-normal {
+		--font-size: var(--font-size-normal);
+	}
+
+	&.size-small {
+		--font-size: var(--font-size-small);
+	}
+
+	&.size-x-small {
+		--font-size: var(--font-size-x-small);
+	}
+
+	&.size-xx-small {
+		--font-size: var(--font-size-xx-small);
 	}
 }
 
@@ -374,6 +423,22 @@ button:hover:not(.no-hover) {
 	&[disabled] {
 		border: 1px solid transparent;
 	}
+
+	&.button-facebook {
+		--background-color: var(--social-facebook-background-hover);
+	}
+
+	&.button-google {
+		--background-color: var(--social-google-background-hover);
+	}
+
+	&.button-linkedin {
+		--background-color: var(--social-linkedin-background-hover);
+	}
+
+	&.button-github {
+		--background-color: var(--social-github-background-hover);
+	}
 }
 
 button.icon-only:hover {
@@ -385,7 +450,7 @@ button.icon-only:active {
 }
 
 button:active:not(.icon-only) {
-	background-color: var(--chalky-red-2);
+	--background-color: var(--chalky-red-2);
 	transform: translate(1px, 1px);
 
 	&.plain {
@@ -402,6 +467,22 @@ button:active:not(.icon-only) {
 
 	&.control {
 		background-color: var(--chalky-offwhite);
+	}
+
+	&.button-facebook {
+		--background-color: var(--social-facebook-background-active);
+	}
+
+	&.button-google {
+		--background-color: var(--social-google-background-active);
+	}
+
+	&.button-linkedin {
+		--background-color: var(--social-linkedin-background-active);
+	}
+
+	&.button-github {
+		--background-color: var(--social-github-background-active);
 	}
 }
 
