@@ -1,0 +1,115 @@
+// Footer Elements
+// Various footer styles for application use
+// ------------------------------------------------------------------------------
+
+// Base footer style
+.footer-base {
+	align-items: center;
+	background: var(--chalky-white);
+	border-top: 1px solid var(--chalky-grey);
+	display: flex;
+	padding: 1rem;
+	width: 100%;
+}
+
+// Tab bar footer
+.footer-tabbar {
+	@extend .footer-base;
+
+	justify-content: space-around;
+	padding: 0;
+
+	.tab-item {
+		align-items: center;
+		background: transparent;
+		border: none !important;
+		color: var(--chalky-grey-3);
+		cursor: pointer;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		padding: 0.75rem 0;
+		text-align: center;
+
+		img,
+		.icon {
+			height: 24px;
+			margin-bottom: 0.25rem;
+			width: 24px;
+		}
+
+		span {
+			font-size: var(--font-size-x-small);
+		}
+
+		&.active {
+			color: var(--chalky-red);
+		}
+	}
+}
+
+// Action footer
+.footer-actions {
+	@extend .footer-base;
+
+	justify-content: space-between;
+	padding: 0.75rem 1rem;
+
+	.action {
+		flex: 1;
+		margin: 0 0.5rem;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+// Footer with single button
+.footer-button {
+	@extend .footer-base;
+	padding: 1rem;
+
+	button {
+		width: 100%;
+	}
+}
+
+// Sticky footer
+.footer-sticky {
+	@extend .footer-base;
+
+	bottom: 0;
+	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	z-index: var(--z-header-bottom);
+}
+
+// Footer with form
+.footer-form {
+	@extend .footer-base;
+	padding: 0.75rem 1rem;
+
+	.form-group {
+		align-items: center;
+		background: var(--chalky-offwhite);
+		border-radius: var(--border-radius);
+		display: flex;
+		flex: 1;
+		margin-right: 0.75rem;
+		padding: 0.5rem 1rem;
+
+		input {
+			background: transparent;
+			border: none;
+			color: var(--chalky-blue);
+			flex: 1;
+			font-size: var(--font-size-small);
+			outline: none;
+		}
+	}
+}

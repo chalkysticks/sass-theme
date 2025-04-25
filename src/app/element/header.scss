@@ -1,0 +1,148 @@
+// Base header style
+.header-base {
+	align-items: center;
+	display: flex;
+	padding: 1rem;
+	width: 100%;
+
+	h1,
+	h2,
+	h3 {
+		flex: 1;
+		margin: 0;
+		text-align: center;
+	}
+
+	.actions {
+		display: flex;
+		justify-content: flex-end;
+		min-width: 44px;
+	}
+}
+
+// Header with back button
+.header-with-back {
+	@extend .header-base;
+
+	.back-button {
+		align-items: center;
+		background: transparent;
+		border: none;
+		color: var(--chalky-blue);
+		cursor: pointer;
+		display: flex;
+		min-width: 44px;
+		padding: 0.5rem;
+
+		img {
+			height: 20px;
+			margin-right: 0.25rem;
+			width: 20px;
+		}
+	}
+}
+
+// Header with title only (centered)
+.header-centered {
+	@extend .header-base;
+	justify-content: center;
+
+	h1,
+	h2,
+	h3 {
+		text-align: center;
+	}
+}
+
+// Header with logo
+.header-with-logo {
+	@extend .header-base;
+
+	.logo {
+		height: 36px;
+		margin-right: 1rem;
+		width: 36px;
+	}
+}
+
+// Header with avatar
+.header-with-avatar {
+	@extend .header-base;
+
+	.avatar {
+		margin-right: 1rem;
+	}
+}
+
+// Header with search
+.header-with-search {
+	@extend .header-base;
+
+	padding: 0.75rem 1rem;
+
+	.search-container {
+		background: var(--chalky-offwhite);
+		border-radius: var(--border-radius);
+		flex: 1;
+		margin: 0 0.5rem;
+		padding: 0.125rem 0.5rem;
+
+		input {
+			background: transparent;
+			border: none;
+			color: var(--chalky-blue);
+			font-size: var(--font-size-small);
+			outline: none;
+			width: 100%;
+		}
+	}
+}
+
+// Sticky header
+.header-sticky {
+	@extend .header-base;
+
+	background: var(--chalky-white);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: var(--z-header-bottom);
+}
+
+// Header with tab
+.header-with-tabs {
+	display: flex;
+	flex-direction: column;
+
+	.header-base {
+		border-bottom: 1px solid var(--chalky-grey);
+	}
+
+	.tabs {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			flex: 1;
+			text-align: center;
+
+			button {
+				background: transparent;
+				border: none;
+				border-bottom: 3px solid transparent;
+				color: var(--chalky-grey-3);
+				cursor: pointer;
+				font-weight: var(--font-weight-medium);
+				padding: 1rem 0.5rem;
+				width: 100%;
+
+				&.active {
+					border-bottom-color: var(--chalky-red);
+					color: var(--chalky-blue);
+				}
+			}
+		}
+	}
+}

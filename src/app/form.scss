@@ -169,7 +169,8 @@ button,
 		margin: 0.5rem;
 		margin-left: 0;
 
-		&:last-child {
+		&:last-child,
+		&:last-of-type {
 			margin-right: 0;
 		}
 	}
@@ -190,6 +191,10 @@ button,
 		border: var(--button-disabled-border);
 		cursor: no-drop;
 		pointer-events: none;
+	}
+
+	&:not(.no-hover) {
+		border: 1px solid transparent;
 	}
 
 	&.plain {
@@ -401,6 +406,18 @@ button.control,
 
 	&.type-sharefill {
 		@extend .icon-sharefill;
+	}
+
+	&.type-search {
+		@extend .icon-search;
+	}
+
+	&.type-send {
+		@extend .icon-send;
+	}
+
+	&.type-alarm {
+		@extend .icon-alarm;
 	}
 }
 
