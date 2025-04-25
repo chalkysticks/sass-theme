@@ -11115,27 +11115,39 @@ button.button-github,
 }
 button.size-large,
 .btn.size-large {
+  --button-control-size: 3rem;
   --font-size: var(--font-size-large);
+  background-size: 50%;
 }
 button.size-medium,
 .btn.size-medium {
+  --button-control-size: 2.5rem;
   --font-size: var(--font-size-medium);
+  background-size: 50%;
 }
 button.size-normal,
 .btn.size-normal {
+  --button-control-size: 2rem;
   --font-size: var(--font-size-normal);
+  background-size: 50%;
 }
 button.size-small,
 .btn.size-small {
+  --button-control-size: 1.75rem;
   --font-size: var(--font-size-small);
+  background-size: 50%;
 }
 button.size-x-small,
 .btn.size-x-small {
+  --button-control-size: 1.5rem;
   --font-size: var(--font-size-x-small);
+  background-size: 50%;
 }
 button.size-xx-small,
 .btn.size-xx-small {
+  --button-control-size: 1.25rem;
   --font-size: var(--font-size-xx-small);
+  background-size: 50%;
 }
 
 button.control,
@@ -11148,6 +11160,14 @@ button.control,
   height: var(--button-control-size);
   padding: 0;
   width: var(--button-control-size);
+}
+button.control.round,
+.btn.control.round {
+  border-radius: 50%;
+}
+button.control.no-shadow,
+.btn.control.no-shadow {
+  box-shadow: none;
 }
 button.control.size-lg,
 .btn.control.size-lg {

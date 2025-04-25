@@ -244,27 +244,39 @@ button,
 	}
 
 	&.size-large {
+		--button-control-size: 3rem;
 		--font-size: var(--font-size-large);
+		background-size: 50%;
 	}
 
 	&.size-medium {
+		--button-control-size: 2.5rem;
 		--font-size: var(--font-size-medium);
+		background-size: 50%;
 	}
 
 	&.size-normal {
+		--button-control-size: 2rem;
 		--font-size: var(--font-size-normal);
+		background-size: 50%;
 	}
 
 	&.size-small {
+		--button-control-size: 1.75rem;
 		--font-size: var(--font-size-small);
+		background-size: 50%;
 	}
 
 	&.size-x-small {
+		--button-control-size: 1.5rem;
 		--font-size: var(--font-size-x-small);
+		background-size: 50%;
 	}
 
 	&.size-xx-small {
+		--button-control-size: 1.25rem;
 		--font-size: var(--font-size-xx-small);
+		background-size: 50%;
 	}
 }
 
@@ -278,6 +290,14 @@ button.control,
 	height: var(--button-control-size);
 	padding: 0;
 	width: var(--button-control-size);
+
+	&.round {
+		border-radius: 50%;
+	}
+
+	&.no-shadow {
+		box-shadow: none;
+	}
 
 	&.size-lg {
 		--button-control-size: 60px;
