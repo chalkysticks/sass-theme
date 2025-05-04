@@ -328,6 +328,11 @@ button.control,
 		@extend .icon-arrowleft;
 	}
 
+	&.type-check,
+	&.type-checkmark {
+		@extend .icon-checkmark;
+	}
+
 	&.type-zoomin {
 		@extend .icon-zoomin;
 	}
