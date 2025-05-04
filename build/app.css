@@ -11532,13 +11532,13 @@ header:has(.type-title) {
 
 .type-paragraph, p {
   font-size: 1em;
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   line-height: 1.375;
 }
 
 .type-small-paragraph, p.small {
   font-size: 0.875em;
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   line-height: 1.375;
 }
 

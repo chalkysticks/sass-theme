@@ -65,15 +65,16 @@
 	line-height: 1.375;
 }
 
+// @todo I think light is too light man
 .type-paragraph {
 	font-size: 1em;
-	font-weight: var(--font-weight-light);
+	font-weight: var(--font-weight-regular);
 	line-height: 1.375;
 }
 
 .type-small-paragraph {
 	font-size: 0.875em;
-	font-weight: var(--font-weight-light);
+	font-weight: var(--font-weight-regular);
 	line-height: 1.375;
 }
 
