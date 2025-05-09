@@ -170,6 +170,9 @@ Page {
 
 	--z-under: -1;
 	--z-bottom: 1;
+	--z-view-bottom: 100;
+	--z-view-mid: 105;
+	--z-view-top: 109;
 	--z-page-bottom: 200;
 	--z-page-mid: 205;
 	--z-page-top: 209;
@@ -182,6 +185,9 @@ Page {
 	--z-modal-bottom: 230;
 	--z-modal-mid: 235;
 	--z-modal-top: 239;
+	--z-overlay-bottom: 260;
+	--z-overlay-mid: 265;
+	--z-overlay-top: 269;
 	--z-top: 299;
 
 	// 6. Utility
