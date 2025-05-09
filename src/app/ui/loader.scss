@@ -1,0 +1,114 @@
+/**
+ * Loader overlays and spinner utilities
+ */
+
+// Loading Overlay (Full screen/container)
+.loading-overlay {
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+
+	&::before {
+		animation: spinCW 2s linear infinite;
+		background-image: url('data:image/svg+xml,<svg class="icon icon-loading" width="50" height="50" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.511137 19.2535C-1.628 11.2701 3.13436 3.02143 11.1177 0.882287C13.8272 0.156299 16.666 0.203145 19.3357 1.00966C20.1293 1.24737 20.5728 2.09132 20.3351 2.88489C20.0974 3.67845 19.2535 4.12199 18.4599 3.88428C16.3315 3.24332 14.053 3.2016 11.8942 3.78006C5.5046 5.49215 1.69683 12.0874 3.40891 18.477C5.121 24.8666 11.7163 28.6744 18.1059 26.9623C24.4955 25.2502 28.3032 18.6549 26.5911 12.2653C26.3776 11.4685 26.8549 10.6418 27.6518 10.4282C28.4487 10.2147 29.2754 10.692 29.4889 11.4889C31.6281 19.4723 26.8657 27.7209 18.8823 29.8601C10.8989 31.9992 2.65028 27.2368 0.511137 19.2535Z" fill="%23030504"/></svg>');
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: '';
+		display: block;
+		height: 40px;
+		width: 40px;
+	}
+
+	// Dark version for use on light backgrounds
+	&.loading-overlay-dark {
+		background-color: rgba(0, 0, 0, 0.5);
+
+		&::before {
+			filter: brightness(0) invert(1);
+			// Makes icon white
+		}
+	}
+
+	// Transparent background version
+	&.loading-overlay-transparent {
+		background-color: transparent;
+	}
+}
+
+// Loading element - can be applied to any container
+.loading {
+	position: relative;
+
+	&::after {
+		animation: spinCW 1s linear infinite;
+		background-image: url('data:image/svg+xml,<svg class="icon icon-loading" width="50" height="50" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.511137 19.2535C-1.628 11.2701 3.13436 3.02143 11.1177 0.882287C13.8272 0.156299 16.666 0.203145 19.3357 1.00966C20.1293 1.24737 20.5728 2.09132 20.3351 2.88489C20.0974 3.67845 19.2535 4.12199 18.4599 3.88428C16.3315 3.24332 14.053 3.2016 11.8942 3.78006C5.5046 5.49215 1.69683 12.0874 3.40891 18.477C5.121 24.8666 11.7163 28.6744 18.1059 26.9623C24.4955 25.2502 28.3032 18.6549 26.5911 12.2653C26.3776 11.4685 26.8549 10.6418 27.6518 10.4282C28.4487 10.2147 29.2754 10.692 29.4889 11.4889C31.6281 19.4723 26.8657 27.7209 18.8823 29.8601C10.8989 31.9992 2.65028 27.2368 0.511137 19.2535Z" fill="%23030504"/></svg>');
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: '';
+		height: 40px;
+		left: calc(50% - 20px);
+		pointer-events: none;
+		position: absolute;
+		top: calc(50% - 20px);
+		width: 40px;
+		z-index: 100;
+	}
+
+	// Light version for use on dark backgrounds
+	&.loading-light::after {
+		filter: brightness(0) invert(1);
+		// Makes icon white
+	}
+
+	// Small version
+	&.loading-sm::after {
+		height: 24px;
+		left: calc(50% - 12px);
+		top: calc(50% - 12px);
+		width: 24px;
+	}
+
+	// Large version
+	&.loading-lg::after {
+		height: 60px;
+		left: calc(50% - 30px);
+		top: calc(50% - 30px);
+		width: 60px;
+	}
+}
+
+// Simple loading indicator - used inline
+.loading-inline {
+	animation: spinCW 1s linear infinite;
+	background-image: url('data:image/svg+xml,<svg class="icon icon-loading" width="50" height="50" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.511137 19.2535C-1.628 11.2701 3.13436 3.02143 11.1177 0.882287C13.8272 0.156299 16.666 0.203145 19.3357 1.00966C20.1293 1.24737 20.5728 2.09132 20.3351 2.88489C20.0974 3.67845 19.2535 4.12199 18.4599 3.88428C16.3315 3.24332 14.053 3.2016 11.8942 3.78006C5.5046 5.49215 1.69683 12.0874 3.40891 18.477C5.121 24.8666 11.7163 28.6744 18.1059 26.9623C24.4955 25.2502 28.3032 18.6549 26.5911 12.2653C26.3776 11.4685 26.8549 10.6418 27.6518 10.4282C28.4487 10.2147 29.2754 10.692 29.4889 11.4889C31.6281 19.4723 26.8657 27.7209 18.8823 29.8601C10.8989 31.9992 2.65028 27.2368 0.511137 19.2535Z" fill="%23030504"/></svg>');
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 20px;
+	vertical-align: middle;
+	width: 20px;
+
+	// Light version
+	&.loading-inline-light {
+		filter: brightness(0) invert(1);
+	}
+
+	// Size variants
+	&.loading-inline-sm {
+		height: 16px;
+		width: 16px;
+	}
+
+	&.loading-inline-lg {
+		height: 32px;
+		width: 32px;
+	}
+}

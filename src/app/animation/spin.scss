@@ -1,0 +1,53 @@
+// Spin Clockwise
+@keyframes spinCW {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+// Spin Counter-Clockwise
+@keyframes spinCCW {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+// Spin utility classes
+.animate-spin {
+	animation: spinCW 1s linear infinite;
+}
+
+.animate-spin-slow {
+	animation: spinCW 2s linear infinite;
+}
+
+.animate-spin-fast {
+	animation: spinCW 0.5s linear infinite;
+}
+
+.animate-spin-ccw {
+	animation: spinCCW 1s linear infinite;
+}
+
+.animate-spin-ccw-slow {
+	animation: spinCCW 2s linear infinite;
+}
+
+.animate-spin-ccw-fast {
+	animation: spinCCW 0.5s linear infinite;
+}
+
+// Spin once classes
+.animate-spin-once {
+	animation: spinCW 1s linear forwards;
+}
+
+.animate-spin-ccw-once {
+	animation: spinCCW 1s linear forwards;
+}

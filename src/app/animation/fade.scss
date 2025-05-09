@@ -1,0 +1,65 @@
+/**
+ * Fade animations
+ */
+
+// Fade In
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+// Fade Out
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+// Fade In/Out (Continuous)
+@keyframes fadeInOut {
+	0% {
+		opacity: 0.4;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+
+// Fade utility classes
+.animate-fade-in {
+	animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.animate-fade-in-slow {
+	animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.animate-fade-in-fast {
+	animation: fadeIn 0.15s ease-in-out forwards;
+}
+
+.animate-fade-out {
+	animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+.animate-fade-out-slow {
+	animation: fadeOut 0.6s ease-in-out forwards;
+}
+
+.animate-fade-out-fast {
+	animation: fadeOut 0.15s ease-in-out forwards;
+}
+
+.animate-fade-in-out {
+	animation: fadeInOut 2s ease-in-out infinite;
+}

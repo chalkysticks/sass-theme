@@ -1497,6 +1497,247 @@
 
 			<section class="level-1">
 				<header>
+					<h3>Animated</h3>
+				</header>
+
+				<section>
+					<h3>Fade Animations</h3>
+					<div class="d-flex gap-3 mb-3">
+						<div class="p-3 bg-primary animate-fade-in">Fade In</div>
+						<div class="p-3 bg-primary animate-fade-in-slow">Fade In Slow</div>
+						<div class="p-3 bg-primary animate-fade-in-fast">Fade In Fast</div>
+					</div>
+
+					<h3>Spin Animations</h3>
+					<div class="d-flex gap-3 mb-3">
+						<img src="../src/asset/image/icon/loading.svg" alt="Loader" class="animate-spin" width="40" height="40" />
+						<img src="../src/asset/image/icon/loading.svg" alt="Loader" class="animate-spin-slow" width="40" height="40" />
+						<img src="../src/asset/image/icon/loading.svg" alt="Loader" class="animate-spin-ccw" width="40" height="40" />
+					</div>
+
+					<h3>Pulse Animations</h3>
+					<div class="d-flex gap-3 mb-3">
+						<img src="../src/asset/image/icon/heart-fill.svg" alt="Heart" class="animate-pulse" width="40" height="40" />
+						<img src="../src/asset/image/icon/heart-fill.svg" alt="Heart" class="animate-heartbeat" width="40" height="40" />
+						<img src="../src/asset/image/icon/star-fill.svg" alt="Star" class="animate-glow" width="40" height="40" />
+					</div>
+				</section>
+			</section>
+
+			<section class="level-1">
+				<header>
+					<h3>Animated Icons</h3>
+				</header>
+
+				<section>
+					<div>
+						<figure class="padded">
+							<img src="../build/asset/image/icon/loading.svg" class="animate-spin" />
+							<div class="label">Loading (Spin)</div>
+						</figure>
+						<figure class="padded">
+							<img src="../build/asset/image/icon/restart.svg" class="animate-spin-ccw" />
+							<div class="label">Restart (Spin CCW)</div>
+						</figure>
+						<figure class="padded">
+							<img src="../build/asset/image/icon/heart-fill.svg" class="animate-pulse" />
+							<div class="label">Heart (Pulse)</div>
+						</figure>
+						<figure class="padded">
+							<img src="../build/asset/image/icon/star-fill.svg" class="animate-glow" />
+							<div class="label">Star (Glow)</div>
+						</figure>
+					</div>
+					<div>
+						<figure class="padded">
+							<img src="../build/asset/image/icon/notification.svg" class="animate-heartbeat" />
+							<div class="label">Notification (Heartbeat)</div>
+						</figure>
+						<figure class="padded">
+							<img src="../build/asset/image/icon/chalkysticks.svg" class="animate-pulse-slow" />
+							<div class="label">ChalkySticks (Pulse Slow)</div>
+						</figure>
+						<figure class="padded">
+							<img src="../build/asset/image/icon/error.svg" class="animate-fade-in" />
+							<div class="label">Error (Fade In)</div>
+						</figure>
+						<figure class="padded">
+							<img src="../build/asset/image/icon/checkmark.svg" class="animate-spin-once" />
+							<div class="label">Checkmark (Spin Once)</div>
+						</figure>
+					</div>
+				</section>
+
+				<header class="mt-5">
+					<h4>Animation Classes</h4>
+				</header>
+
+				<section>
+					<table class="table table-bordered" style="max-width: 800px">
+						<thead>
+							<tr>
+								<th width="200">Animation Type</th>
+								<th>Available Classes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Fade</td>
+								<td>
+									<code>animate-fade-in</code>
+									<code>animate-fade-in-slow</code>
+									<code>animate-fade-in-fast</code>
+									<code>animate-fade-out</code>
+									<code>animate-fade-out-slow</code>
+									<code>animate-fade-out-fast</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Spin</td>
+								<td>
+									<code>animate-spin</code>
+									<code>animate-spin-slow</code>
+									<code>animate-spin-fast</code>
+									<code>animate-spin-ccw</code>
+									<code>animate-spin-ccw-slow</code>
+									<code>animate-spin-ccw-fast</code>
+									<code>animate-spin-once</code>
+									<code>animate-spin-ccw-once</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Pulse</td>
+								<td>
+									<code>animate-pulse</code>
+									<code>animate-pulse-slow</code>
+									<code>animate-pulse-fast</code>
+									<code>animate-heartbeat</code>
+									<code>animate-glow</code>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<header class="mt-5">
+					<h4>Loading Overlays</h4>
+				</header>
+
+				<section>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card mb-3">
+								<div class="card-header">Full Overlay</div>
+								<div class="card-body position-relative" style="height: 200px; padding: 0">
+									<img
+										src="../src/asset/image/diagrammer/tables/table-horizontal-8.svg"
+										style="width: 100%; height: 100%; object-fit: contain"
+									/>
+									<div class="loading-overlay"></div>
+								</div>
+								<div class="card-footer">
+									<code>.loading-overlay</code>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card mb-3">
+								<div class="card-header">Dark Overlay</div>
+								<div class="card-body position-relative" style="height: 200px; padding: 0; background-color: #f5f5f5">
+									<img
+										src="../src/asset/image/diagrammer/tables/table-horizontal-8.svg"
+										style="width: 100%; height: 100%; object-fit: contain"
+									/>
+									<div class="loading-overlay loading-overlay-dark"></div>
+								</div>
+								<div class="card-footer">
+									<code>.loading-overlay.loading-overlay-dark</code>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card mb-3">
+								<div class="card-header">Transparent Overlay</div>
+								<div class="card-body position-relative" style="height: 200px; padding: 0; background-color: #f5f5f5">
+									<img
+										src="../src/asset/image/diagrammer/tables/table-horizontal-8.svg"
+										style="width: 100%; height: 100%; object-fit: contain"
+									/>
+									<div class="loading-overlay loading-overlay-transparent"></div>
+								</div>
+								<div class="card-footer">
+									<code>.loading-overlay.loading-overlay-transparent</code>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-4">
+						<div class="col-md-4">
+							<div class="card mb-3">
+								<div class="card-header">Element Loading</div>
+								<div class="card-body loading" style="height: 200px; padding: 0; background-color: #f5f5f5">
+									<img
+										src="../src/asset/image/diagrammer/tables/table-horizontal-8.svg"
+										style="width: 100%; height: 100%; object-fit: contain; opacity: 0.3"
+									/>
+								</div>
+								<div class="card-footer">
+									<code>.loading</code>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card mb-3">
+								<div class="card-header">Light Loading on Dark</div>
+								<div class="card-body loading loading-light" style="height: 200px; padding: 0; background-color: #333">
+									<img
+										src="../src/asset/image/diagrammer/tables/table-horizontal-8.svg"
+										style="width: 100%; height: 100%; object-fit: contain; opacity: 0.1; filter: brightness(0.5)"
+									/>
+								</div>
+								<div class="card-footer">
+									<code>.loading.loading-light</code>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card mb-3">
+								<div class="card-header">Inline Loaders</div>
+								<div class="card-body" style="height: 200px; padding: 20px">
+									<p>
+										Default:
+										<span class="loading-inline"></span>
+									</p>
+									<p>
+										Light:
+										<span class="loading-inline loading-inline-light" style="background-color: #333; padding: 12px"></span>
+									</p>
+									<p>
+										Small:
+										<span class="loading-inline loading-inline-sm"></span>
+									</p>
+									<p>
+										Large:
+										<span class="loading-inline loading-inline-lg"></span>
+									</p>
+								</div>
+								<div class="card-footer">
+									<code>.loading-inline</code>
+									with variants
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section class="level-1">
+				<header>
 					<h3>Images</h3>
 				</header>
 
