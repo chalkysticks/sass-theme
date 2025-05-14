@@ -64,7 +64,6 @@ textarea {
 		box-shadow: 0 0 0px 1000px var(--chalky-white) inset !important;
 		caret-color: var(--chalky-blue) !important; /* Fix caret visibility */
 		color: var(--chalky-blue) !important;
-		transition: background-color 0s ease-in-out 0s; /* Prevent flashing */
 	}
 
 	&:placeholder-shown {
