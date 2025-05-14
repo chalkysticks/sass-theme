@@ -28,7 +28,7 @@ label {
 	h6 {
 		color: var(--chalky-grey-3);
 		font-size: 0.75rem;
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.5rem;
 		margin-left: 0.5rem;
 	}
 
@@ -53,7 +53,9 @@ textarea {
 	color: var(--chalky-blue);
 	font-size: 0.875rem;
 	font-weight: var(--font-weight-medium);
+	outline: var(--input-outline-width) solid rgba(170, 170, 170, 0.24);
 	padding: 0.5rem 0.85rem;
+	transition: outline 0.25s ease-in-out;
 	width: 100%;
 
 	&:-webkit-autofill {
@@ -543,6 +545,7 @@ input[type='email'],
 input[type='number'],
 input[type='password'],
 input[type='text'],
+select,
 textarea {
 	&:hover {
 		border-color: var(--chalky-grey-2);
@@ -551,6 +554,6 @@ textarea {
 	&:active,
 	&:focus {
 		border-color: var(--body-color);
-		outline: var(--input-outline-width) solid rgba(0, 0, 0, 0.07);
+		outline: var(--input-outline-width) solid var(--chalky-grey-2);
 	}
 }

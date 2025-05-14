@@ -13,6 +13,29 @@
 	text-align: right;
 }
 
+// Text styling
+// ---------------------------------------------------------------------------
+
+.text-muted {
+	opacity: var(--text-muted-opacity);
+}
+
+.text-small {
+	font-size: var(--font-size-small);
+}
+
+.text-x-small {
+	font-size: var(--font-size-x-small);
+}
+
+.text-bold {
+	font-weight: var(--font-weight-bold);
+}
+
+.text-medium {
+	font-weight: var(--font-weight-medium);
+}
+
 a.no-decoration {
 	border: 0;
 	text-decoration: none;

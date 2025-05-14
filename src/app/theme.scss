@@ -8,6 +8,8 @@
 }
 
 .theme-dark {
+	--anchor-color: var(--chalky-white);
+	--anchor-color-hover: var(--chalky-white);
 	--body-background: var(--chalky-blue);
 	--body-color: var(--chalky-offwhite);
 	--border-dark: var(--chalky-white);
@@ -17,4 +19,15 @@
 [class*='theme-'] {
 	background: var(--body-background);
 	color: var(--body-color);
+}
+
+// Specific Overrides
+// -----------------------------------------------------------------------------
+
+.theme-dark {
+	// It's optically thicker light on dark
+	.type-large-paragraph,
+	.type-paragraph {
+		font-weight: var(--font-weight-light);
+	}
 }

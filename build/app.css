@@ -10784,6 +10784,9 @@ Page {
   --social-github-background-hover: #2b2b2b;
   --social-github-background-active: #2b2b2b;
   --social-github-color: #fff;
+  --anchor-color: var(--chalky-lightblue);
+  --anchor-color-hover: var(--chalky-blue-2);
+  --text-muted-opacity: 0.65;
   --font-size-largest: 3em;
   --font-size-xx-large: 2em;
   --font-size-x-large: 2em;
@@ -10836,7 +10839,7 @@ Page {
   --button-border-radius: 4px;
   --button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   --input-accentcolor: var(--chalky-lightblue);
-  --input-outline-width: 6px;
+  --input-outline-width: 4px;
   --input-toggleable-size: 16px;
   --radio-radius: 0.75rem;
   --body-background: var(--chalky-offwhite);
@@ -10920,7 +10923,7 @@ label a {
 label h6, label .h6 {
   color: var(--chalky-grey-3);
   font-size: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   margin-left: 0.5rem;
 }
 label .type-error {
@@ -10942,7 +10945,9 @@ textarea {
   color: var(--chalky-blue);
   font-size: 0.875rem;
   font-weight: var(--font-weight-medium);
+  outline: var(--input-outline-width) solid rgba(170, 170, 170, 0.24);
   padding: 0.5rem 0.85rem;
+  transition: outline 0.25s ease-in-out;
   width: 100%;
 }
 input[type=email]:-webkit-autofill,
@@ -11281,6 +11286,7 @@ input[type=email]:hover,
 input[type=number]:hover,
 input[type=password]:hover,
 input[type=text]:hover,
+select:hover,
 textarea:hover {
   border-color: var(--chalky-grey-2);
 }
@@ -11291,10 +11297,12 @@ input[type=password]:active,
 input[type=password]:focus,
 input[type=text]:active,
 input[type=text]:focus,
+select:active,
+select:focus,
 textarea:active,
 textarea:focus {
   border-color: var(--body-color);
-  outline: var(--input-outline-width) solid rgba(0, 0, 0, 0.07);
+  outline: var(--input-outline-width) solid var(--chalky-grey-2);
 }
 
 /**
@@ -11524,9 +11532,13 @@ header:has(.type-title) {
 }
 
 .type-link, a {
-  color: var(--chalky-lightblue);
+  color: var(--anchor-color);
   font-weight: var(--font-weight-medium);
   line-height: 1.375;
+  text-decoration: none;
+}
+.type-link:hover, a:hover {
+  color: var(--anchor-color-hover);
   text-decoration: underline;
 }
 
@@ -11538,7 +11550,7 @@ header:has(.type-title) {
 
 .type-paragraph, p {
   font-size: 1em;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-book);
   line-height: 1.375;
 }
 
@@ -11558,7 +11570,7 @@ header:has(.type-title) {
 
 .type-small-heading, .badge, a.type-caps {
   font-size: 0.75em;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
   letter-spacing: 0.0125em;
   margin: 0.7em 0;
   text-transform: uppercase;
@@ -11607,9 +11619,11 @@ a {
 
 a.type-caps {
   border: 0;
-  cursor: pointer;
-  text-decoration: none;
   color: var(--chalky-grey-3);
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.025em;
+  text-decoration: none;
 }
 a.type-caps:hover {
   color: var(--body-color);
@@ -11647,6 +11661,8 @@ address {
 }
 
 .theme-dark {
+  --anchor-color: var(--chalky-white);
+  --anchor-color-hover: var(--chalky-white);
   --body-background: var(--chalky-blue);
   --body-color: var(--chalky-offwhite);
   --border-dark: var(--chalky-white);
@@ -11656,6 +11672,12 @@ address {
 [class*=theme-] {
   background: var(--body-background);
   color: var(--body-color);
+}
+
+.theme-dark .type-large-paragraph,
+.theme-dark .type-paragraph,
+.theme-dark p {
+  font-weight: var(--font-weight-light);
 }
 
 /**
@@ -13185,6 +13207,9 @@ Page {
   --social-github-background-hover: #2b2b2b;
   --social-github-background-active: #2b2b2b;
   --social-github-color: #fff;
+  --anchor-color: var(--chalky-lightblue);
+  --anchor-color-hover: var(--chalky-blue-2);
+  --text-muted-opacity: 0.65;
   --font-size-largest: 3em;
   --font-size-xx-large: 2em;
   --font-size-x-large: 2em;
@@ -13237,7 +13262,7 @@ Page {
   --button-border-radius: 4px;
   --button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   --input-accentcolor: var(--chalky-lightblue);
-  --input-outline-width: 6px;
+  --input-outline-width: 4px;
   --input-toggleable-size: 16px;
   --radio-radius: 0.75rem;
   --body-background: var(--chalky-offwhite);
@@ -14461,6 +14486,26 @@ Page {
 
 .text-right {
   text-align: right;
+}
+
+.text-muted {
+  opacity: var(--text-muted-opacity);
+}
+
+.text-small {
+  font-size: var(--font-size-small);
+}
+
+.text-x-small {
+  font-size: var(--font-size-x-small);
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.text-medium {
+  font-weight: var(--font-weight-medium);
 }
 
 a.no-decoration {

@@ -82,6 +82,10 @@ Page {
 	// 2. Typography
 	// ------------------------------------------------------------------------------
 
+	--anchor-color: var(--chalky-lightblue);
+	--anchor-color-hover: var(--chalky-blue-2);
+	--text-muted-opacity: 0.65;
+
 	--font-size-largest: 3em;
 	--font-size-xx-large: 2em;
 	--font-size-x-large: 2em;
@@ -151,7 +155,7 @@ Page {
 	--button-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 
 	--input-accentcolor: var(--chalky-lightblue);
-	--input-outline-width: 6px;
+	--input-outline-width: 4px;
 	--input-toggleable-size: 16px;
 
 	--radio-radius: 0.75rem;

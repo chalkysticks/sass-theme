@@ -53,10 +53,15 @@
 }
 
 .type-link {
-	color: var(--chalky-lightblue);
+	color: var(--anchor-color);
 	font-weight: var(--font-weight-medium);
 	line-height: 1.375;
-	text-decoration: underline;
+	text-decoration: none;
+
+	&:hover {
+		color: var(--anchor-color-hover);
+		text-decoration: underline;
+	}
 }
 
 .type-large-paragraph {
@@ -65,10 +70,9 @@
 	line-height: 1.375;
 }
 
-// @todo I think light is too light man
 .type-paragraph {
 	font-size: 1em;
-	font-weight: var(--font-weight-regular);
+	font-weight: var(--font-weight-book);
 	line-height: 1.375;
 }
 
@@ -88,7 +92,7 @@
 
 .type-small-heading {
 	font-size: 0.75em;
-	font-weight: var(--font-weight-medium);
+	font-weight: var(--font-weight-bold);
 	letter-spacing: 0.0125em;
 	margin: 0.7em 0;
 	text-transform: uppercase;
@@ -155,9 +159,11 @@ a.type-caps {
 	@extend .type-small-heading;
 
 	border: 0;
-	cursor: pointer;
-	text-decoration: none;
 	color: var(--chalky-grey-3);
+	cursor: pointer;
+	font-weight: var(--font-weight-semibold);
+	letter-spacing: -0.025em;
+	text-decoration: none;
 
 	&:hover {
 		color: var(--body-color);
