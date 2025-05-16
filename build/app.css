@@ -11659,13 +11659,13 @@ header:has(.type-title) {
 
 .type-paragraph, p {
   font-size: 1em;
-  font-weight: var(--font-weight-book);
+  font-weight: var(--font-weight-medium);
   line-height: 1.375;
 }
 
 .type-small-paragraph, p.small {
   font-size: 0.875em;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-book);
   line-height: 1.375;
 }
 
@@ -11781,12 +11781,6 @@ address {
 [class*=theme-] {
   background: var(--body-background);
   color: var(--body-color);
-}
-
-.theme-dark .type-large-paragraph,
-.theme-dark .type-paragraph,
-.theme-dark p {
-  font-weight: var(--font-weight-light);
 }
 
 /**
@@ -13460,10 +13454,6 @@ Page {
   background-color: var(--chalky-black) !important;
 }
 
-.foreground-chalky-black {
-  color: var(--chalky-black) !important;
-}
-
 .border-color-chalky-black {
   border-color: var(--chalky-black) !important;
 }
@@ -13476,16 +13466,16 @@ Page {
   fill: var(--chalky-black) !important;
 }
 
+.foreground-chalky-black {
+  color: var(--chalky-black) !important;
+}
+
 .stroke-chalky-black {
   stroke: var(--chalky-black) !important;
 }
 
 .background-chalky-blue {
   background-color: var(--chalky-blue) !important;
-}
-
-.foreground-chalky-blue {
-  color: var(--chalky-blue) !important;
 }
 
 .border-color-chalky-blue {
@@ -13500,16 +13490,16 @@ Page {
   fill: var(--chalky-blue) !important;
 }
 
+.foreground-chalky-blue {
+  color: var(--chalky-blue) !important;
+}
+
 .stroke-chalky-blue {
   stroke: var(--chalky-blue) !important;
 }
 
 .background-chalky-blue-2 {
   background-color: var(--chalky-blue-2) !important;
-}
-
-.foreground-chalky-blue-2 {
-  color: var(--chalky-blue-2) !important;
 }
 
 .border-color-chalky-blue-2 {
@@ -13524,16 +13514,16 @@ Page {
   fill: var(--chalky-blue-2) !important;
 }
 
+.foreground-chalky-blue-2 {
+  color: var(--chalky-blue-2) !important;
+}
+
 .stroke-chalky-blue-2 {
   stroke: var(--chalky-blue-2) !important;
 }
 
 .background-chalky-blue-3 {
   background-color: var(--chalky-blue-3) !important;
-}
-
-.foreground-chalky-blue-3 {
-  color: var(--chalky-blue-3) !important;
 }
 
 .border-color-chalky-blue-3 {
@@ -13548,16 +13538,16 @@ Page {
   fill: var(--chalky-blue-3) !important;
 }
 
+.foreground-chalky-blue-3 {
+  color: var(--chalky-blue-3) !important;
+}
+
 .stroke-chalky-blue-3 {
   stroke: var(--chalky-blue-3) !important;
 }
 
 .background-chalky-blue-4 {
   background-color: var(--chalky-blue-4) !important;
-}
-
-.foreground-chalky-blue-4 {
-  color: var(--chalky-blue-4) !important;
 }
 
 .border-color-chalky-blue-4 {
@@ -13572,16 +13562,16 @@ Page {
   fill: var(--chalky-blue-4) !important;
 }
 
+.foreground-chalky-blue-4 {
+  color: var(--chalky-blue-4) !important;
+}
+
 .stroke-chalky-blue-4 {
   stroke: var(--chalky-blue-4) !important;
 }
 
 .background-chalky-grey {
   background-color: var(--chalky-grey) !important;
-}
-
-.foreground-chalky-grey {
-  color: var(--chalky-grey) !important;
 }
 
 .border-color-chalky-grey {
@@ -13596,16 +13586,16 @@ Page {
   fill: var(--chalky-grey) !important;
 }
 
+.foreground-chalky-grey {
+  color: var(--chalky-grey) !important;
+}
+
 .stroke-chalky-grey {
   stroke: var(--chalky-grey) !important;
 }
 
 .background-chalky-grey-2 {
   background-color: var(--chalky-grey-2) !important;
-}
-
-.foreground-chalky-grey-2 {
-  color: var(--chalky-grey-2) !important;
 }
 
 .border-color-chalky-grey-2 {
@@ -13620,16 +13610,16 @@ Page {
   fill: var(--chalky-grey-2) !important;
 }
 
+.foreground-chalky-grey-2 {
+  color: var(--chalky-grey-2) !important;
+}
+
 .stroke-chalky-grey-2 {
   stroke: var(--chalky-grey-2) !important;
 }
 
 .background-chalky-grey-3 {
   background-color: var(--chalky-grey-3) !important;
-}
-
-.foreground-chalky-grey-3 {
-  color: var(--chalky-grey-3) !important;
 }
 
 .border-color-chalky-grey-3 {
@@ -13644,16 +13634,16 @@ Page {
   fill: var(--chalky-grey-3) !important;
 }
 
+.foreground-chalky-grey-3 {
+  color: var(--chalky-grey-3) !important;
+}
+
 .stroke-chalky-grey-3 {
   stroke: var(--chalky-grey-3) !important;
 }
 
 .background-chalky-grey-4 {
   background-color: var(--chalky-grey-4) !important;
-}
-
-.foreground-chalky-grey-4 {
-  color: var(--chalky-grey-4) !important;
 }
 
 .border-color-chalky-grey-4 {
@@ -13668,16 +13658,16 @@ Page {
   fill: var(--chalky-grey-4) !important;
 }
 
+.foreground-chalky-grey-4 {
+  color: var(--chalky-grey-4) !important;
+}
+
 .stroke-chalky-grey-4 {
   stroke: var(--chalky-grey-4) !important;
 }
 
 .background-chalky-lightblue {
   background-color: var(--chalky-lightblue) !important;
-}
-
-.foreground-chalky-lightblue {
-  color: var(--chalky-lightblue) !important;
 }
 
 .border-color-chalky-lightblue {
@@ -13692,16 +13682,16 @@ Page {
   fill: var(--chalky-lightblue) !important;
 }
 
+.foreground-chalky-lightblue {
+  color: var(--chalky-lightblue) !important;
+}
+
 .stroke-chalky-lightblue {
   stroke: var(--chalky-lightblue) !important;
 }
 
 .background-chalky-lightblue-2 {
   background-color: var(--chalky-lightblue-2) !important;
-}
-
-.foreground-chalky-lightblue-2 {
-  color: var(--chalky-lightblue-2) !important;
 }
 
 .border-color-chalky-lightblue-2 {
@@ -13716,16 +13706,16 @@ Page {
   fill: var(--chalky-lightblue-2) !important;
 }
 
+.foreground-chalky-lightblue-2 {
+  color: var(--chalky-lightblue-2) !important;
+}
+
 .stroke-chalky-lightblue-2 {
   stroke: var(--chalky-lightblue-2) !important;
 }
 
 .background-chalky-purple {
   background-color: var(--chalky-purple) !important;
-}
-
-.foreground-chalky-purple {
-  color: var(--chalky-purple) !important;
 }
 
 .border-color-chalky-purple {
@@ -13740,16 +13730,16 @@ Page {
   fill: var(--chalky-purple) !important;
 }
 
+.foreground-chalky-purple {
+  color: var(--chalky-purple) !important;
+}
+
 .stroke-chalky-purple {
   stroke: var(--chalky-purple) !important;
 }
 
 .background-chalky-purple-2 {
   background-color: var(--chalky-purple-2) !important;
-}
-
-.foreground-chalky-purple-2 {
-  color: var(--chalky-purple-2) !important;
 }
 
 .border-color-chalky-purple-2 {
@@ -13764,16 +13754,16 @@ Page {
   fill: var(--chalky-purple-2) !important;
 }
 
+.foreground-chalky-purple-2 {
+  color: var(--chalky-purple-2) !important;
+}
+
 .stroke-chalky-purple-2 {
   stroke: var(--chalky-purple-2) !important;
 }
 
 .background-chalky-purple-3 {
   background-color: var(--chalky-purple-3) !important;
-}
-
-.foreground-chalky-purple-3 {
-  color: var(--chalky-purple-3) !important;
 }
 
 .border-color-chalky-purple-3 {
@@ -13788,16 +13778,16 @@ Page {
   fill: var(--chalky-purple-3) !important;
 }
 
+.foreground-chalky-purple-3 {
+  color: var(--chalky-purple-3) !important;
+}
+
 .stroke-chalky-purple-3 {
   stroke: var(--chalky-purple-3) !important;
 }
 
 .background-chalky-red {
   background-color: var(--chalky-red) !important;
-}
-
-.foreground-chalky-red {
-  color: var(--chalky-red) !important;
 }
 
 .border-color-chalky-red {
@@ -13812,16 +13802,16 @@ Page {
   fill: var(--chalky-red) !important;
 }
 
+.foreground-chalky-red {
+  color: var(--chalky-red) !important;
+}
+
 .stroke-chalky-red {
   stroke: var(--chalky-red) !important;
 }
 
 .background-chalky-red-2 {
   background-color: var(--chalky-red-2) !important;
-}
-
-.foreground-chalky-red-2 {
-  color: var(--chalky-red-2) !important;
 }
 
 .border-color-chalky-red-2 {
@@ -13836,16 +13826,16 @@ Page {
   fill: var(--chalky-red-2) !important;
 }
 
+.foreground-chalky-red-2 {
+  color: var(--chalky-red-2) !important;
+}
+
 .stroke-chalky-red-2 {
   stroke: var(--chalky-red-2) !important;
 }
 
 .background-chalky-red-3 {
   background-color: var(--chalky-red-3) !important;
-}
-
-.foreground-chalky-red-3 {
-  color: var(--chalky-red-3) !important;
 }
 
 .border-color-chalky-red-3 {
@@ -13860,16 +13850,16 @@ Page {
   fill: var(--chalky-red-3) !important;
 }
 
+.foreground-chalky-red-3 {
+  color: var(--chalky-red-3) !important;
+}
+
 .stroke-chalky-red-3 {
   stroke: var(--chalky-red-3) !important;
 }
 
 .background-chalky-red-4 {
   background-color: var(--chalky-red-4) !important;
-}
-
-.foreground-chalky-red-4 {
-  color: var(--chalky-red-4) !important;
 }
 
 .border-color-chalky-red-4 {
@@ -13884,16 +13874,16 @@ Page {
   fill: var(--chalky-red-4) !important;
 }
 
+.foreground-chalky-red-4 {
+  color: var(--chalky-red-4) !important;
+}
+
 .stroke-chalky-red-4 {
   stroke: var(--chalky-red-4) !important;
 }
 
 .background-chalky-white {
   background-color: var(--chalky-white) !important;
-}
-
-.foreground-chalky-white {
-  color: var(--chalky-white) !important;
 }
 
 .border-color-chalky-white {
@@ -13908,16 +13898,16 @@ Page {
   fill: var(--chalky-white) !important;
 }
 
+.foreground-chalky-white {
+  color: var(--chalky-white) !important;
+}
+
 .stroke-chalky-white {
   stroke: var(--chalky-white) !important;
 }
 
 .background-chalky-offwhite {
   background-color: var(--chalky-offwhite) !important;
-}
-
-.foreground-chalky-offwhite {
-  color: var(--chalky-offwhite) !important;
 }
 
 .border-color-chalky-offwhite {
@@ -13930,6 +13920,10 @@ Page {
 
 .fill-chalky-offwhite {
   fill: var(--chalky-offwhite) !important;
+}
+
+.foreground-chalky-offwhite {
+  color: var(--chalky-offwhite) !important;
 }
 
 .stroke-chalky-offwhite {

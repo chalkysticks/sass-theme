@@ -20,14 +20,3 @@
 	background: var(--body-background);
 	color: var(--body-color);
 }
-
-// Specific Overrides
-// -----------------------------------------------------------------------------
-
-.theme-dark {
-	// It's optically thicker light on dark
-	.type-large-paragraph,
-	.type-paragraph {
-		font-weight: var(--font-weight-light);
-	}
-}
