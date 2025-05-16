@@ -11313,7 +11313,7 @@ button.control.theme-dark,
   justify-content: center;
 }
 .button-group > * {
-  flex: 1 1 auto;
+  flex: 1;
 }
 
 button:hover:not(.no-hover) {
