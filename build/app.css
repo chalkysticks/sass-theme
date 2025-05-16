@@ -11033,7 +11033,9 @@ input.switch:checked + span::after {
 
 button,
 .btn,
-[class*=button-] {
+[class~=button-primary],
+[class~=button-secondary],
+[class~=button-tertiary] {
   --background-color: var(--button-primary-background);
   --foreground-color: var(--button-primary-color);
   --font-size: var(--font-size-normal);
@@ -11051,27 +11053,39 @@ button > i,
 button > span,
 .btn > i,
 .btn > span,
-[class*=button-] > i,
-[class*=button-] > span {
+[class~=button-primary] > i,
+[class~=button-primary] > span,
+[class~=button-secondary] > i,
+[class~=button-secondary] > span,
+[class~=button-tertiary] > i,
+[class~=button-tertiary] > span {
   position: relative;
   z-index: 2;
 }
 button .icon,
 .btn .icon,
-[class*=button-] .icon {
+[class~=button-primary] .icon,
+[class~=button-secondary] .icon,
+[class~=button-tertiary] .icon {
   margin: 0.5rem;
   margin-left: 0;
 }
 button .icon:last-child, button .icon:last-of-type,
 .btn .icon:last-child,
 .btn .icon:last-of-type,
-[class*=button-] .icon:last-child,
-[class*=button-] .icon:last-of-type {
+[class~=button-primary] .icon:last-child,
+[class~=button-primary] .icon:last-of-type,
+[class~=button-secondary] .icon:last-child,
+[class~=button-secondary] .icon:last-of-type,
+[class~=button-tertiary] .icon:last-child,
+[class~=button-tertiary] .icon:last-of-type {
   margin-right: 0;
 }
 button.icon-only,
 .btn.icon-only,
-[class*=button-].icon-only {
+[class~=button-primary].icon-only,
+[class~=button-secondary].icon-only,
+[class~=button-tertiary].icon-only {
   background-color: transparent;
   border: none;
   color: var(--button-primary-color);
@@ -11081,7 +11095,9 @@ button.icon-only,
 }
 button[disabled],
 .btn[disabled],
-[class*=button-][disabled] {
+[class~=button-primary][disabled],
+[class~=button-secondary][disabled],
+[class~=button-tertiary][disabled] {
   --background-color: var(--button-disabled-background);
   --foreground-color: var(--button-disabled-color);
   border: var(--button-disabled-border);
@@ -11090,12 +11106,16 @@ button[disabled],
 }
 button:not(.no-hover),
 .btn:not(.no-hover),
-[class*=button-]:not(.no-hover) {
+[class~=button-primary]:not(.no-hover),
+[class~=button-secondary]:not(.no-hover),
+[class~=button-tertiary]:not(.no-hover) {
   border: 1px solid transparent;
 }
 button.plain, nav button,
 .btn.plain,
-[class*=button-].plain {
+[class~=button-primary].plain,
+[class~=button-secondary].plain,
+[class~=button-tertiary].plain {
   background-color: initial;
   border-color: transparent;
   border-radius: 0;
@@ -11104,84 +11124,108 @@ button.plain, nav button,
 }
 button.button-secondary,
 .btn.button-secondary,
-[class*=button-].button-secondary {
+[class~=button-primary].button-secondary,
+[class~=button-secondary].button-secondary,
+[class~=button-tertiary].button-secondary {
   --background-color: var(--button-secondary-background);
   --foreground-color: var(--button-secondary-color);
   border: var(--button-secondary-border);
 }
 button.button-tertiary,
 .btn.button-tertiary,
-[class*=button-].button-tertiary {
+[class~=button-primary].button-tertiary,
+[class~=button-secondary].button-tertiary,
+[class~=button-tertiary].button-tertiary {
   --background-color: var(--button-tertiary-background);
   --foreground-color: var(--button-tertiary-color);
   border: var(--button-tertiary-border);
 }
 button.button-facebook,
 .btn.button-facebook,
-[class*=button-].button-facebook {
+[class~=button-primary].button-facebook,
+[class~=button-secondary].button-facebook,
+[class~=button-tertiary].button-facebook {
   --background-color: var(--button-facebook-background);
   --foreground-color: var(--button-facebook-color);
   border: var(--button-facebook-border);
 }
 button.button-google,
 .btn.button-google,
-[class*=button-].button-google {
+[class~=button-primary].button-google,
+[class~=button-secondary].button-google,
+[class~=button-tertiary].button-google {
   --background-color: var(--button-google-background);
   --foreground-color: var(--button-google-color);
   border: var(--button-google-border);
 }
 button.button-linkedin,
 .btn.button-linkedin,
-[class*=button-].button-linkedin {
+[class~=button-primary].button-linkedin,
+[class~=button-secondary].button-linkedin,
+[class~=button-tertiary].button-linkedin {
   --background-color: var(--button-linkedin-background);
   --foreground-color: var(--button-linkedin-color);
   border: var(--button-linkedin-border);
 }
 button.button-github,
 .btn.button-github,
-[class*=button-].button-github {
+[class~=button-primary].button-github,
+[class~=button-secondary].button-github,
+[class~=button-tertiary].button-github {
   --background-color: var(--button-github-background);
   --foreground-color: var(--button-github-color);
   border: var(--button-github-border);
 }
 button.size-large,
 .btn.size-large,
-[class*=button-].size-large {
+[class~=button-primary].size-large,
+[class~=button-secondary].size-large,
+[class~=button-tertiary].size-large {
   --button-control-size: 3rem;
   --font-size: var(--font-size-large);
   background-size: 50%;
 }
 button.size-medium,
 .btn.size-medium,
-[class*=button-].size-medium {
+[class~=button-primary].size-medium,
+[class~=button-secondary].size-medium,
+[class~=button-tertiary].size-medium {
   --button-control-size: 2.5rem;
   --font-size: var(--font-size-medium);
   background-size: 50%;
 }
 button.size-normal,
 .btn.size-normal,
-[class*=button-].size-normal {
+[class~=button-primary].size-normal,
+[class~=button-secondary].size-normal,
+[class~=button-tertiary].size-normal {
   --button-control-size: 2rem;
   --font-size: var(--font-size-normal);
   background-size: 50%;
 }
 button.size-small,
 .btn.size-small,
-[class*=button-].size-small {
+[class~=button-primary].size-small,
+[class~=button-secondary].size-small,
+[class~=button-tertiary].size-small {
   --button-control-size: 1.75rem;
   --font-size: var(--font-size-small);
   background-size: 50%;
 }
 button.size-x-small,
 .btn.size-x-small,
-[class*=button-].size-x-small {
+[class~=button-primary].size-x-small,
+[class~=button-secondary].size-x-small,
+[class~=button-tertiary].size-x-small {
   --button-control-size: 1.5rem;
   --font-size: var(--font-size-x-small);
   background-size: 50%;
 }
 button.size-xx-small,
 .btn.size-xx-small,
-[class*=button-].size-xx-small {
+[class~=button-primary].size-xx-small,
+[class~=button-secondary].size-xx-small,
+[class~=button-tertiary].size-xx-small {
   --button-control-size: 1.25rem;
   --font-size: var(--font-size-xx-small);
   background-size: 50%;

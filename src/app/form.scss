@@ -146,7 +146,9 @@ input.switch {
 
 button,
 .btn,
-[class*='button-'] {
+[class~='button-primary'],
+[class~='button-secondary'],
+[class~='button-tertiary'] {
 	--background-color: var(--button-primary-background);
 	--foreground-color: var(--button-primary-color);
 	--font-size: var(--font-size-normal);
