@@ -10809,12 +10809,15 @@ Page {
   --font-weight-black: 800;
   --font-weight-extra-black: 900;
   --button-primary-background: var(--chalky-red);
+  --button-primary-background-disabled: var(--chalky-red-4);
   --button-primary-border: 1px solid transparent;
   --button-primary-color: var(--chalky-white);
   --button-secondary-background: var(--chalky-blue);
+  --button-secondary-background-disabled: var(--chalky-blue-4);
   --button-secondary-border: 1px solid transparent;
   --button-secondary-color: var(--chalky-white);
   --button-tertiary-background: var(--chalky-white);
+  --button-tertiary-background-disabled: var(--chalky-grey-2);
   --button-tertiary-border: 1px solid var(--chalky-grey);
   --button-tertiary-color: var(--chalky-blue);
   --button-disabled-background: var(--chalky-offwhite);
@@ -11037,6 +11040,7 @@ button,
 [class~=button-secondary],
 [class~=button-tertiary] {
   --background-color: var(--button-primary-background);
+  --button-disabled-background: var(--button-primary-background-disabled);
   --foreground-color: var(--button-primary-color);
   --font-size: var(--font-size-normal);
   background-color: var(--background-color);
@@ -11093,17 +11097,6 @@ button.icon-only,
   margin: 0;
   padding: 0.5rem;
 }
-button[disabled],
-.btn[disabled],
-[class~=button-primary][disabled],
-[class~=button-secondary][disabled],
-[class~=button-tertiary][disabled] {
-  --background-color: var(--button-disabled-background);
-  --foreground-color: var(--button-disabled-color);
-  border: var(--button-disabled-border);
-  cursor: no-drop;
-  pointer-events: none;
-}
 button:not(.no-hover),
 .btn:not(.no-hover),
 [class~=button-primary]:not(.no-hover),
@@ -11128,6 +11121,7 @@ button.button-secondary,
 [class~=button-secondary].button-secondary,
 [class~=button-tertiary].button-secondary {
   --background-color: var(--button-secondary-background);
+  --button-disabled-background: var(--button-secondary-background-disabled);
   --foreground-color: var(--button-secondary-color);
   border: var(--button-secondary-border);
 }
@@ -11137,6 +11131,7 @@ button.button-tertiary,
 [class~=button-secondary].button-tertiary,
 [class~=button-tertiary].button-tertiary {
   --background-color: var(--button-tertiary-background);
+  --button-disabled-background: var(--button-tertiary-background-disabled);
   --foreground-color: var(--button-tertiary-color);
   border: var(--button-tertiary-border);
 }
@@ -11229,6 +11224,17 @@ button.size-xx-small,
   --button-control-size: 1.25rem;
   --font-size: var(--font-size-xx-small);
   background-size: 50%;
+}
+button[disabled],
+.btn[disabled],
+[class~=button-primary][disabled],
+[class~=button-secondary][disabled],
+[class~=button-tertiary][disabled] {
+  --background-color: var(--button-disabled-background);
+  --foreground-color: var(--button-disabled-color);
+  border: var(--button-disabled-border);
+  cursor: no-drop;
+  pointer-events: none;
 }
 
 button.control,
@@ -13297,12 +13303,15 @@ Page {
   --font-weight-black: 800;
   --font-weight-extra-black: 900;
   --button-primary-background: var(--chalky-red);
+  --button-primary-background-disabled: var(--chalky-red-4);
   --button-primary-border: 1px solid transparent;
   --button-primary-color: var(--chalky-white);
   --button-secondary-background: var(--chalky-blue);
+  --button-secondary-background-disabled: var(--chalky-blue-4);
   --button-secondary-border: 1px solid transparent;
   --button-secondary-color: var(--chalky-white);
   --button-tertiary-background: var(--chalky-white);
+  --button-tertiary-background-disabled: var(--chalky-grey-2);
   --button-tertiary-border: 1px solid var(--chalky-grey);
   --button-tertiary-color: var(--chalky-blue);
   --button-disabled-background: var(--chalky-offwhite);

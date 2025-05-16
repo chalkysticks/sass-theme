@@ -114,14 +114,17 @@ Page {
 	// ------------------------------------------------------------------------------
 
 	--button-primary-background: var(--chalky-red);
+	--button-primary-background-disabled: var(--chalky-red-4);
 	--button-primary-border: 1px solid transparent;
 	--button-primary-color: var(--chalky-white);
 
 	--button-secondary-background: var(--chalky-blue);
+	--button-secondary-background-disabled: var(--chalky-blue-4);
 	--button-secondary-border: 1px solid transparent;
 	--button-secondary-color: var(--chalky-white);
 
 	--button-tertiary-background: var(--chalky-white);
+	--button-tertiary-background-disabled: var(--chalky-grey-2);
 	--button-tertiary-border: 1px solid var(--chalky-grey);
 	--button-tertiary-color: var(--chalky-blue);
 

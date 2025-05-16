@@ -150,6 +150,7 @@ button,
 [class~='button-secondary'],
 [class~='button-tertiary'] {
 	--background-color: var(--button-primary-background);
+	--button-disabled-background: var(--button-primary-background-disabled);
 	--foreground-color: var(--button-primary-color);
 	--font-size: var(--font-size-normal);
 
@@ -188,15 +189,6 @@ button,
 		padding: 0.5rem;
 	}
 
-	&[disabled] {
-		--background-color: var(--button-disabled-background);
-		--foreground-color: var(--button-disabled-color);
-
-		border: var(--button-disabled-border);
-		cursor: no-drop;
-		pointer-events: none;
-	}
-
 	&:not(.no-hover) {
 		border: 1px solid transparent;
 	}
@@ -212,6 +204,7 @@ button,
 
 	&.button-secondary {
 		--background-color: var(--button-secondary-background);
+		--button-disabled-background: var(--button-secondary-background-disabled);
 		--foreground-color: var(--button-secondary-color);
 
 		border: var(--button-secondary-border);
@@ -219,6 +212,7 @@ button,
 
 	&.button-tertiary {
 		--background-color: var(--button-tertiary-background);
+		--button-disabled-background: var(--button-tertiary-background-disabled);
 		--foreground-color: var(--button-tertiary-color);
 
 		border: var(--button-tertiary-border);
@@ -286,6 +280,15 @@ button,
 		--button-control-size: 1.25rem;
 		--font-size: var(--font-size-xx-small);
 		background-size: 50%;
+	}
+
+	&[disabled] {
+		--background-color: var(--button-disabled-background);
+		--foreground-color: var(--button-disabled-color);
+
+		border: var(--button-disabled-border);
+		cursor: no-drop;
+		pointer-events: none;
 	}
 }
 
