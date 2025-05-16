@@ -10811,18 +10811,24 @@ Page {
   --button-primary-background: var(--chalky-red);
   --button-primary-background-disabled: var(--chalky-red-4);
   --button-primary-border: 1px solid transparent;
+  --button-primary-border-disabled: 1px solid var(--chalky-red-4);
   --button-primary-color: var(--chalky-white);
+  --button-primary-color-disabled: var(--chalky-grey-2);
   --button-secondary-background: var(--chalky-blue);
   --button-secondary-background-disabled: var(--chalky-blue-4);
   --button-secondary-border: 1px solid transparent;
+  --button-secondary-border-disabled: 1px solid var(--chalky-blue-4);
   --button-secondary-color: var(--chalky-white);
+  --button-secondary-color-disabled: var(--chalky-grey-2);
   --button-tertiary-background: var(--chalky-white);
   --button-tertiary-background-disabled: var(--chalky-grey-2);
   --button-tertiary-border: 1px solid var(--chalky-grey);
+  --button-tertiary-border-disabled: 1px solid var(--chalky-grey-2);
   --button-tertiary-color: var(--chalky-blue);
+  --button-tertiary-color-disabled: var(--chalky-grey-3);
   --button-disabled-background: var(--chalky-offwhite);
-  --button-disabled-border: 1px solid var(--chalky-grey);
-  --button-disabled-color: var(--chalky-grey);
+  --button-disabled-border: 0;
+  --button-disabled-color: var(--chalky-grey-3);
   --button-facebook-background: var(--social-facebook-background);
   --button-facebook-border: 1px solid transparent;
   --button-facebook-color: var(--social-facebook-color);
@@ -11041,6 +11047,8 @@ button,
 [class~=button-tertiary] {
   --background-color: var(--button-primary-background);
   --button-disabled-background: var(--button-primary-background-disabled);
+  --button-disabled-border: var(--button-primary-border-disabled);
+  --button-disabled-color: var(--button-primary-color-disabled);
   --foreground-color: var(--button-primary-color);
   --font-size: var(--font-size-normal);
   background-color: var(--background-color);
@@ -11122,6 +11130,8 @@ button.button-secondary,
 [class~=button-tertiary].button-secondary {
   --background-color: var(--button-secondary-background);
   --button-disabled-background: var(--button-secondary-background-disabled);
+  --button-disabled-border: var(--button-secondary-border-disabled);
+  --button-disabled-color: var(--button-secondary-color-disabled);
   --foreground-color: var(--button-secondary-color);
   border: var(--button-secondary-border);
 }
@@ -11132,6 +11142,8 @@ button.button-tertiary,
 [class~=button-tertiary].button-tertiary {
   --background-color: var(--button-tertiary-background);
   --button-disabled-background: var(--button-tertiary-background-disabled);
+  --button-disabled-border: var(--button-tertiary-border-disabled);
+  --button-disabled-color: var(--button-tertiary-color-disabled);
   --foreground-color: var(--button-tertiary-color);
   border: var(--button-tertiary-border);
 }
@@ -13305,18 +13317,24 @@ Page {
   --button-primary-background: var(--chalky-red);
   --button-primary-background-disabled: var(--chalky-red-4);
   --button-primary-border: 1px solid transparent;
+  --button-primary-border-disabled: 1px solid var(--chalky-red-4);
   --button-primary-color: var(--chalky-white);
+  --button-primary-color-disabled: var(--chalky-grey-2);
   --button-secondary-background: var(--chalky-blue);
   --button-secondary-background-disabled: var(--chalky-blue-4);
   --button-secondary-border: 1px solid transparent;
+  --button-secondary-border-disabled: 1px solid var(--chalky-blue-4);
   --button-secondary-color: var(--chalky-white);
+  --button-secondary-color-disabled: var(--chalky-grey-2);
   --button-tertiary-background: var(--chalky-white);
   --button-tertiary-background-disabled: var(--chalky-grey-2);
   --button-tertiary-border: 1px solid var(--chalky-grey);
+  --button-tertiary-border-disabled: 1px solid var(--chalky-grey-2);
   --button-tertiary-color: var(--chalky-blue);
+  --button-tertiary-color-disabled: var(--chalky-grey-3);
   --button-disabled-background: var(--chalky-offwhite);
-  --button-disabled-border: 1px solid var(--chalky-grey);
-  --button-disabled-color: var(--chalky-grey);
+  --button-disabled-border: 0;
+  --button-disabled-color: var(--chalky-grey-3);
   --button-facebook-background: var(--social-facebook-background);
   --button-facebook-border: 1px solid transparent;
   --button-facebook-color: var(--social-facebook-color);

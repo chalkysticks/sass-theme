@@ -151,6 +151,8 @@ button,
 [class~='button-tertiary'] {
 	--background-color: var(--button-primary-background);
 	--button-disabled-background: var(--button-primary-background-disabled);
+	--button-disabled-border: var(--button-primary-border-disabled);
+	--button-disabled-color: var(--button-primary-color-disabled);
 	--foreground-color: var(--button-primary-color);
 	--font-size: var(--font-size-normal);
 
@@ -205,6 +207,8 @@ button,
 	&.button-secondary {
 		--background-color: var(--button-secondary-background);
 		--button-disabled-background: var(--button-secondary-background-disabled);
+		--button-disabled-border: var(--button-secondary-border-disabled);
+		--button-disabled-color: var(--button-secondary-color-disabled);
 		--foreground-color: var(--button-secondary-color);
 
 		border: var(--button-secondary-border);
@@ -213,6 +217,8 @@ button,
 	&.button-tertiary {
 		--background-color: var(--button-tertiary-background);
 		--button-disabled-background: var(--button-tertiary-background-disabled);
+		--button-disabled-border: var(--button-tertiary-border-disabled);
+		--button-disabled-color: var(--button-tertiary-color-disabled);
 		--foreground-color: var(--button-tertiary-color);
 
 		border: var(--button-tertiary-border);
