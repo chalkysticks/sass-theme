@@ -81,88 +81,114 @@
 			padding-#{$side}: 0.25rem;
 		}
 
-		&-#{$side}-xs {
-			padding-#{$side}: 0.5rem;
+		&-#{$side}-xs,
+		&-#{$side}-x-small {
+			padding-#{$side}: var(--pad-x-small);
 		}
 
-		&-#{$side}-sm {
-			padding-#{$side}: 0.75rem;
+		&-#{$side}-sm,
+		&-#{$side}-small {
+			padding-#{$side}: var(--pad-small);
 		}
 
-		&-#{$side} {
-			padding-#{$side}: 1rem;
+		&-#{$side},
+		&-#{$side}-md,
+		&-#{$side}-medium {
+			padding-#{$side}: var(--pad-medium);
 		}
 
-		&-#{$side}-lg {
-			padding-#{$side}: 1.25rem;
+		&-#{$side}-lg,
+		&-#{$side}-large {
+			padding-#{$side}: var(--pad-large);
 		}
 
-		&-#{$side}-xl {
-			padding-#{$side}: 1.5rem;
+		&-#{$side}-xl,
+		&-#{$side}-x-large {
+			padding-#{$side}: var(--pad-x-large);
 		}
 	}
 }
 
 .pull {
 	@each $side in ('top', 'right', 'bottom', 'left') {
-		&-#{$side}-x0 {
-			margin-#{$side}: -0.125rem;
+		&-#{$side}-xs,
+		&-#{$side}-x-small {
+			margin-#{$side}: calc(var(--margin-x-small) * -1);
 		}
 
-		&-#{$side}-xx {
-			margin-#{$side}: -0.25rem;
+		&-#{$side}-sm,
+		&-#{$side}-small {
+			margin-#{$side}: calc(var(--margin-small) * -1);
 		}
 
-		&-#{$side}-xs {
-			margin-#{$side}: -0.5rem;
+		&-#{$side},
+		&-#{$side}-md,
+		&-#{$side}-medium {
+			margin-#{$side}: calc(var(--margin-medium) * -1);
 		}
 
-		&-#{$side}-sm {
-			margin-#{$side}: -0.75rem;
+		&-#{$side}-lg,
+		&-#{$side}-large {
+			margin-#{$side}: calc(var(--margin-large) * -1);
 		}
 
-		&-#{$side} {
-			margin-#{$side}: -1rem;
-		}
-
-		&-#{$side}-lg {
-			margin-#{$side}: -1.25rem;
-		}
-
-		&-#{$side}-xl {
-			margin-#{$side}: -1.5rem;
+		&-#{$side}-xl,
+		&-#{$side}-x-large {
+			margin-#{$side}: calc(var(--margin-x-large) * -1);
 		}
 	}
 }
 
 .push {
 	@each $side in ('top', 'right', 'bottom', 'left') {
-		&-#{$side}-x0 {
-			margin-#{$side}: 0.125rem;
+		&-#{$side}-xs,
+		&-#{$side}-x-small {
+			margin-#{$side}: var(--margin-x-small);
 		}
 
-		&-#{$side}-xx {
-			margin-#{$side}: 0.25rem;
+		&-#{$side}-sm,
+		&-#{$side}-small {
+			margin-#{$side}: var(--margin-small);
 		}
 
-		&-#{$side}-xs {
-			margin-#{$side}: 0.5rem;
+		&-#{$side},
+		&-#{$side}-md,
+		&-#{$side}-medium {
+			margin-#{$side}: var(--margin-medium);
 		}
 
-		&-#{$side}-sm {
-			margin-#{$side}: 0.75rem;
+		&-#{$side}-lg,
+		&-#{$side}-large {
+			margin-#{$side}: var(--margin-large);
 		}
 
-		&-#{$side} {
-			margin-#{$side}: 1rem;
-		}
-
-		&-#{$side}-lg {
-			margin-#{$side}: 1.25rem;
-		}
-
-		&-#{$side}-xl {
-			margin-#{$side}: 1.5rem;
+		&-#{$side}-xl,
+		&-#{$side}-x-large {
+			margin-#{$side}: var(--margin-x-large);
 		}
 	}
+}
+
+.gap-xs,
+.gap-x-small {
+	gap: var(--gap-x-small);
+}
+
+.gap-sm,
+.gap-small {
+	gap: var(--gap-small);
+}
+
+.gap,
+.gap-medium {
+	gap: var(--gap-medium);
+}
+
+.gap-lg .gap-large {
+	gap: var(--gap-large);
+}
+
+.gap-xl,
+.gap-x-large {
+	gap: var(--gap-x-large);
 }

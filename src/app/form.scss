@@ -457,6 +457,18 @@ button.control.theme-dark,
 	flex-direction: row;
 }
 
+.button-group {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	justify-content: center;
+
+	> * {
+		flex: 1 1 auto;
+	}
+}
+
 // User Interaction
 // ---------------------------------------------------------------------------
 
